@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JGJPayStock - Gestion de Stock & Facturation</title>
+    <meta name="description" content="Solution professionnelle de gestion de stock et facturation développée avec Flutter. Optimisez votre gestion d'entreprise avec JGJPayStock.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/JGJPayStock.jpg" alt="JGJPayStock Logo" class="logo-img">
+                    <span class="logo-text">JGJ<span class="logo-text-part2">PayStock</span></span>
+                </a>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Accueil</a></li>
+                    <li><a href="#features">Fonctionnalités</a></li>
+                    <li><a href="about.html">À Propos</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contact.html" class="btn btn-nav">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="particles" id="particles-js"></div>
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-content" data-aos="fade-right">
+                    <h1 class="typing-text">
+                        <span>Gérez votre stock,</span>
+                        <span>Facturez en un clic,</span>
+                        <span>Développez votre entreprise.</span>
+                    </h1>
+                    <p class="hero-subtitle">La solution tout-en-un pour une gestion d'entreprise simplifiée et efficace, disponible sur tous vos appareils.</p>
+                    <div class="platform-badges">
+                        <span class="platform-badge"><i class="fas fa-mobile-alt"></i> Mobile</span>
+                        <span class="platform-badge"><i class="fas fa-desktop"></i> Desktop</span>
+                        <span class="platform-badge"><i class="fas fa-globe"></i> Web</span>
+                    </div>
+                    <div class="cta-buttons">
+                        <a href="#demo" class="btn btn-primary">
+                            <i class="fas fa-play-circle"></i> Voir la démo
+                        </a>
+                        <a href="contact.html" class="btn btn-outline">
+                            <i class="fas fa-file-invoice"></i> Demander un devis
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image-container" data-aos="fade-left">
+                    <div class="device-mockup">
+                        <div class="device-frame">
+                            <img src="assets/images/screenhot_app.png" alt="Capture d'écran JGJPayStock" class="app-screenshot">
+                        </div>
+                        <div class="device-stats">
+                            <div class="stat">
+                                <i class="fas fa-bolt"></i>
+                                <span>Rapide</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-sync"></i>
+                                <span>Synchronisé</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-shield-alt"></i>
+                                <span>Sécurisé</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Fonctionnalités Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">📊</div>
+                    <h3>Gestion de Stock</h3>
+                    <p>Suivez vos produits en temps réel avec des alertes de stock bas.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-icon">🧾</div>
+                    <h3>Facturation</h3>
+                    <p>Créez des factures professionnelles en quelques secondes.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-icon">📱</div>
+                    <h3>Multi-Plateforme</h3>
+                    <p>Disponible sur iOS, Android et Web.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-icon">🔄</div>
+                    <h3>Synchronisation Cloud</h3>
+                    <p>Vos données sont sauvegardées et synchronisées en temps réel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Preview -->
+    <section class="about-preview">
+        <div class="container">
+            <div class="about-content">
+                <h2>Développé avec Expertise</h2>
+                <p>JGJPayStock est le fruit de plusieurs années d'expérience dans le développement d'applications mobiles professionnelles avec Flutter.</p>
+                <a href="about.html" class="btn btn-outline">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">Ce qu'ils en disent</h2>
+            <div class="testimonial-slider">
+                <!-- Testimonial items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Prêt à révolutionner votre gestion d'entreprise ?</h2>
+            <p>Contactez-nous dès aujourd'hui pour une démonstration personnalisée.</p>
+            <a href="contact.html" class="btn btn-primary">Demander une démo</a>
+        </div>
+    </section>
+
+    <!-- Font Awesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>JGJPayStock</h3>
+                    <p>Solution professionnelle de gestion de stock, de caisse et de facturation pour les entreprises. Développée avec Flutter pour des performances optimales sur toutes les plateformes.</p>
+                    
+                    <!-- Capture d'écran de l'application -->
+                    <div class="app-screenshot-container">
+                        <img src="assets/images/screenhot_app.png" alt="Capture d'écran de JGJPayStock" class="app-screenshot">
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html#features"><i class="fas fa-chevron-right"></i> Fonctionnalités</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Témoignages</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contactez-nous</h4>
+                    <p><i class="fas fa-envelope"></i> contact@jgjpaystock.com</p>
+                    <p><i class="fas fa-phone"></i> +49 152 585 75 909</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Allemagne</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/jguimfack8080" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+4915258575909" class="social-link" aria-label="Téléphone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:contact@jgjpaystock.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <p>Abonnez-vous pour recevoir nos dernières actualités</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn-subscribe"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JGJPayStock. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true,
+                offset: 100
+            });
+        });
+    </script>
+</body>
+</html>

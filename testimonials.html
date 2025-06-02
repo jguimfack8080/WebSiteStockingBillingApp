@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Témoignages - JGJPayStock</title>
+    <meta name="description" content="Découvrez ce que nos clients disent de JGJPayStock, la solution de gestion de stock et de facturation tout-en-un.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    
+    <style>
+        /* Testimonials Page Specific Styles */
+        .testimonials-hero {
+            background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%);
+            color: white;
+            padding: 100px 0 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .testimonials-hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonials-hero p {
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .testimonials-container {
+            padding: 80px 0;
+            background-color: var(--background-alt);
+        }
+        
+        .testimonial-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .testimonial-card::before {
+            content: '\201C';
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 6rem;
+            font-family: Georgia, serif;
+            color: rgba(67, 97, 238, 0.1);
+            line-height: 1;
+            z-index: 0;
+        }
+        
+        .testimonial-content {
+            position: relative;
+            z-index: 1;
+            flex-grow: 1;
+            margin-bottom: 1.5rem;
+        }
+        
+        .testimonial-content p {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            color: var(--text-color);
+        }
+        
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            margin-top: auto;
+        }
+        
+        .testimonial-avatar {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            overflow: hidden;
+            margin-right: 15px;
+            border: 3px solid var(--primary-color);
+            flex-shrink: 0;
+        }
+        
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .testimonial-info h4 {
+            margin: 0 0 5px;
+            font-size: 1.1rem;
+        }
+        
+        .testimonial-info p {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--text-light);
+        }
+        
+        .testimonial-rating {
+            color: #FFD700;
+            margin: 5px 0 0;
+        }
+        
+        .stats-section {
+            padding: 60px 0;
+            background: white;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-item {
+            padding: 2rem 1rem;
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+            line-height: 1;
+        }
+        
+        .stat-label {
+            color: var(--text-light);
+            font-size: 1.1rem;
+        }
+        
+        .cta-testimonial {
+            background: linear-gradient(135deg, #f5f7ff 0%, #e9ecff 100%);
+            padding: 80px 0;
+            text-align: center;
+        }
+        
+        .cta-testimonial h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .cta-testimonial p {
+            max-width: 700px;
+            margin: 0 auto 2.5rem;
+            font-size: 1.1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .testimonials-hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .testimonial-card {
+                padding: 25px 20px;
+            }
+            
+            .testimonial-card::before {
+                font-size: 5rem;
+                right: 20px;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .testimonials-hero h1 {
+                font-size: 2rem;
+            }
+            
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo">
+                    <img src="assets/images/JGJPayStock.jpg" alt="JGJPayStock Logo" class="logo-img">
+                    <span class="logo-text">JGJ<span class="logo-text-part2">PayStock</span></span>
+                </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#features">Fonctionnalités</a></li>
+                <li><a href="about.html">À Propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="testimonials.html" class="active">Témoignages</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="testimonials-hero">
+        <div class="container">
+            <h1>Ce que disent nos clients</h1>
+            <p>Découvrez comment JGJPayStock a transformé la gestion d'entreprise de nos clients à travers leurs témoignages sincères.</p>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="testimonials-container">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Témoignages Clients</h2>
+                <p>Des entreprises comme la vôtre qui ont choisi JGJPayStock</p>
+            </div>
+            
+            <div class="grid" style="--gap: 2rem; --min: 30ch; --max: 1fr;">
+                <!-- Témoignage 1 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>« JGJPayStock a révolutionné notre gestion de stock. L'interface est intuitive et l'application est incroyablement rapide. La facturation est devenue un jeu d'enfant ! »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="Marie D.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Marie Dupont</h4>
+                            <p>Gérante, Boutique Élégance</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 2 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>« La synchronisation en temps réel entre nos différents points de vente est exceptionnelle. Plus de problèmes de stock, tout est fluide et précis. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Thomas L.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Thomas Leroy</h4>
+                            <p>Directeur, TechStore</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 3 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>« L'équipe de support est réactive et compétente. Ils ont su s'adapter à nos besoins spécifiques et nous accompagnent dans notre croissance. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Sophie M.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Sophie Martin</h4>
+                            <p>Gérante, Maison des Délices</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 4 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>« La transition vers JGJPayStock s'est faite en douceur. L'équipe a été d'une grande aide pour l'import de nos données. Aujourd'hui, nous gagnons un temps précieux. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="David P.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>David Petit</h4>
+                            <p>Gérant, AutoPro</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 5 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>« La fonctionnalité de gestion des fournisseurs est exceptionnelle. Nous avons pu optimiser nos commandes et réduire nos coûts d'approvisionnement de 15%. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/28.jpg" alt="Laura T.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Laura Tremblay</h4>
+                            <p>Directrice des Achats, Style & Co</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 6 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>« L'application mobile est parfaite pour nos vendeurs en déplacement. Ils peuvent vérifier les stocks et créer des devis directement chez le client. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Nicolas B.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Nicolas Bernard</h4>
+                            <p>Commercial, ProEquip</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 7 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>« Les rapports personnalisables nous font gagner un temps considérable. Nous pouvons maintenant prendre des décisions basées sur des données précises et à jour. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/72.jpg" alt="Émilie R.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Émilie Robert</h4>
+                            <p>Directrice Financière, OptiGestion</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 8 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="testimonial-content">
+                        <p>« La formation a été complète et adaptée à nos besoins. En une semaine, toute l'équipe utilisait l'application en toute autonomie. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Pierre L.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Pierre Laurent</h4>
+                            <p>Responsable Formation, Groupe Horizon</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 9 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="testimonial-content">
+                        <p>« La sécurité des données est primordiale pour nous. Avec JGJPayStock, nous sommes rassurés sur ce point. Les sauvegardes automatiques sont un vrai plus. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/38.jpg" alt="Céline D.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Céline Dubois</h4>
+                            <p>Responsable IT, SécuriTech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Témoignage 10 -->
+                <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="testimonial-content">
+                        <p>« Le meilleur investissement pour notre entreprise cette année. Le retour sur investissement a été immédiat grâce aux gains de productivité. »</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/82.jpg" alt="Alexandre M.">
+                        </div>
+                        <div class="testimonial-info">
+                            <h4>Alexandre Moreau</h4>
+                            <p>PDG, Groupe ExcelPro</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item" data-aos="fade-up">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">Clients satisfaits</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Entreprises nous font confiance</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="stat-number">4.8/5</div>
+                    <div class="stat-label">Note moyenne sur les stores</div>
+                </div>
+                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Support client disponible</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-testimonial">
+        <div class="container">
+            <h2>Prêt à transformer votre gestion d'entreprise ?</h2>
+            <p>Rejoignez les centaines d'entreprises qui font confiance à JGJPayStock pour une gestion simplifiée et efficace.</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Démarrer l'essai gratuit</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>JGJPayStock</h3>
+                    <p>Solution professionnelle de gestion de stock, de caisse et de facturation pour les entreprises. Développée avec Flutter pour des performances optimales sur toutes les plateformes.</p>
+                    <div class="app-screenshot-container">
+                        <img src="assets/images/screenhot_app.png" alt="Capture d'écran de JGJPayStock" class="app-screenshot">
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Liens Rapides</h4>
+                    <ul class="footer-links-list">
+                        <li><a href="index.html#features"><i class="fas fa-chevron-right"></i> Fonctionnalités</a></li>
+                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
+                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
+                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
+                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Témoignages</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>Contactez-nous</h4>
+                    <p><i class="fas fa-envelope"></i> contact@jgjpaystock.com</p>
+                    <p><i class="fas fa-phone"></i> +49 152 585 75 909</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Allemagne</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/jguimfack8080" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="tel:+4915258575909" class="social-link" aria-label="Téléphone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                        <a href="mailto:contact@jgjpaystock.com" class="social-link" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="newsletter">
+                        <h5>Newsletter</h5>
+                        <p>Abonnez-vous pour recevoir nos dernières actualités</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Votre adresse email" required>
+                            <button type="submit" class="btn-subscribe"><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JGJPayStock. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                    <a href="#">Mentions légales</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="assets/js/particles.min.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <script>
+        // Initialisation des animations AOS
+        document.addEventListener('DOMContentLoaded', function() {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: true
+            });
+        });
+    </script>
+</body>
+</html>

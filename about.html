@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - JGJPayStock</title>
+    <meta name="description" content="Découvrez l'histoire et l'équipe derrière JGJPayStock, la solution complète de gestion de stock, de caisse et de facturation.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/header-footer.css">
+    <style>
+        .about-hero {
+            background: linear-gradient(135deg, #3f37c9 0%, #4361ee 100%);
+            color: white;
+            padding: 120px 0 80px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .about-hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+        }
+        
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+        
+        .about-section {
+            padding: 5rem 0;
+        }
+        
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+        }
+        
+        .about-image {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.05);
+        }
+        
+        .about-content h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: #2b2d42;
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            color: #6b7280;
+            line-height: 1.7;
+        }
+        
+        .features-list {
+            margin: 2rem 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.2rem;
+        }
+        
+        .feature-icon {
+            background: #eef2ff;
+            color: #4361ee;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+        
+        .feature-text h4 {
+            margin: 0 0 0.3rem;
+            color: #2b2d42;
+        }
+        
+        .feature-text p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .stat-item h3 {
+            font-size: 2.5rem;
+            color: #4361ee;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-item p {
+            margin: 0;
+            font-weight: 500;
+            color: #6b7280;
+        }
+        
+        .team-section {
+            background: #f8f9fa;
+            padding: 5rem 0;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+        
+        .section-header h2 {
+            font-size: 2.2rem;
+            color: #2b2d42;
+            margin-bottom: 1rem;
+        }
+        
+        .section-header p {
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .team-member {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .team-member:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .member-image {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .member-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .team-member:hover .member-image img {
+            transform: scale(1.1);
+        }
+        
+        .member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+        
+        .member-info h3 {
+            margin: 0 0 0.3rem;
+            color: #2b2d42;
+        }
+        
+        .member-role {
+            color: #4361ee;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            display: block;
+        }
+        
+        .member-bio {
+            color: #6b7280;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        
+        .social-links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            background: #f0f2f5;
+            color: #2b2d42;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .social-links a:hover {
+            background: #4361ee;
+            color: white;
+            transform: translateY(-3px);
+        }
+        
+        @media (max-width: 992px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .about-image {
+                max-width: 600px;
+                margin: 0 auto;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .about-hero {
+                padding: 100px 0 60px;
+            }
+            
+            .about-hero h1 {
+                font-size: 2.2rem;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/images/JGJPayStock.jpg" alt="JGJPayStock Logo" class="logo-img">
+                <span class="logo-text">JGJ<span class="logo-text-part2">PayStock</span></span>
+            </a>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="index.html#features">Fonctionnalités</a></li>
+                <li><a href="about.html" class="active">À Propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="btn btn-primary">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <h1 data-aos="fade-up">À Propos de JGJPayStock</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Découvrez l'histoire et la passion qui nous animent pour révolutionner la gestion d'entreprise</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="about-container">
+                <div class="about-image" data-aos="fade-right">
+                    <img src="assets/images/JGJPayStock.jpeg" alt="Capture d'écran de l'application JGJPayStock">
+                </div>
+                <div class="about-content" data-aos="fade-left">
+                    <h2>Notre Histoire</h2>
+                    <p>JGJPayStock est né d'une vision simple mais puissante : simplifier la gestion d'entreprise pour les professionnels de tous les secteurs. Fondée en 2020 par Jordan Jeuna, notre entreprise s'est rapidement imposée comme une référence dans le domaine des solutions de gestion intégrées.</p>
+                    <p>Notre application est le fruit de plusieurs années d'expérience dans le développement d'applications métiers et d'une compréhension approfondie des défis auxquels sont confrontés les gérants d'entreprise au quotidien.</p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">📱</div>
+                            <div class="feature-text">
+                                <h4>Interface Intuitive</h4>
+                                <p>Conçue pour être simple d'utilisation tout en étant puissante.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-text">
+                                <h4>Performant</h4>
+                                <p>Technologies modernes pour des performances optimales.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">🔄</div>
+                            <div class="feature-text">
+                                <h4>Mises à Jour Régulières</h4>
+                                <p>Améliorations continues basées sur vos retours.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="stats">
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                            <h3 class="counter" data-count="500">0</h3>
+                            <p>Clients Satisfaits</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                            <h3 class="counter" data-count="50">0</h3>
+                            <p>Pays Desservis</p>
+                        </div>
+                        <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                            <h3 class="counter" data-count="99.9">0</h3>
+                            <p>% Disponibilité</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Notre Équipe</h2>
+                <p>Découvrez les esprits créatifs et les professionnels passionnés qui donnent vie à JGJPayStock</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member-image">
+                        <img src="assets/images/jordanjeuna.jpg" alt="Jordan Jeuna">
+                    </div>
+                    <div class="member-info">
+                        <h3>Jordan Jeuna</h3>
+                        <span class="member-role">Fondateur & Développeur Principal</span>
+                        <p class="member-bio">Développeur Full-Stack avec plus de 5 ans d'expérience dans la création d'applications métiers performantes.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="LinkedIn">in</a>
+                            <a href="#" aria-label="GitHub">gh</a>
+                            <a href="#" aria-label="Twitter">tw</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophie Martin">
+                    </div>
+                    <div class="member-info">
+                        <h3>Sophie Martin</h3>
+                        <span class="member-role">Designer UI/UX</span>
+                        <p class="member-bio">Spécialiste en expérience utilisateur avec une passion pour les interfaces intuitives et élégantes.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Dribbble">db</a>
+                            <a href="#" aria-label="Behance">be</a>
+                            <a href="#" aria-label="Instagram">ig</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                    <div class="member-image">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Thomas Dubois">
+                    </div>
+                    <div class="member-info">
+                        <h3>Thomas Dubois</h3>
+                        <span class="member-role">Responsable Support Client</span>
+                        <p class="member-bio">Dévoué à fournir une assistance exceptionnelle et à résoudre les problèmes des clients.</p>
+                        <div class="social-links">
+                            <a href="#" aria-label="Twitter">tw</a>
+                            <a href="#" aria-label="Facebook">fb</a>
+                            <a href="#" aria-label="LinkedIn">in</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" style="background: linear-gradient(135deg, #4361ee 0%, #3f37c9 100%); padding: 5rem 0; text-align: center; color: white;">
+        <div class="container" data-aos="fade-up">
+            <h2 style="color: white; margin-bottom: 1.5rem;">Prêt à révolutionner votre gestion d'entreprise ?</h2>
+            <p style="max-width: 600px; margin: 0 auto 2rem; font-size: 1.1rem;">Rejoignez des milliers de professionnels qui font confiance à JGJPayStock pour gérer leur activité plus efficacement.</p>
+            <a href="contact.html" class="btn" style="background: white; color: #4361ee; padding: 0.8rem 2rem; border-radius: 50px; font-weight: 600; text-decoration: none; display: inline-block; transition: all 0.3s ease;">
+                Nous Contacter
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <a href="index.html" class="footer-logo">
+                        <span class="logo-text">JGJ</span>PayStock
+                    </a>
+                    <p>Solution complète de gestion de stock, de caisse et de facturation pour les professionnels.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Liens rapides</h3>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="index.html#features">Fonctionnalités</a></li>
+                        <li><a href="about.html">À Propos</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact</h3>
+                    <p>Email: contact@jgjpaystock.com</p>
+                    <p>Tél: +33 1 23 45 67 89</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">FB</a>
+                        <a href="#" aria-label="Twitter">TW</a>
+                        <a href="#" aria-label="LinkedIn">IN</a>
+                        <a href="#" aria-label="GitHub">GH</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 JGJPayStock. Tous droits réservés.</p>
+                <div class="footer-legal">
+                    <a href="#">Politique de confidentialité</a>
+                    <a href="#">Conditions d'utilisation</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" aria-label="Retour en haut">
+        <span>↑</span>
+    </a>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Animation des compteurs
+        document.addEventListener('DOMContentLoaded', function() {
+            const counters = document.querySelectorAll('.counter');
+            const speed = 200; // La vitesse en millisecondes
+            
+            function animateCounters() {
+                counters.forEach(counter => {
+                    const target = +counter.getAttribute('data-count');
+                    const count = +counter.innerText;
+                    const increment = target / speed;
+                    
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + increment);
+                        setTimeout(animateCounters, 1);
+                    } else {
+                        counter.innerText = target;
+                    }
+                });
+            }
+            
+            // Démarrer l'animation lorsque l'élément est visible
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateCounters();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.5 });
+            
+            counters.forEach(counter => {
+                observer.observe(counter);
+            });
+        });
+    </script>
+</body>
+</html>
