@@ -1,250 +1,511 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JGJPayStock - Gestion de Stock & Facturation</title>
-    <meta name="description" content="Solution professionnelle de gestion de stock et facturation développée avec Flutter. Optimisez votre gestion d'entreprise avec JGJPayStock.">
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg">
-    
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/animations.css">
-    <link rel="stylesheet" href="assets/css/header-footer.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JGJPayStock - Logiciel de gestion de stock, caisse et facturation</title>
+  <meta name="description" content="JGJPayStock est la solution tout-en-un de gestion de stock, point de vente et facturation pour PME et commerces. Multi-entreprise, multi-plateforme (mobile, desktop, web), temps reel et securisee. Demandez une demo." />
+  <meta name="theme-color" content="#4361ee" />
+  <link rel="canonical" href="https://jgjpaystock.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="JGJPayStock - Gestion de stock, caisse et facturation" />
+  <meta property="og:description" content="La solution tout-en-un pour gerer votre stock, encaisser et facturer, sur tous vos appareils." />
+  <meta property="og:image" content="assets/images/screenhot_app.png" />
+
+  <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/theme.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
 </head>
 <body>
-    <!-- Navigation -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <a href="index.html" class="logo">
-                    <img src="assets/images/JGJPayStock.jpg" alt="JGJPayStock Logo" class="logo-img">
-                    <span class="logo-text">JGJ<span class="logo-text-part2">PayStock</span></span>
-                </a>
-                <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <ul class="nav-links">
-                    <li><a href="#home" class="active">Accueil</a></li>
-                    <li><a href="#features">Fonctionnalités</a></li>
-                    <li><a href="about.html">À Propos</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="contact.html" class="btn btn-nav">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="particles" id="particles-js"></div>
-        <div class="container">
-            <div class="hero-grid">
-                <div class="hero-content" data-aos="fade-right">
-                    <h1 class="typing-text">
-                        <span>Gérez votre stock,</span>
-                        <span>Facturez en un clic,</span>
-                        <span>Développez votre entreprise.</span>
-                    </h1>
-                    <p class="hero-subtitle">La solution tout-en-un pour une gestion d'entreprise simplifiée et efficace, disponible sur tous vos appareils.</p>
-                    <div class="platform-badges">
-                        <span class="platform-badge"><i class="fas fa-mobile-alt"></i> Mobile</span>
-                        <span class="platform-badge"><i class="fas fa-desktop"></i> Desktop</span>
-                        <span class="platform-badge"><i class="fas fa-globe"></i> Web</span>
-                    </div>
-                    <div class="cta-buttons">
-                        <a href="#demo" class="btn btn-primary">
-                            <i class="fas fa-play-circle"></i> Voir la démo
-                        </a>
-                        <a href="contact.html" class="btn btn-outline">
-                            <i class="fas fa-file-invoice"></i> Demander un devis
-                        </a>
-                    </div>
-                </div>
-                <div class="hero-image-container" data-aos="fade-left">
-                    <div class="device-mockup">
-                        <div class="device-frame">
-                            <img src="assets/images/screenhot_app.png" alt="Capture d'écran JGJPayStock" class="app-screenshot">
-                        </div>
-                        <div class="device-stats">
-                            <div class="stat">
-                                <i class="fas fa-bolt"></i>
-                                <span>Rapide</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-sync"></i>
-                                <span>Synchronisé</span>
-                            </div>
-                            <div class="stat">
-                                <i class="fas fa-shield-alt"></i>
-                                <span>Sécurisé</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+  <!-- ======================= HEADER ======================= -->
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="brand" aria-label="JGJPayStock, accueil">
+        <img src="assets/images/JGJPayStock.jpg" alt="" />
+        <span>JGJ<b>PayStock</b></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+        <a href="index.html" class="is-active">Accueil</a>
+        <a href="features.html">Fonctionnalites</a>
+        <a href="pricing.html">Tarifs</a>
+        <a href="faq.html">FAQ</a>
+        <a href="about.html">A propos</a>
+        <a href="contact.html" class="btn btn--primary btn--sm nav-cta">Demander une demo</a>
+      </nav>
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn--primary btn--sm btn-desktop">Demander une demo</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================= HERO ======================= -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <span class="hero-badge"><span class="pill">Nouveau</span> Facturation, caisse et stock reunis</span>
+            <h1>Gerez votre stock, encaissez et <span class="grad">facturez</span> sans effort.</h1>
+            <p class="hero-sub">JGJPayStock est la solution tout-en-un qui reunit la gestion de stock, le point de vente et la facturation. Concue pour les commerces et les PME, disponible sur mobile, ordinateur et navigateur, en temps reel.</p>
+            <div class="hero-cta">
+              <a href="contact.html" class="btn btn--primary btn--lg">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                Demander une demo
+              </a>
+              <a href="features.html" class="btn btn--ghost btn--lg">Decouvrir les fonctionnalites</a>
             </div>
+            <div class="hero-trust">
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Sans engagement</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Donnees isolees par entreprise</span>
+              <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Mise en route rapide</span>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="glow"></div>
+            <div class="device">
+              <img src="assets/images/screenhot_app.png" alt="Apercu de l'application JGJPayStock" />
+            </div>
+            <div class="floating floating--tl">
+              <span class="ic" style="background:#10b981"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+              <span>Vente encaissee<small>Recu PDF genere</small></span>
+            </div>
+            <div class="floating floating--br">
+              <span class="ic" style="background:#f59e0b"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+              <span>Alerte stock<small>3 produits en rupture</small></span>
+            </div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+      </div>
     </section>
 
-    <!-- Features Section -->
-    <section id="features" class="features">
-        <div class="container">
-            <h2 class="section-title">Fonctionnalités Principales</h2>
-            <div class="features-grid">
-                <div class="feature-card" data-aos="fade-up">
-                    <div class="feature-icon">📊</div>
-                    <h3>Gestion de Stock</h3>
-                    <p>Suivez vos produits en temps réel avec des alertes de stock bas.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="100">
-                    <div class="feature-icon">🧾</div>
-                    <h3>Facturation</h3>
-                    <p>Créez des factures professionnelles en quelques secondes.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="200">
-                    <div class="feature-icon">📱</div>
-                    <h3>Multi-Plateforme</h3>
-                    <p>Disponible sur iOS, Android et Web.</p>
-                </div>
-                <div class="feature-card" data-aos="fade-up" data-aos-delay="300">
-                    <div class="feature-icon">🔄</div>
-                    <h3>Synchronisation Cloud</h3>
-                    <p>Vos données sont sauvegardées et synchronisées en temps réel.</p>
-                </div>
-            </div>
+    <!-- ======================= TRUSTBAR ======================= -->
+    <div class="trustbar">
+      <div class="container">
+        <span class="label">Pense pour</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Commerces de detail</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v4H3z"/><path d="M5 7v13h14V7"/><path d="M9 11h6"/></svg> Boutiques et superettes</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 7h20v13H2z"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg> PME et grossistes</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg> Reseaux multi-points de vente</span>
+      </div>
+    </div>
+
+    <!-- ======================= STATS ======================= -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="stats-row">
+          <div class="stat-box reveal"><div class="num">3</div><div class="lbl">roles dedies : admin, manager, caissier</div></div>
+          <div class="stat-box reveal" data-delay="1"><div class="num">3</div><div class="lbl">langues : francais, anglais, allemand</div></div>
+          <div class="stat-box reveal" data-delay="2"><div class="num">100%</div><div class="lbl">multi-entreprise, donnees cloisonnees</div></div>
+          <div class="stat-box reveal" data-delay="3"><div class="num">24/7</div><div class="lbl">alertes de stock en temps reel</div></div>
         </div>
+      </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="about-content">
-                <h2>Développé avec Expertise</h2>
-                <p>JGJPayStock est le fruit de plusieurs années d'expérience dans le développement d'applications mobiles professionnelles avec Flutter.</p>
-                <a href="about.html" class="btn btn-outline">En savoir plus</a>
-            </div>
+    <!-- ======================= VALEUR ======================= -->
+    <section class="section section--soft" id="pourquoi">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pourquoi JGJPayStock</span>
+          <h2 class="section-title">Tout votre commerce, dans un seul outil</h2>
+          <p class="section-subtitle">Fini les tableurs eparpilles et les logiciels qui ne se parlent pas. Le stock, la caisse et la facturation partagent les memes donnees, mises a jour instantanement.</p>
         </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="ic ic--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div>
+            <h3>Le stock toujours juste</h3>
+            <p>Chaque vente met a jour le stock automatiquement. Plus de ruptures imprevues : des seuils configurables declenchent des alertes avant qu'il ne soit trop tard.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div>
+            <h3>Encaissez en quelques secondes</h3>
+            <p>Une caisse rapide et claire : recherche par categorie, panier, plusieurs moyens de paiement, monnaie a rendre et recu PDF imprime immediatement.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="ic ic--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+            <h3>Des factures conformes</h3>
+            <p>Factures professionnelles avec TVA, remises, totaux HT / TVA / TTC, numerotation automatique et export PDF. Votre logo et vos coordonnees y figurent.</p>
+          </article>
+          <article class="card reveal">
+            <div class="ic ic--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div>
+            <h3>Alerte avant la rupture</h3>
+            <p>Notifications en temps reel (in-app et email) lorsque le stock passe sous vos seuils. Suivez aussi les dates de peremption et les produits qui expirent bientot.</p>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="ic ic--cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></div>
+            <h3>Decidez avec des chiffres</h3>
+            <p>Tableaux de bord et rapports jour / mois / periode, top des produits vendus, valeur du stock, chiffre d'affaires. Exportez tout en PDF et CSV.</p>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="ic ic--rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Securise et multi-entreprise</h3>
+            <p>Chaque entreprise est totalement isolee. Acces par roles, mots de passe chiffres, journal d'audit des actions sensibles : vos donnees restent les votres.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title">Ce qu'ils en disent</h2>
-            <div class="testimonial-slider">
-                <!-- Testimonial items will be populated by JavaScript -->
-            </div>
+    <!-- ======================= MODULE STOCK ======================= -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__content reveal">
+            <span class="eyebrow">Gestion de stock</span>
+            <h2>Maitrisez chaque produit, du rayon a l'inventaire</h2>
+            <p class="lead">Un catalogue clair, des mouvements traces et un inventaire toujours a jour. Vous savez ce que vous avez, ou, et combien ca vaut.</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Produits et categories</b> avec images, references, prix et numero d'article unique.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Mouvements d'entree et de sortie</b> traces (qui, quand, pourquoi), avec numero de lot.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Ajustement d'inventaire physique</b> : saisissez le reel, l'ecart est calcule automatiquement.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Dates de peremption</b> et ecran des produits qui expirent bientot.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>QR code produit</b> et valeur totale du stock calculee instantanement.</span></li>
+            </ul>
+          </div>
+          <div class="split__media reveal" data-delay="1">
+            <div class="shot"><img src="assets/images/screenhot_app.png" alt="Ecran de gestion de stock JGJPayStock" /></div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Prêt à révolutionner votre gestion d'entreprise ?</h2>
-            <p>Contactez-nous dès aujourd'hui pour une démonstration personnalisée.</p>
-            <a href="contact.html" class="btn btn-primary">Demander une démo</a>
+    <!-- ======================= MODULE CAISSE ======================= -->
+    <section class="section section--soft">
+      <div class="container">
+        <div class="split split--reverse">
+          <div class="split__media reveal">
+            <div class="shot"><img src="assets/images/screenhot_app.png" alt="Ecran de caisse JGJPayStock" /></div>
+          </div>
+          <div class="split__content reveal" data-delay="1">
+            <span class="eyebrow">Point de vente</span>
+            <h2>Une caisse rapide, pensee pour le terrain</h2>
+            <p class="lead">Le caissier va a l'essentiel : trouver un produit, remplir le panier, encaisser. Le stock se met a jour tout seul a chaque vente.</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Navigation categories / produits / panier</b> redimensionnable selon votre ecran.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Paiement multiple</b> (jusqu'a deux moyens) avec calcul de la monnaie a rendre.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Verification du stock avant paiement</b> : impossible de vendre ce que vous n'avez pas.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Recu PDF</b> imprime immediatement apres l'encaissement.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Historique des ventes</b> filtrable et exportable.</span></li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Font Awesome pour les icônes -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-about">
-                    <h3>JGJPayStock</h3>
-                    <p>Solution professionnelle de gestion de stock, de caisse et de facturation pour les entreprises. Développée avec Flutter pour des performances optimales sur toutes les plateformes.</p>
-                    
-                    <!-- Capture d'écran de l'application -->
-                    <div class="app-screenshot-container">
-                        <img src="assets/images/screenhot_app.png" alt="Capture d'écran de JGJPayStock" class="app-screenshot">
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <h4>Liens Rapides</h4>
-                    <ul class="footer-links-list">
-                        <li><a href="index.html#features"><i class="fas fa-chevron-right"></i> Fonctionnalités</a></li>
-                        <li><a href="about.html"><i class="fas fa-chevron-right"></i> À Propos</a></li>
-                        <li><a href="services.html"><i class="fas fa-chevron-right"></i> Services</a></li>
-                        <li><a href="portfolio.html"><i class="fas fa-chevron-right"></i> Portfolio</a></li>
-                        <li><a href="testimonials.html"><i class="fas fa-chevron-right"></i> Témoignages</a></li>
-                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-contact">
-                    <h4>Contactez-nous</h4>
-                    <p><i class="fas fa-envelope"></i> contact@jgjpaystock.com</p>
-                    <p><i class="fas fa-phone"></i> +49 152 585 75 909</p>
-                    <p><i class="fas fa-map-marker-alt"></i> Allemagne</p>
-                    
-                    <div class="social-links">
-                        <a href="https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/" target="_blank" class="social-link" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="https://github.com/jguimfack8080" target="_blank" class="social-link" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="tel:+4915258575909" class="social-link" aria-label="Téléphone">
-                            <i class="fas fa-phone"></i>
-                        </a>
-                        <a href="mailto:contact@jgjpaystock.com" class="social-link" aria-label="Email">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="newsletter">
-                        <h5>Newsletter</h5>
-                        <p>Abonnez-vous pour recevoir nos dernières actualités</p>
-                        <form class="newsletter-form">
-                            <input type="email" placeholder="Votre adresse email" required>
-                            <button type="submit" class="btn-subscribe"><i class="fas fa-paper-plane"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 JGJPayStock. Tous droits réservés.</p>
-                <div class="footer-legal">
-                    <a href="#">Politique de confidentialité</a>
-                    <a href="#">Conditions d'utilisation</a>
-                    <a href="#">Mentions légales</a>
-                </div>
-            </div>
+    <!-- ======================= MODULE FACTURATION ======================= -->
+    <section class="section">
+      <div class="container">
+        <div class="split">
+          <div class="split__content reveal">
+            <span class="eyebrow">Facturation</span>
+            <h2>Des factures pro, generees automatiquement</h2>
+            <p class="lead">Chaque paiement peut generer sa facture. TVA, remises et totaux sont calcules cote serveur : aucun risque d'erreur de calcul.</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>TVA et remises</b> par article et par vente, avec recapitulatif HT / TVA / TTC.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Numerotation automatique</b> avec votre prefixe personnalise (ex. FACT-2026-00001).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Export PDF</b>, impression, envoi et annulation des factures.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Pied de facture, conditions de paiement et coordonnees bancaires</b> personnalisables.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Votre identite visuelle</b> : logo, couleurs et devise propres a votre entreprise.</span></li>
+            </ul>
+          </div>
+          <div class="split__media reveal" data-delay="1">
+            <div class="shot"><img src="assets/images/screenhot_app.png" alt="Module de facturation JGJPayStock" /></div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <!-- JavaScript -->
-    <script src="assets/js/particles.min.js"></script>
-    <script src="assets/js/animations.js"></script>
-    <script src="assets/js/header.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
-        // Initialize AOS (Animate On Scroll)
-        document.addEventListener('DOMContentLoaded', function() {
-            AOS.init({
-                duration: 800,
-                easing: 'ease-in-out',
-                once: true,
-                offset: 100
-            });
-        });
-    </script>
+    <!-- ======================= COMMENT CA MARCHE ======================= -->
+    <section class="section section--soft" id="comment">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">En 4 etapes</span>
+          <h2 class="section-title">De l'inscription a la premiere vente</h2>
+          <p class="section-subtitle">La mise en route est simple. Vous etes operationnel rapidement, sans installation complexe.</p>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><div class="num">1</div><h3>Votre espace est cree</h3><p>Votre entreprise est configuree avec son logo, ses couleurs, sa devise et son taux de TVA.</p></div>
+          <div class="step reveal" data-delay="1"><div class="num">2</div><h3>Vos equipes arrivent</h3><p>L'administrateur cree les comptes manager et caissier, chacun avec ses droits.</p></div>
+          <div class="step reveal" data-delay="2"><div class="num">3</div><h3>Votre catalogue est pret</h3><p>Importez vos produits, categories, prix et seuils d'alerte de stock.</p></div>
+          <div class="step reveal" data-delay="3"><div class="num">4</div><h3>Vous vendez</h3><p>Le caissier encaisse, le stock se met a jour, les rapports se remplissent en temps reel.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= ROLES ======================= -->
+    <section class="section" id="roles">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Pour chaque metier</span>
+          <h2 class="section-title">Un role pour chaque membre de l'equipe</h2>
+          <p class="section-subtitle">Les permissions sont verifiees cote serveur. Chacun voit ce qui le concerne, ni plus, ni moins.</p>
+        </div>
+        <div class="grid grid-3">
+          <div class="role-card reveal">
+            <div class="role-card__head">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+              <div><h3>Administrateur</h3><small>Controle total</small></div>
+            </div>
+            <div class="role-card__body">
+              <ul class="checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Gere les utilisateurs et leurs roles</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Parametre l'entreprise, la TVA et la facturation</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Acces complet aux rapports et a l'audit</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="role-card reveal" data-delay="1">
+            <div class="role-card__head">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+              <div><h3>Manager</h3><small>Pilotage operationnel</small></div>
+            </div>
+            <div class="role-card__body">
+              <ul class="checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Suit le stock, les seuils et les alertes</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Consulte ventes, factures et rapports</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Recoit les notifications de stock critique</span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="role-card reveal" data-delay="2">
+            <div class="role-card__head">
+              <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+              <div><h3>Caissier</h3><small>Vente au quotidien</small></div>
+            </div>
+            <div class="role-card__body">
+              <ul class="checklist">
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Encaisse rapidement les ventes</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Imprime les recus et consulte ses ventes</span></li>
+                <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Consulte le catalogue produits</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= PLATEFORMES ======================= -->
+    <section class="section section--soft" id="plateformes">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Partout avec vous</span>
+          <h2 class="section-title">Une seule application, tous vos appareils</h2>
+          <p class="section-subtitle">JGJPayStock est developpe avec Flutter : la meme experience, fluide et coherente, du telephone au grand ecran.</p>
+        </div>
+        <div class="platforms">
+          <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Android</span>
+          <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> iOS</span>
+          <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> Windows</span>
+          <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg> macOS et Linux</span>
+          <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z"/></svg> Web</span>
+        </div>
+        <p class="text-center muted" style="margin-top:22px">Mode sombre, interface en francais, anglais et allemand, et un design coherent partout.</p>
+      </div>
+    </section>
+
+    <!-- ======================= SECURITE ======================= -->
+    <section class="section section--dark" id="securite">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Securite et confiance</span>
+          <h2 class="section-title">Vos donnees protegees, par conception</h2>
+          <p class="section-subtitle">La securite n'est pas une option. Elle est integree a chaque couche de l'application.</p>
+        </div>
+        <div class="sec-grid">
+          <div class="sec-item reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3>Isolation multi-entreprise</h3>
+            <p>Les donnees de chaque entreprise sont strictement cloisonnees. Une entreprise ne voit jamais celles d'une autre.</p>
+          </div>
+          <div class="sec-item reveal" data-delay="1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Acces par roles</h3>
+            <p>Authentification par jeton securise et permissions verifiees cote serveur pour chaque action sensible.</p>
+          </div>
+          <div class="sec-item reveal" data-delay="2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+            <h3>Journal d'audit</h3>
+            <p>Les actions sensibles (connexions, modifications, mouvements de stock) sont tracees et horodatees.</p>
+          </div>
+          <div class="sec-item reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
+            <h3>Mots de passe chiffres</h3>
+            <p>Les mots de passe sont haches. La reinitialisation se fait par code a usage unique envoye par email.</p>
+          </div>
+          <div class="sec-item reveal" data-delay="1">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg></div>
+            <h3>Validation cote serveur</h3>
+            <p>Toutes les regles metier et tous les calculs (stock, TVA, totaux) sont valides par le serveur, jamais par le client seul.</p>
+          </div>
+          <div class="sec-item reveal" data-delay="2">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v12H4z"/><path d="M2 20h20"/></svg></div>
+            <h3>Architecture robuste</h3>
+            <p>Des microservices independants (authentification, stock, ventes) pour la fiabilite et la montee en charge.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================= TARIFS (apercu) ======================= -->
+    <section class="section" id="tarifs">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Tarifs</span>
+          <h2 class="section-title">Des offres simples et transparentes</h2>
+          <p class="section-subtitle">Choisissez le plan adapte a votre activite. Sans frais caches.</p>
+        </div>
+        <div class="pricing-grid">
+          <div class="plan reveal">
+            <h3>Starter</h3>
+            <p class="plan__desc">Pour demarrer votre premier point de vente.</p>
+            <div class="price"><span class="amount">Gratuit</span></div>
+            <p class="price-note">Decouverte sans engagement</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>1 point de vente</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Stock, caisse et facturation</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Jusqu'a 3 utilisateurs</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost btn--block">Commencer</a>
+          </div>
+          <div class="plan plan--featured reveal" data-delay="1">
+            <span class="plan__tag">Le plus choisi</span>
+            <h3>Business</h3>
+            <p class="plan__desc">Pour les commerces qui veulent tout piloter.</p>
+            <div class="price"><span class="amount">Sur devis</span></div>
+            <p class="price-note">Adapte a votre volume</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Utilisateurs illimites</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Rapports avances et exports</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Notifications email et alertes</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Support prioritaire</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--primary btn--block">Demander un devis</a>
+          </div>
+          <div class="plan reveal" data-delay="2">
+            <h3>Enterprise</h3>
+            <p class="plan__desc">Pour les reseaux et besoins specifiques.</p>
+            <div class="price"><span class="amount">Sur mesure</span></div>
+            <p class="price-note">Deploiement et accompagnement</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Multi-points de vente</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Hebergement dedie possible</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Accompagnement personnalise</span></li>
+            </ul>
+            <a href="contact.html" class="btn btn--ghost btn--block">Nous contacter</a>
+          </div>
+        </div>
+        <p class="text-center muted" style="margin-top:24px">Vous hesitez sur l'offre ? <a href="pricing.html">Comparez les plans en detail</a>.</p>
+      </div>
+    </section>
+
+    <!-- ======================= FAQ (apercu) ======================= -->
+    <section class="section section--soft" id="faq">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Questions frequentes</span>
+          <h2 class="section-title">Vous avez des questions, voici nos reponses</h2>
+        </div>
+        <div class="faq">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Ai-je besoin d'installer un serveur ou du materiel particulier ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-a"><div class="faq-a__inner"><p>Non. JGJPayStock fonctionne sur vos appareils existants : telephone, tablette, ordinateur ou simple navigateur web. Vous pouvez commencer avec ce que vous avez deja.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Le stock se met-il vraiment a jour tout seul a chaque vente ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-a"><div class="faq-a__inner"><p>Oui. Chaque encaissement decremente automatiquement le stock des produits vendus, et une annulation le restaure. Vous gardez un inventaire fiable sans double saisie.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Mes donnees sont-elles separees de celles des autres entreprises ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-a"><div class="faq-a__inner"><p>Absolument. JGJPayStock est multi-entreprise par conception : chaque entreprise dispose d'un espace totalement isole. Vos donnees ne sont jamais melangees ni accessibles a un autre client.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Puis-je personnaliser mes factures ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button>
+            <div class="faq-a"><div class="faq-a__inner"><p>Oui : logo, couleurs, devise, taux de TVA, prefixe de numerotation, pied de page, conditions de paiement et coordonnees bancaires sont entierement parametrables.</p></div></div>
+          </div>
+        </div>
+        <p class="text-center" style="margin-top:28px"><a href="faq.html" class="btn btn--ghost">Voir toutes les questions</a></p>
+      </div>
+    </section>
+
+    <!-- ======================= CTA ======================= -->
+    <section class="section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <h2>Pret a simplifier la gestion de votre commerce ?</h2>
+          <p>Demandez une demonstration personnalisee. Nous vous montrons comment JGJPayStock s'adapte a votre activite.</p>
+          <div class="hero-cta">
+            <a href="contact.html" class="btn btn--white btn--lg">Demander une demo</a>
+            <a href="features.html" class="btn btn--light btn--lg">Explorer les fonctionnalites</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ======================= FOOTER ======================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand"><img src="assets/images/JGJPayStock.jpg" alt="" /> JGJPayStock</span>
+          <p>La solution tout-en-un de gestion de stock, de caisse et de facturation pour les commerces et les PME. Disponible sur mobile, ordinateur et web.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Produit</h4>
+          <ul>
+            <li><a href="features.html">Fonctionnalites</a></li>
+            <li><a href="pricing.html">Tarifs</a></li>
+            <li><a href="index.html#securite">Securite</a></li>
+            <li><a href="index.html#plateformes">Plateformes</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Entreprise</h4>
+          <ul>
+            <li><a href="about.html">A propos</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Demander une demo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> <a href="mailto:contact@jgjpaystock.com">contact@jgjpaystock.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg> <a href="tel:+4915258575909">+49 152 585 75 909</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Allemagne</li>
+          </ul>
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg></a>
+            <a href="https://github.com/jguimfack8080" target="_blank" rel="noopener" aria-label="GitHub"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/></svg></a>
+            <a href="mailto:contact@jgjpaystock.com" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> JGJPayStock. Tous droits reserves.</p>
+        <div class="links">
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="about.html">A propos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Revenir en haut de la page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="assets/js/site.js"></script>
 </body>
 </html>
