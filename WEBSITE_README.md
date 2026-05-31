@@ -26,17 +26,31 @@ Site web professionnel pour présenter l'application JGJPayStock, une solution c
 .
 ├── assets/
 │   ├── css/
-│   │   ├── main.css       # Styles principaux
-│   │   └── animations.css # Animations et keyframes
-│   └── js/
-│       ├── main.js       # Scripts principaux
-│       └── particles.js   # Configuration des particules
-├── index.html             # Page d'accueil
-├── about.html             # Page À propos
-├── services.html          # Page Services
-├── portfolio.html         # Page Portfolio
-└── contact.html           # Page Contact
+│   │   ├── main.css                # Styles principaux
+│   │   ├── animations.css          # Animations et keyframes
+│   │   ├── header-footer.css       # En-tete et pied de page
+│   │   ├── pricing.css             # Section des formules
+│   │   └── services-portfolio.css  # Pages Services et Portfolio
+│   ├── js/
+│   │   ├── main.js                 # Scripts principaux
+│   │   └── particles.js            # Configuration des particules
+│   └── images/                     # Logo et captures de l'application
+├── index.html                      # Page d'accueil (hero, fonctionnalites, avantages)
+├── about.html                      # Page A propos (histoire, fondateur)
+├── services.html                   # Page Services (modules, formules sur devis)
+├── portfolio.html                  # Page Portfolio (modules et secteurs)
+├── testimonials.html               # Page Avantages de la solution
+└── contact.html                    # Page Contact
 ```
+
+## Contenu
+
+Le contenu du site presente l'application JGJPayStock de maniere factuelle : gestion de
+stock (seuils, peremption, QR codes, ajustement d'inventaire), caisse et point de vente,
+facturation et TVA, rapports et export, roles (admin, manager, caissier), architecture
+multi-entreprise, notifications, multi-plateforme et multilingue (FR, EN, DE).
+Les tarifs sont presentes sur devis. Les coordonnees officielles sont :
+contact@jgjpaystock.com, +49 152 585 75 909, Allemagne.
 
 ## Installation
 
@@ -78,7 +92,7 @@ Ce projet est sous licence MIT. Consultez le fichier [LICENSE](LICENSE) pour plu
 
 ## Auteur
 
-- **Jordan Jeuna** - [Votre Site Web](https://votresite.com) - [GitHub](https://github.com/votrepseudo)
+- **Jordan Jeuna** - [LinkedIn](https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/) - [GitHub](https://github.com/jguimfack8080)
 
 ## Remerciements
 
