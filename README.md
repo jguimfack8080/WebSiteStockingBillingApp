@@ -124,6 +124,24 @@ Aucune etape de build n'est necessaire.
 
 ---
 
+## Notes de version
+
+**Refonte complete (branche `refonte/site-vitrine-vente`, ticket #1)**
+
+- Reconstruction du site a partir de zero, dedie a la vente de l'application.
+- 6 pages : accueil, fonctionnalites, tarifs, FAQ, a propos, contact.
+- Mise en valeur de toutes les fonctionnalites de l'application, dont les
+  statistiques et graphiques : courbe d'evolution des ventes, top des produits
+  vendus par periode (jour / semaine / mois / trimestre / semestre / annee /
+  periode libre, 5 a 50), evolution du chiffre d'affaires vs mois precedent,
+  camembert de repartition par categorie, graphique des mouvements de stock
+  (entrees / sorties), tableau de bord des transactions a onglets.
+- Tout le texte visible est accentue correctement (UTF-8).
+- Aucune reference a des outils internes (pas de lien GitHub) sur le site public.
+- Aucune dependance externe lourde : HTML / CSS / JavaScript natif, sans build.
+
+---
+
 ## Contact
 
 - Email : contact@jgjpaystock.com
