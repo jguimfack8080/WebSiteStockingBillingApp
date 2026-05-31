@@ -129,4 +129,3 @@ Aucune etape de build n'est necessaire.
 - Email : contact@jgjpaystock.com
 - Telephone : +49 152 585 75 909
 - LinkedIn : https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/
-- GitHub : https://github.com/jguimfack8080
