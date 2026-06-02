@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fonctionnalités - JGJPayStock | Stock, caisse, facturation</title>
-  <meta name="description" content="Toutes les fonctionnalites de JGJPayStock : gestion de stock, point de vente, facturation avec TVA, devis convertibles en ventes, rapports, alertes en temps reel, multi-entreprise, multi-plateforme et securite." />
+  <meta name="description" content="Toutes les fonctionnalites de JGJPayStock : gestion de stock, point de vente, facturation avec TVA, devis convertibles en ventes, envoi des documents par e-mail, programme de fidelite client (multi-devises), rapports, alertes en temps reel, multi-entreprise, multi-plateforme et securite." />
   <meta name="theme-color" content="#4361ee" />
   <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -54,6 +54,8 @@
         <a class="chip" href="#caisse"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/></svg> Caisse</a>
         <a class="chip" href="#facturation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg> Facturation</a>
         <a class="chip" href="#devis"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="9" y1="13" x2="15" y2="13"/><line x1="9" y1="17" x2="13" y2="17"/></svg> Devis</a>
+        <a class="chip" href="#email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> E-mailing</a>
+        <a class="chip" href="#fidelite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 8.5 22 9.3 17 14 18.2 21 12 17.5 5.8 21 7 14 2 9.3 9 8.5 12 2"/></svg> Fidelite</a>
         <a class="chip" href="#alertes"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/></svg> Alertes</a>
         <a class="chip" href="#rapports"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg> Rapports</a>
         <a class="chip" href="#personnalisation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.83-.44-1.12-.25-.29-.43-.65-.43-1.12a1.64 1.64 0 0 1 1.67-1.67H16c3.05 0 5.5-2.45 5.5-5.5C21.5 6 17.5 2 12 2z"/></svg> Personnalisation</a>
@@ -212,11 +214,58 @@
       </div>
     </section>
 
+    <!-- ============ E-MAILING / ENVOI DES DOCUMENTS ============ -->
+    <section class="section section--soft" id="email">
+      <div class="container">
+        <div class="split split--reverse">
+          <div class="split__media reveal">
+            <div class="shot"><img src="assets/images/screenhot_app.png" alt="Envoi des documents par e-mail JGJPayStock" /></div>
+          </div>
+          <div class="split__content reveal" data-delay="1">
+            <span class="eyebrow">Module 5</span>
+            <h2>Envoi des documents par e-mail</h2>
+            <p class="lead">Envoyez la facture ou le devis directement au client par e-mail, en un clic. Plus de papier, plus d'attente : tout est digitalise.</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Facture et devis envoyes par e-mail</b> au client, avec le PDF professionnel a son nom.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Directement depuis l'encaissement</b>, le detail d'une vente ou l'ecran du document - sans changer de fenetre.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Envoi fiable et non bloquant</b> : reessai automatique en cas de coupure reseau, l'e-mail n'est jamais perdu.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Configuration e-mail dediee</b> par environnement, prête pour un fournisseur professionnel (haute delivrabilite).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Alertes de stock et reinitialisation de mot de passe</b> aussi par e-mail, au branding de votre entreprise.</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FIDELITE CLIENT ============ -->
+    <section class="section" id="fidelite">
+      <div class="container">
+        <div class="split">
+          <div class="split__content reveal">
+            <span class="eyebrow">Module 6</span>
+            <h2>Programme de fidelite client</h2>
+            <p class="lead">Transformez un achat ponctuel en relation durable : vos clients cumulent des points et les utilisent comme remise. Comme les plus grandes enseignes.</p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Des points a chaque achat</b>, cumules automatiquement sur la fiche du client.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Points convertibles en remise</b> directement au moment de la vente.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Solde et historique</b> visibles sur la fiche client (gains et utilisations).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Entierement configurable</b> par entreprise : taux de gain, valeur d'un point, minimum d'utilisation.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Multi-devises</b> : la valeur du point s'exprime dans votre devise (EUR, FCFA, USD...).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Optionnel</b> : activez-le si vous le souhaitez. Desactive, il est totalement invisible.</span></li>
+            </ul>
+          </div>
+          <div class="split__media reveal" data-delay="1">
+            <div class="shot"><img src="assets/images/screenhot_app.png" alt="Programme de fidelite JGJPayStock" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ ALERTES & NOTIFICATIONS ============ -->
     <section class="section section--soft" id="alertes">
       <div class="container">
         <div class="section-head section-head--left">
-          <span class="eyebrow">Module 5</span>
+          <span class="eyebrow">Module 7</span>
           <h2 class="section-title">Alertes et notifications en temps réel</h2>
           <p class="section-subtitle">Ne soyez plus jamais surpris par une rupture. L'application vous prévient au bon moment.</p>
         </div>
@@ -257,7 +306,7 @@
       <div class="container">
         <div class="split">
           <div class="split__content reveal">
-            <span class="eyebrow">Module 6</span>
+            <span class="eyebrow">Module 8</span>
             <h2>Tableaux de bord et rapports</h2>
             <p class="lead">Transformez vos données en décisions. Des graphiques clairs et des indicateurs précis, à là journée comme à l'année.</p>
             <ul class="checklist">
@@ -284,7 +333,7 @@
     <section class="section section--soft" id="personnalisation">
       <div class="container">
         <div class="section-head section-head--left">
-          <span class="eyebrow">Module 7</span>
+          <span class="eyebrow">Module 9</span>
           <h2 class="section-title">Votre entreprise, votre identité</h2>
           <p class="section-subtitle">JGJPayStock s'adapte à votre marque et à vos regles de gestion, pas l'inverse.</p>
         </div>
@@ -333,7 +382,7 @@
     <section class="section" id="roles">
       <div class="container">
         <div class="section-head section-head--left">
-          <span class="eyebrow">Module 8</span>
+          <span class="eyebrow">Module 10</span>
           <h2 class="section-title">Rôles et permissions</h2>
           <p class="section-subtitle">Chaque collaborateur dispose exactement des droits dont il a besoin. Les permissions sont vérifiées côté serveur.</p>
         </div>
@@ -361,7 +410,7 @@
     <section class="section section--dark" id="securite">
       <div class="container">
         <div class="section-head section-head--left">
-          <span class="eyebrow">Module 9</span>
+          <span class="eyebrow">Module 11</span>
           <h2 class="section-title">Sécurité, fiabilité et technologie</h2>
           <p class="section-subtitle">Une base technique solide pour protéger vos données et accompagner votre croissance.</p>
         </div>
