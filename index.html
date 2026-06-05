@@ -424,7 +424,7 @@
         <div class="section-head">
           <span class="eyebrow">Partout avec vous</span>
           <h2 class="section-title">Une seule application, tous vos appareils</h2>
-          <p class="section-subtitle">JGJPayStock est développé avec Flutter : la même expérience, fluide et cohérente, du téléphone au grand écran.</p>
+          <p class="section-subtitle">Une seule application, la même expérience fluide et cohérente, du téléphone au grand écran.</p>
         </div>
         <div class="platforms">
           <span class="platform"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg> Android</span>
@@ -449,12 +449,12 @@
           <div class="sec-item reveal">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
             <h3>Isolation multi-tenant</h3>
-            <p>Les données de chaque entreprise sont strictement cloisonnées : l'identifiant d'entreprise provient du <strong>jeton JWT</strong>, jamais de la requête (protection anti-IDOR). Une entreprise ne voit jamais celles d'une autre.</p>
+            <p>Les données de chaque entreprise sont strictement cloisonnées : l'identifiant d'entreprise provient du <strong>jeton d'authentification</strong>, jamais de la requête (protection anti-IDOR). Une entreprise ne voit jamais celles d'une autre.</p>
           </div>
           <div class="sec-item reveal" data-delay="1">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
-            <h3>RBAC + authentification JWT</h3>
-            <p>Authentification par jeton <strong>JWT</strong> et contrôle d'accès basé sur les rôles (RBAC) : chaque action sensible est autorisée côté serveur, jamais sur la seule confiance du client.</p>
+            <h3>RBAC + authentification par jeton</h3>
+            <p>Authentification par <strong>jeton sécurisé</strong> et contrôle d'accès basé sur les rôles (RBAC) : chaque action sensible est autorisée côté serveur, jamais sur la seule confiance du client.</p>
           </div>
           <div class="sec-item reveal" data-delay="2">
             <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
@@ -517,12 +517,12 @@
           <article class="card reveal" data-delay="1">
             <div class="ic ic--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 9 5-9 5-9-5 9-5z"/><path d="m3 12 9 5 9-5"/><path d="m3 17 9 5 9-5"/></svg></div>
             <h3>Multi-tenant à isolation stricte</h3>
-            <p>Chaque entreprise (tenant) est totalement cloisonnée. L'identifiant d'entreprise est <strong>injecté depuis le jeton JWT</strong>, jamais depuis la requête : aucune donnée ne peut fuir d'un tenant à l'autre (protection contre les accès indirects / IDOR).</p>
+            <p>Chaque entreprise (tenant) est totalement cloisonnée. L'identifiant d'entreprise est <strong>injecté depuis le jeton d'authentification</strong>, jamais depuis la requête : aucune donnée ne peut fuir d'un tenant à l'autre (protection contre les accès indirects / IDOR).</p>
           </article>
           <article class="card reveal" data-delay="2">
             <div class="ic ic--cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="8" y="14" width="8" height="8" rx="1"/><path d="M6 10v2a2 2 0 0 0 2 2h0M18 10v2a2 2 0 0 1-2 2h0"/></svg></div>
             <h3>Microservices découplés</h3>
-            <p>Authentification, stock et ventes sont des services <strong>FastAPI</strong> indépendants, chacun avec sa base <strong>MySQL</strong>, orchestrés par <strong>Docker</strong>. Zéro dépendance circulaire, montée en charge service par service.</p>
+            <p>Authentification, stock et ventes sont des <strong>services indépendants</strong>, chacun avec sa propre base de données, déployés et isolés séparément. Zéro dépendance circulaire, montée en charge service par service.</p>
           </article>
           <article class="card reveal">
             <div class="ic ic--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
@@ -542,13 +542,13 @@
         </div>
 
         <div class="text-center" style="margin-top:40px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center">
-          <span class="tag">REST · FastAPI</span>
-          <span class="tag">JWT</span>
+          <span class="tag">API REST</span>
           <span class="tag">RBAC</span>
           <span class="tag">Multi-tenant</span>
-          <span class="tag">MySQL · index</span>
-          <span class="tag">Docker</span>
-          <span class="tag">Flutter</span>
+          <span class="tag">Jetons sécurisés</span>
+          <span class="tag">Anti-IDOR</span>
+          <span class="tag">Index &amp; keyset</span>
+          <span class="tag">Pré-agrégation</span>
           <span class="tag">Requêtes paramétrées</span>
           <span class="tag">UTC + fuseau IANA</span>
           <span class="tag">i18n fr/en/de</span>
