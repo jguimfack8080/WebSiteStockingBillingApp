@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FAQ - JGJPayStock | Toutes vos questions, nos réponses</title>
-  <meta name="description" content="Foire aux questions JGJPayStock : fonctionnement, stock, caisse, facturation, securite, donnees, plateformes, mise en route, tarifs et support. Toutes les reponses au meme endroit." />
+  <meta name="description" content="Foire aux questions JGJPayStock : fonctionnement, stock, caisse, facturation, comptabilite, TVA, achats et fournisseurs, securite, donnees, plateformes, mise en route, tarifs et support. Toutes les reponses au meme endroit." />
   <meta name="theme-color" content="#4361ee" />
   <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -115,8 +115,26 @@
       </div>
     </section>
 
-    <!-- Securite & donnees -->
+    <!-- Comptabilite, TVA & achats -->
     <section class="section">
+      <div class="container container--narrow">
+        <div class="section-head section-head--left">
+          <span class="eyebrow">Comptabilité, TVA et achats</span>
+          <h2 class="section-title">Piloter vos finances</h2>
+        </div>
+        <div class="faq">
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>JGJPayStock gère-t-il la comptabilité de mon entreprise ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>Oui. Un module de comptabilité de gestion vous donne un compte de résultat, un rapport de TVA, votre trésorerie et la valeur de votre stock au coût, le tout calculé côté serveur au centime près. Il vous aide à piloter votre activité et à préparer votre déclaration de TVA sur des chiffres fiables. Il ne remplace pas votre expert-comptable, il lui facilite le travail.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Comment ma marge et mon résultat sont-ils calculés ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>Votre marge brute correspond au chiffre d'affaires hors taxes diminué du coût des ventes, et le taux de marge en découle. L'application distingue clairement le résultat (en HT) des encaissements (en TTC), pour éviter toute confusion. Le coût des ventes s'appuie sur le coût réel de vos achats, et non sur une estimation.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>La TVA est-elle calculée automatiquement ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>Oui. La TVA collectée sur vos ventes, la TVA déductible sur vos achats et la TVA réellement due (collectée moins déductible) sont calculées pour vous, taux par taux. Lorsque votre TVA déductible dépasse la collectée, un crédit de TVA est détecté et affiché automatiquement.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Puis-je gérer mes achats et mes fournisseurs ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>Oui. Vous tenez un fichier fournisseurs et vous enregistrez vos documents d'achat (réception ou facture fournisseur) avec le coût réel et la TVA. Chaque achat met à jour automatiquement le coût moyen de vos produits, enregistre la TVA déductible et génère les entrées de stock correspondantes. Votre stock et votre marge restent justes en permanence.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Puis-je comparer deux périodes et exporter mes rapports ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>Oui. Vous choisissez une période (jour, semaine, mois, trimestre, année ou période libre) et vous la comparez à la précédente, avec la variation en pourcentage. Chaque rapport s'exporte en PDF formel et en CSV, et un rapport complet réunit résultat, TVA et trésorerie dans un seul document, avec l'identité légale de votre entreprise et un numéro de document unique.</p></div></div></div>
+          <div class="faq-item"><button class="faq-q" aria-expanded="false"><span>Qui peut accéder à la comptabilité ?</span><svg class="chev" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><div class="faq-a__inner"><p>L'accès est réservé aux profils habilités (administrateurs et gérants), et les permissions sont vérifiées côté serveur. Un caissier n'a pas accès à ces données financières.</p></div></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Securite & donnees -->
+    <section class="section section--soft">
       <div class="container container--narrow">
         <div class="section-head section-head--left">
           <span class="eyebrow">Sécurité et données</span>
@@ -133,7 +151,7 @@
     </section>
 
     <!-- Technique & plateformes -->
-    <section class="section section--soft">
+    <section class="section">
       <div class="container container--narrow">
         <div class="section-head section-head--left">
           <span class="eyebrow">Technique et plateformes</span>
@@ -149,7 +167,7 @@
     </section>
 
     <!-- Mise en route, tarifs & support -->
-    <section class="section">
+    <section class="section section--soft">
       <div class="container container--narrow">
         <div class="section-head section-head--left">
           <span class="eyebrow">Mise en route, tarifs et support</span>
@@ -165,7 +183,7 @@
       </div>
     </section>
 
-    <section class="section section--soft">
+    <section class="section">
       <div class="container">
         <div class="cta-banner reveal">
           <h2>Une question sans réponse ?</h2>
@@ -184,7 +202,7 @@
       <div class="footer-grid">
         <div>
           <span class="footer-brand"><img src="assets/images/JGJPayStock.jpg" alt="" /> JGJPayStock</span>
-          <p>La solution tout-en-un de gestion de stock, de caisse et de facturation pour les commerces et les PME. Disponible sur mobile, ordinateur et web.</p>
+          <p>La solution tout-en-un de gestion de stock, caisse, facturation, achats et comptabilite pour les commerces et les PME. Disponible sur mobile, ordinateur et web.</p>
         </div>
         <div class="footer-col">
           <h4>Produit</h4>
