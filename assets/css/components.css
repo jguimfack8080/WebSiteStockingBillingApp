@@ -322,3 +322,23 @@
 .tag { display: inline-flex; align-items: center; gap: 6px; font-size: 0.78rem; font-weight: 700; padding: 4px 11px; border-radius: var(--radius-full); background: var(--brand-50); color: var(--brand-700); }
 .tag--green { background: #d1fae5; color: var(--success); }
 .tag--amber { background: #fef3c7; color: #b45309; }
+
+/* ----- Mini-recit par fonctionnalite (scenario du quotidien) ----- */
+.feature-story {
+  display: flex; gap: 10px; align-items: flex-start;
+  background: var(--brand-50); border-left: 3px solid var(--brand-500);
+  border-radius: var(--radius-sm); padding: 12px 16px; margin: 0 0 22px;
+  font-style: italic; color: var(--ink-800); font-size: 0.97rem; line-height: 1.65;
+}
+.feature-story svg { width: 14px; height: 14px; flex-shrink: 0; margin-top: 4px; opacity: 0.45; color: var(--brand-600); }
+.section--dark .feature-story { background: rgba(67, 97, 238, 0.16); color: var(--ink-200); border-left-color: var(--brand-300); }
+.section--dark .feature-story svg { color: var(--brand-200); }
+
+/* ----- Recit / storytelling (section sombre) ----- */
+.story { max-width: 760px; margin: 0 auto; }
+.story p { font-size: 1.12rem; line-height: 1.9; margin-bottom: 20px; }
+.story p:last-child { margin-bottom: 0; }
+.section--dark .story p { color: var(--ink-200); }
+.story__close { font-weight: 600; }
+.section--dark .story__close { color: #fff; }
+@media (max-width: 560px) { .story p { font-size: 1.04rem; line-height: 1.8; } }

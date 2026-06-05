@@ -29,8 +29,8 @@ JGJPayStock.
 
 | Page | Role |
 |---|---|
-| `index.html` | Landing complete : hero, valeur, modules (stock / caisse / facturation), etapes, roles, plateformes, securite, tarifs, FAQ, CTA |
-| `features.html` | Detail exhaustif de chaque module avec listes de fonctionnalites et tableau des roles |
+| `index.html` | Landing complete : hero (probleme -> solution), valeur, solutions par probleme, modules (stock / caisse / facturation / comptabilite et achats), etapes, roles, plateformes, securite, tarifs, FAQ, recit "Notre raison d'etre", CTA |
+| `features.html` | Detail exhaustif de chaque module (stock, caisse, facturation, devis, e-mailing, fidelite, alertes, rapports, achats et fournisseurs, comptabilite, personnalisation, roles, securite) avec listes de fonctionnalites et tableau des roles |
 | `pricing.html` | Offres (Starter, Business, Enterprise), comparatif detaille et FAQ tarifs |
 | `faq.html` | Foire aux questions exhaustive, organisee par theme (generalites, stock, caisse, facturation, securite, technique, mise en route et support) |
 | `about.html` | Mission, valeurs, createur et stack technique |
@@ -125,6 +125,14 @@ Aucune etape de build n'est necessaire.
 ---
 
 ## Notes de version
+
+**Integration modules Comptabilite et Achats + storytelling**
+
+- Ajout des modules **Achats et fournisseurs** et **Comptabilite** (compte de resultat, TVA collectee/deductible/due, tresorerie, valeur du stock au cout, comparaison de periodes, exports PDF/CSV et documents officiels) sur `features.html` (modules 9 et 10, renumerotation des suivants) avec ancres dediees.
+- Page d'accueil : nouvelles cartes de valeur (achats, comptabilite), section **Solutions** (probleme -> reponse, tous metiers), module **Comptabilite et achats**, et section **hero** repensee pour exposer immediatement le probleme et la solution.
+- Recit **"Notre raison d'etre"** (section sombre `#histoire`) racontant la genese de l'idee et les vrais problemes resolus, pour qu'un visiteur comprenne l'essentiel sans parcourir tout le site.
+- FAQ : nouvelle rubrique **Comptabilite, TVA et achats**. Tarifs : comptabilite et achats positionnes sur les offres Business et Enterprise (offre + comparatif).
+- Styles `.story` ajoutes dans `components.css`. Aucune dependance externe ajoutee.
 
 **Refonte complete (branche `refonte/site-vitrine-vente`, ticket #1)**
 
