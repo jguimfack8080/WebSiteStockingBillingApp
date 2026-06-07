@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Fonctionnalités - JGJPayStock | Stock, caisse, facturation</title>
-  <meta name="description" content="Toutes les fonctionnalites de JGJPayStock : gestion de stock, point de vente, facturation avec TVA, devis convertibles en ventes, envoi des documents par e-mail, programme de fidelite client (multi-devises), achats et fournisseurs, comptabilite (compte de resultat, TVA, tresorerie, documents officiels), rapports, alertes en temps reel, multi-entreprise, multi-plateforme et securite." />
+  <meta name="description" content="Toutes les fonctionnalites de JGJPayStock : gestion de stock, point de vente, facturation avec TVA, devis convertibles en ventes, envoi des documents par e-mail, programme de fidelite client (multi-devises), achats et fournisseurs, comptabilite (compte de resultat, TVA, tresorerie, documents officiels), rapports, alertes en temps reel, roles et permissions fines par utilisateur, photo de profil, connexion biometrique, multi-entreprise, multi-plateforme et securite." />
   <meta name="theme-color" content="#4361ee" />
   <link rel="icon" type="image/jpg" href="assets/images/JGJPayStock.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -474,6 +474,8 @@
             <h3>Profil et compte</h3>
             <ul class="checklist">
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Écran de profil pour chaque utilisateur</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Photo de profil</b> par utilisateur (ou initiales par défaut), visible dans l'app</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Connexion biométrique (empreinte, Face ID, Windows Hello)</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Reinitialisation du mot de passe par email</span></li>
               <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Desactivation et reactivation des comptes</span></li>
             </ul>
@@ -487,9 +489,9 @@
       <div class="container">
         <div class="section-head section-head--left">
           <span class="eyebrow">Module 12</span>
-          <h2 class="section-title">Rôles et permissions</h2>
-          <p class="section-subtitle">Chaque collaborateur dispose exactement des droits dont il a besoin. Les permissions sont vérifiées côté serveur.</p>
-          <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Votre caissier n'a pas à voir vos marges ni à modifier vos prix. Chacun n'accède qu'à ce qui le concerne, et vous gardez l'esprit tranquille.</span></p>
+          <h2 class="section-title">Rôles et permissions sur mesure</h2>
+          <p class="section-subtitle">Trois rôles prêts à l'emploi (administrateur, manager, caissier) et, surtout, des <b>droits sur mesure par utilisateur</b> : accordez ou retirez une permission précise à une personne, au-delà de son rôle. Tout est vérifié côté serveur.</p>
+          <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Vous faites confiance à un manager pour modifier les produits, mais pas aux autres ; vous autorisez un caissier précis à faire des remboursements. En deux clics, chacun a exactement les droits que vous décidez - ni plus, ni moins.</span></p>
         </div>
         <div class="compare-wrap reveal">
           <table class="compare">
@@ -507,6 +509,39 @@
             </tbody>
           </table>
         </div>
+
+        <h3 class="section-title" style="margin-top:36px;font-size:1.25rem">Au-delà des rôles : des droits fins, personne par personne</h3>
+        <p class="section-subtitle" style="margin-bottom:18px">Les rôles ne sont qu'un point de départ. L'administrateur ajuste ensuite chaque utilisateur individuellement.</p>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="ic ic--violet"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 11l-3 3-1.5-1.5"/></svg></div>
+            <h3>Accorder ou retirer un droit</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Donnez à une personne un droit que son rôle n'a pas (ex : un manager qui peut <b>modifier ou supprimer</b> les produits).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Ou retirez un droit que le rôle a par défaut (ex : un caissier qui <b>ne peut plus rembourser</b>).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Le changement ne touche <b>que cette personne</b>, jamais les autres du même rôle.</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="ic ic--cyan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></div>
+            <h3>Une matrice claire par module</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Droits regroupés par module : Produits, Ventes, Stock, Clients, Factures, Achats, Rapports, Comptabilité, Utilisateurs...</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Une case par action (voir, créer, modifier, supprimer, rembourser...). Cochez, c'est appliqué.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Chaque droit indique s'il est déjà inclus par défaut dans le rôle.</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="ic ic--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg></div>
+            <h3>Sûr, tracé, sans blocage</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Toujours vérifié <b>côté serveur</b> : impossible de contourner depuis l'application.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Anti-blocage</b> : un administrateur garde toujours la main (impossible de retirer la gestion au dernier admin).</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Chaque modification des droits est <b>enregistrée dans le journal d'audit</b>.</span></li>
+            </ul>
+          </article>
+        </div>
+
         <p class="muted" style="margin-top:18px">Une console Superadmin dédiée permet par ailleurs de gérer l'ensemble des entreprises de la plateforme.</p>
       </div>
     </section>
@@ -527,6 +562,8 @@
           <div class="sec-item reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div><h3>Mots de passe protégés</h3><p>Mots de passe hachés, codes de reinitialisation à usage unique et limitation des tentatives.</p></div>
           <div class="sec-item reveal" data-delay="1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></div><h3>Multi-plateforme</h3><p>Mobile, ordinateur et web depuis une seule base de code, pour une expérience identique partout.</p></div>
           <div class="sec-item reveal" data-delay="2"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="8" height="8" rx="1"/><rect x="14" y="2" width="8" height="8" rx="1"/><rect x="2" y="14" width="8" height="8" rx="1"/><rect x="14" y="14" width="8" height="8" rx="1"/></svg></div><h3>Architecture microservices</h3><p>Services indépendants pour l'authentification, le stock et les ventes : fiabilité et montée en charge.</p></div>
+          <div class="sec-item reveal"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 11c0-1.1.9-2 2-2s2 .9 2 2c0 .76-.3 1.45-.78 1.96"/><path d="M7 17.5A7 7 0 0 1 5 12a7 7 0 0 1 14 0c0 2-1 4-2 5.5"/><path d="M9.5 20.5A10 10 0 0 1 8 15"/></svg></div><h3>Connexion biométrique</h3><p>Empreinte, Face ID ou Windows Hello : une connexion rapide et sûre, après une première authentification par mot de passe.</p></div>
+          <div class="sec-item reveal" data-delay="1"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg></div><h3>Notifications temps réel fiables</h3><p>Alertes instantanées sur un canal sécurisé (jeton hors URL), avec reconnexion automatique : aucune notification n'est perdue.</p></div>
         </div>
       </div>
     </section>
