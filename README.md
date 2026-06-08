@@ -43,7 +43,9 @@ JGJPayStock.
 - **HTML5 + CSS3 + JavaScript natif** - aucun framework, aucun bundler, aucune
   dependance externe a charger (pas de jQuery, AOS, particles ni Font Awesome).
   Les icones sont des SVG inline.
-- Seule ressource externe : la police **Google Fonts** (Inter + Poppins).
+- **Aucune ressource externe** : les polices **Inter + Poppins** (sous-ensemble
+  latin, woff2) sont auto-hebergees dans `assets/fonts/`. Le site ne charge donc
+  aucun domaine tiers (ni Google Fonts), ce qui ameliore performance et vie privee.
 - Le site est **statique** : il se deploie tel quel sur n'importe quel
   hebergement de fichiers (Nginx, Apache, Netlify, GitHub Pages, S3...).
 
@@ -57,16 +59,25 @@ WebSiteStockingBillingApp/
 ├── faq.html
 ├── about.html
 ├── contact.html
+├── robots.txt               # Indexation + lien vers le sitemap
+├── sitemap.xml              # Sitemap (URLs absolues jgjpaystock.com)
+├── _headers                 # En-tetes Cloudflare (cache, securite, CSP)
 └── assets/
     ├── css/
     │   ├── theme.css         # Design tokens, reset, utilitaires, grilles, reveal
     │   └── components.css    # Header, hero, cartes, sections, tarifs, FAQ, footer...
     ├── js/
     │   └── site.js           # Menu mobile, header au scroll, reveal, accordeon FAQ, retour haut, annee
+    ├── fonts/                # Inter + Poppins auto-hebergees (woff2, sous-ensemble latin)
     └── images/
-        ├── JGJPayStock.jpg   # Logo
-        ├── screenhot_app.png # Capture de l'application
-        └── jordanjeuna.jpg   # Photo du createur
+        ├── logo-96.png           # Logo (header / footer)
+        ├── favicon-32.png        # Favicon
+        ├── apple-touch-icon.png  # Icone iOS (180x180)
+        ├── icon-192.png          # Icone (logo schema.org / PWA)
+        ├── screenhot_app.webp    # Capture de l'application (WebP, 1280px)
+        ├── screenhot_app-1280.png# Capture (repli PNG pour navigateurs sans WebP)
+        ├── jordanjeuna.webp      # Photo du createur (WebP, 640px)
+        └── jordanjeuna-640.jpg   # Photo du createur (repli JPEG)
 ```
 
 ---
@@ -81,8 +92,17 @@ WebSiteStockingBillingApp/
 - **Responsive** (mobile, tablette, desktop) avec menu mobile accessible.
 - **Accessibilite** : navigation au clavier, attributs ARIA sur le menu et la
   FAQ, respect de `prefers-reduced-motion`.
-- **SEO** : titres et meta descriptions par page, balises Open Graph, liens
-  canoniques.
+- **SEO** : titres et meta descriptions uniques par page, canonical absolu sur
+  chaque page, Open Graph et Twitter Cards complets, donnees structurees JSON-LD
+  (Organization, WebSite, SoftwareApplication, FAQPage, BreadcrumbList, Person,
+  ContactPoint), `robots.txt` et `sitemap.xml` servis a la racine.
+- **Performance** : images en WebP avec repli et dimensions explicites (anti-CLS),
+  `loading="lazy"` hors ecran, prechargement de l'image hero (LCP), polices Google
+  chargees en non bloquant.
+
+> Le domaine canonique de reference est `https://jgjpaystock.com`. Tant que le
+> site est servi depuis un domaine de test (`*.workers.dev`), ce domaine de test
+> ne doit pas etre indexe (voir la section Deploiement).
 
 ---
 
@@ -104,11 +124,27 @@ Puis ouvrir `http://localhost:8080`.
 
 ## Deploiement
 
-1. Copier l'integralite du dossier sur votre hebergement statique.
+Le site est deploye sur Cloudflare (Pages / Workers Static Assets).
+
+1. Copier l'integralite du dossier sur l'hebergement statique.
 2. Servir `index.html` comme page d'entree.
-3. (Recommande) Activer HTTPS et la compression (gzip / brotli).
+3. HTTPS, Brotli et HTTP/3 sont fournis par Cloudflare (cote plateforme).
+4. Le fichier `_headers` applique le cache et les en-tetes de securite (CSP, HSTS)
+   uniquement si le deploiement utilise le gestionnaire d'assets statiques
+   Cloudflare avec la prise en charge de `_headers`/`_redirects`.
 
 Aucune etape de build n'est necessaire.
+
+### Domaine de test vs production
+
+- Le domaine canonique est `https://jgjpaystock.com` (canonical, hreflang futurs,
+  sitemap et Open Graph y pointent).
+- Tant que le site est servi depuis un domaine de test (`*.workers.dev`), il ne
+  faut PAS laisser ce domaine s'indexer. Un fichier statique ne peut pas
+  distinguer l'hote : pour bloquer l'indexation du test, ajouter cote plateforme
+  (dashboard / route Cloudflare) un en-tete `X-Robots-Tag: noindex` sur le
+  domaine de test, ou le proteger par mot de passe. A retirer au passage en
+  production sur le domaine final.
 
 ---
 
@@ -118,8 +154,8 @@ Aucune etape de build n'est necessaire.
 |---|---|
 | Couleurs et typographie | `assets/css/theme.css` (variables `--brand-*`, `--font-*`) |
 | Coordonnees de contact | Pied de page de chaque `.html` et `contact.html` |
-| Capture d'ecran | Remplacer `assets/images/screenhot_app.png` |
-| Logo | Remplacer `assets/images/JGJPayStock.jpg` |
+| Capture d'ecran | Regenerer `assets/images/screenhot_app.webp` et `screenhot_app-1280.png` (memes dimensions 1280x676) |
+| Logo et favicons | Regenerer `logo-96.png`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png` depuis le logo source |
 | Textes et offres | Directement dans les fichiers `.html` correspondants |
 
 ---
