@@ -133,6 +133,9 @@
         <a class="chip" href="#comptabilite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="2"/><line x1="8" y1="6" x2="16" y2="6"/><line x1="8" y1="10" x2="10" y2="10"/><line x1="14" y1="10" x2="16" y2="10"/><line x1="8" y1="14" x2="10" y2="14"/><line x1="14" y1="14" x2="16" y2="14"/><line x1="8" y1="18" x2="10" y2="18"/></svg> Comptabilité</a>
         <a class="chip" href="#personnalisation"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r=".5"/><circle cx="17.5" cy="10.5" r=".5"/><circle cx="8.5" cy="7.5" r=".5"/><circle cx="6.5" cy="12.5" r=".5"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.93 0 1.65-.75 1.65-1.69 0-.44-.18-.83-.44-1.12-.25-.29-.43-.65-.43-1.12a1.64 1.64 0 0 1 1.67-1.67H16c3.05 0 5.5-2.45 5.5-5.5C21.5 6 17.5 2 12 2z"/></svg> Personnalisation</a>
         <a class="chip" href="#roles"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg> Rôles</a>
+        <a class="chip" href="#perf-caissiers"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="17 11 19 13 23 9"/></svg> Performance caissiers</a>
+        <a class="chip" href="#scan"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5v14M7 5v14M11 5v14M15 5v14M19 5v14"/></svg> Scan</a>
+        <a class="chip" href="#aide"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Aide</a>
         <a class="chip" href="#securite"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg> Sécurité</a>
       </div>
     </div>
@@ -617,11 +620,118 @@
       </div>
     </section>
 
+    <!-- ============ PERFORMANCE DES CAISSIERS ============ -->
+    <section class="section section--soft" id="perf-caissiers">
+      <div class="container">
+        <div class="split">
+          <div class="split__content reveal">
+            <span class="eyebrow">Module 13</span>
+            <h2>Performance des caissiers</h2>
+            <p class="lead">Sachez qui vend le plus et récompensez vos meilleurs éléments. Comparez et classez vos caissiers sur la période de votre choix.</p>
+            <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Fin de journée : qui a fait le plus de ventes ? Au lieu d'éplucher les tickets, le classement est déjà là, à l'écran - de quoi motiver l'équipe et repérer qui a besoin d'un coup de main.</span></p>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Classement des caissiers</b>, du plus performant au moins performant.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Tri par chiffre d'affaires ou par nombre de ventes</b>, en un clic.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Totaux de la période</b> : chiffre d'affaires, nombre de ventes, caissiers actifs et remboursements.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Graphique du chiffre d'affaires (ou des ventes) par caissier</b> pour comparer d'un coup d'oeil.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Période librement choisie</b> : aujourd'hui, semaine, mois ou plage personnalisée.</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Calculs côté serveur</b>, rapides et fiables même sur de gros volumes, réservés aux profils autorisés.</span></li>
+            </ul>
+          </div>
+          <div class="split__media reveal" data-delay="1">
+            <div class="shot"><img src="/assets/images/cashier-performance.png" alt="Performance des caissiers JGJPayStock" width="1916" height="1036" loading="lazy" decoding="async" /></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCAN CODE-BARRES ============ -->
+    <section class="section" id="scan">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span class="eyebrow">Module 14</span>
+          <h2 class="section-title">Scan code-barres (douchette)</h2>
+          <p class="section-subtitle">Encaissez et retrouvez vos produits à la vitesse de l'éclair, avec une simple douchette.</p>
+          <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Le client pose dix articles sur le comptoir. Vous les scannez un à un : chaque produit tombe dans le panier tout seul, sans chercher, sans taper. La file avance.</span></p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5v14M7 5v14M11 5v14M15 5v14M19 5v14"/></svg></div>
+            <h3>Scanner pour encaisser</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Scanner un produit l'ajoute aussitôt au panier en caisse</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Les rafales rapides de la douchette sont gérées sans erreur</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Moins d'erreurs de saisie, des files qui avancent plus vite</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="ic ic--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Retrouver un produit</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Scannez dans une liste pour identifier un article instantanément</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Vérifiez le stock et le prix d'un produit en un scan</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Plus de recherche à tâtons dans le catalogue</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="ic ic--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="10" rx="2"/><path d="M6 7v10M10 7v10M14 7v10M18 7v10"/></svg></div>
+            <h3>Plusieurs codes, vraie douchette</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Plusieurs codes-barres par produit (formats ou conditionnements)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Compatible avec les douchettes USB et Bluetooth du marché</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Capture globale : aucun champ à cliquer avant de scanner</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CENTRE D'AIDE ============ -->
+    <section class="section section--soft" id="aide">
+      <div class="container">
+        <div class="section-head section-head--left">
+          <span class="eyebrow">Module 15</span>
+          <h2 class="section-title">Centre d'aide intégré</h2>
+          <p class="section-subtitle">Un guide complet dans l'application : vos équipes deviennent autonomes, sans formation coûteuse.</p>
+          <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Nouveau caissier, premier jour. Plutôt que de vous interrompre toutes les cinq minutes, il ouvre le guide intégré et trouve, étape par étape, exactement quoi faire.</span></p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Une aide par rôle</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Chaque utilisateur voit l'aide de son périmètre (caissier, manager, admin)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Rien d'inutile : on ne montre que ce qui concerne la personne</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Disponible en français, anglais et allemand</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="1">
+            <div class="ic ic--green"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+            <h3>Recherche instantanée</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Tapez un mot-clé, trouvez la bonne fiche immédiatement</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Fiches classées par catégorie pour parcourir facilement</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>La réponse en quelques secondes, sans quitter l'application</span></li>
+            </ul>
+          </article>
+          <article class="card reveal" data-delay="2">
+            <div class="ic ic--amber"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+            <h3>Pensé pour les débutants</h3>
+            <ul class="checklist">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Procédures pas à pas : où cliquer, quoi saisir, comment vérifier</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Exemples concrets et messages d'erreur expliqués (cause + solution)</span></li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span>Toujours à jour : le guide suit l'évolution de l'application</span></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ SECURITE & TECH ============ -->
     <section class="section section--dark" id="securite">
       <div class="container">
         <div class="section-head section-head--left">
-          <span class="eyebrow">Module 13</span>
+          <span class="eyebrow">Module 16</span>
           <h2 class="section-title">Sécurité, fiabilité et technologie</h2>
           <p class="section-subtitle">Une base technique solide pour protéger vos données et accompagner votre croissance.</p>
           <p class="feature-story"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg><span>Vos données, c'est des années de travail. Elles restent strictement les vôtres, isolées des autres entreprises, protégées et tracées, quoi qu'il arrive.</span></p>
