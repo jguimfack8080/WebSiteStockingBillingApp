@@ -98,7 +98,7 @@ def rewrite_redirects(path: Path, default_lang: str) -> bool:
       src = parts[0]
       for page in pages:
         if src == f"/{page}.html":
-          dst = f"/{default_lang}/{page}.html"
+          dst = f"/{default_lang}/{page}"
           if parts[1] != dst:
             parts[1] = dst
             changed = True
