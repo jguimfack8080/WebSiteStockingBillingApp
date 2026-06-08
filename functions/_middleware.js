@@ -43,7 +43,7 @@ export function onRequest({ request, next, env }) {
     url.pathname === "/features.html" ||
     url.pathname === "/pricing.html"
   ) {
-    return Response.redirect(`${url.origin}/${defaultLang}${url.pathname}`, 301);
+    return Response.redirect(`${url.origin}/${defaultLang}${url.pathname.replace(/\.html$/, "")}`, 301);
   }
 
   return next();
