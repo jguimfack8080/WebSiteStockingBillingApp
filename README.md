@@ -27,14 +27,16 @@ JGJPayStock.
 
 ## Pages
 
-| Page | Role |
+Le site est multilingue. Chaque langue contient les 6 pages suivantes :
+
+| Page (par langue) | URL | Role |
 |---|---|
-| `index.html` | Landing complete : hero (probleme -> solution), valeur, solutions par probleme, modules (stock / caisse / facturation / comptabilite et achats), etapes, roles, plateformes, securite, tarifs, FAQ, recit "Notre raison d'etre", CTA |
-| `features.html` | Detail exhaustif de chaque module (stock, caisse, facturation, devis, e-mailing, fidelite, alertes, rapports, achats et fournisseurs, comptabilite, personnalisation, roles, securite) avec listes de fonctionnalites et tableau des roles |
-| `pricing.html` | Offres (Starter, Business, Enterprise), comparatif detaille et FAQ tarifs |
-| `faq.html` | Foire aux questions exhaustive, organisee par theme (generalites, stock, caisse, facturation, securite, technique, mise en route et support) |
-| `about.html` | Mission, valeurs, createur et stack technique |
-| `contact.html` | Coordonnees et formulaire de demande de demo (ouvre la messagerie pre-remplie, sans backend) |
+| Accueil | `/<lang>/` | Landing complete : hero (probleme -> solution), valeur, solutions par probleme, modules, etapes, roles, plateformes, securite, tarifs, FAQ, recit "Notre raison d'etre", CTA |
+| Fonctionnalites | `/<lang>/features.html` | Detail exhaustif de chaque module avec listes et tableau des roles |
+| Tarifs | `/<lang>/pricing.html` | Offres, comparatif detaille et FAQ tarifs |
+| FAQ | `/<lang>/faq.html` | Foire aux questions exhaustive, organisee par theme |
+| A propos | `/<lang>/about.html` | Mission, valeurs, createur et stack technique |
+| Contact | `/<lang>/contact.html` | Coordonnees et formulaire de demande de demo (mailto, sans backend) |
 
 ---
 
@@ -53,15 +55,35 @@ JGJPayStock.
 
 ```
 WebSiteStockingBillingApp/
-├── index.html
-├── features.html
-├── pricing.html
-├── faq.html
-├── about.html
-├── contact.html
+├── fr/
+│   ├── index.html
+│   ├── features.html
+│   ├── pricing.html
+│   ├── faq.html
+│   ├── about.html
+│   └── contact.html
+├── en/
+│   ├── index.html
+│   ├── features.html
+│   ├── pricing.html
+│   ├── faq.html
+│   ├── about.html
+│   └── contact.html
+├── de/
+│   ├── index.html
+│   ├── features.html
+│   ├── pricing.html
+│   ├── faq.html
+│   ├── about.html
+│   └── contact.html
 ├── robots.txt               # Indexation + lien vers le sitemap
-├── sitemap.xml              # Sitemap (URLs absolues jgjpaystock.com)
+├── sitemap.xml              # Sitemap multilingue (URLs absolues)
 ├── _headers                 # En-tetes Cloudflare (cache, securite, CSP)
+├── _redirects               # Redirections (fallback)
+├── functions/_middleware.js # Redirection racine + detection de langue
+├── .env                     # Domaine canonique (SITE_ORIGIN)
+├── sync_site_origin.py      # Applique SITE_ORIGIN dans le HTML/SEO
+├── sync_site_origin.sh      # Script bash: modifier .env puis executer
 └── assets/
     ├── css/
     │   ├── theme.css         # Design tokens, reset, utilitaires, grilles, reveal
@@ -100,9 +122,7 @@ WebSiteStockingBillingApp/
   `loading="lazy"` hors ecran, prechargement de l'image hero (LCP), polices Google
   chargees en non bloquant.
 
-> Le domaine canonique de reference est `https://jgjpaystock.com`. Tant que le
-> site est servi depuis un domaine de test (`*.workers.dev`), ce domaine de test
-> ne doit pas etre indexe (voir la section Deploiement).
+> Domaine canonique : `https://www.jgjpaystock.com` (voir `.env`).
 
 ---
 
@@ -127,7 +147,7 @@ Puis ouvrir `http://localhost:8080`.
 Le site est deploye sur Cloudflare (Pages / Workers Static Assets).
 
 1. Copier l'integralite du dossier sur l'hebergement statique.
-2. Servir `index.html` comme page d'entree.
+2. Les pages sont sous `/fr/`, `/en/`, `/de/`. La racine `/` est redirigee par Cloudflare Pages Functions (voir `functions/_middleware.js`).
 3. HTTPS, Brotli et HTTP/3 sont fournis par Cloudflare (cote plateforme).
 4. Le fichier `_headers` applique le cache et les en-tetes de securite (CSP, HSTS)
    uniquement si le deploiement utilise le gestionnaire d'assets statiques
@@ -135,16 +155,17 @@ Le site est deploye sur Cloudflare (Pages / Workers Static Assets).
 
 Aucune etape de build n'est necessaire.
 
-### Domaine de test vs production
+### Changer le domaine (sans modifier les pages une par une)
 
-- Le domaine canonique est `https://jgjpaystock.com` (canonical, hreflang futurs,
-  sitemap et Open Graph y pointent).
-- Tant que le site est servi depuis un domaine de test (`*.workers.dev`), il ne
-  faut PAS laisser ce domaine s'indexer. Un fichier statique ne peut pas
-  distinguer l'hote : pour bloquer l'indexation du test, ajouter cote plateforme
-  (dashboard / route Cloudflare) un en-tete `X-Robots-Tag: noindex` sur le
-  domaine de test, ou le proteger par mot de passe. A retirer au passage en
-  production sur le domaine final.
+1. Modifier `WebSiteStockingBillingApp/.env` (variable `SITE_ORIGIN`).
+2. Executer le script bash (recommande) :
+
+```bash
+cd WebSiteStockingBillingApp
+bash ./sync_site_origin.sh
+```
+
+Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` et `sitemap.xml` a partir de `.env`.
 
 ---
 
@@ -153,7 +174,7 @@ Aucune etape de build n'est necessaire.
 | Element | Ou le modifier |
 |---|---|
 | Couleurs et typographie | `assets/css/theme.css` (variables `--brand-*`, `--font-*`) |
-| Coordonnees de contact | Pied de page de chaque `.html` et `contact.html` |
+| Coordonnees de contact | Pied de page de chaque langue (`/fr/*.html`, `/en/*.html`, `/de/*.html`) et pages `contact.html` |
 | Capture d'ecran | Regenerer `assets/images/screenhot_app.webp` et `screenhot_app-1280.png` (memes dimensions 1280x676) |
 | Logo et favicons | Regenerer `logo-96.png`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png` depuis le logo source |
 | Textes et offres | Directement dans les fichiers `.html` correspondants |
