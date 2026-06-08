@@ -1,0 +1,30 @@
+# Cloudflare Pages / Workers Static Assets - en-tetes HTTP
+# Format: https://developers.cloudflare.com/pages/configuration/headers/
+# Ces regles ne s'appliquent que si le deploiement sert les fichiers via le
+# gestionnaire d'assets statiques Cloudflare (Pages, ou Workers avec binding assets).
+
+# Pages HTML : revalidation systematique + securite
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self'; form-action 'self'; frame-ancestors 'self'; upgrade-insecure-requests
+  Cache-Control: public, max-age=0, must-revalidate
+
+# Polices : auto-hebergees, versionnables -> cache long
+/assets/fonts/*
+  Cache-Control: public, max-age=31536000
+  Access-Control-Allow-Origin: *
+
+# CSS / JS : pas de fingerprint dans les noms de fichiers -> on revalide vite
+# (NE PAS passer en immutable tant que les assets ne sont pas versionnes/hashes)
+/assets/css/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+/assets/js/*
+  Cache-Control: public, max-age=3600, stale-while-revalidate=86400
+
+# Images : stables, cache plus long
+/assets/images/*
+  Cache-Control: public, max-age=2592000
