@@ -5,9 +5,7 @@ lors de la passe d'optimisation SEO technique et performance, et **a quoi chaque
 changement sert**. Il sert de reference durable : avant de modifier le site,
 relire cette page pour ne pas casser ce qui a ete mis en place.
 
-Branche de travail : `feature/F-SEO01-technical-seo-perf`.
-Perimetre : site FR actuel uniquement. Le multilingue (`/fr` `/en` `/de`,
-hreflang) est prevu dans une phase ulterieure.
+Perimetre : site vitrine multilingue (`/fr`, `/en`, `/de`) avec canonical, hreflang et sitemap multilingue.
 
 ---
 
@@ -69,12 +67,11 @@ divise par ~2 a 3** sur les pages a visuels (de ~6 s a ~2-3 s).
 
 ### 3.1 Indexation et donnees structurees (SEO)
 
-- **Canonical absolu sur chaque page** (`https://jgjpaystock.com/<page>`). Avant,
+- **Canonical absolu sur chaque page** (domaine canonique `SITE_ORIGIN`, voir `.env`). Avant,
   seul `index.html` en avait un. *A quoi ca sert :* dire a Google quelle est
   l'URL de reference d'une page et eviter le contenu duplique.
 - **`robots.txt`** (a la racine) : autorise le crawl et pointe vers le sitemap.
-- **`sitemap.xml`** (a la racine) : liste les 6 pages avec URLs absolues. *Sert a*
-  accelerer et completer l'indexation.
+- **`sitemap.xml`** (a la racine) : sitemap multilingue avec `xhtml:link hreflang` (FR, EN, DE + x-default). *Sert a* accelerer et completer l'indexation, et declarer les variantes linguistiques.
 - **JSON-LD (donnees structurees) injecte par page**, uniquement a partir du
   contenu reel :
   - `index.html` : `Organization` + `WebSite` + `SoftwareApplication` (l'app et
@@ -148,15 +145,11 @@ Fichier `_headers` (format Cloudflare Pages / Workers Static Assets) :
 - **Le contenu redactionnel** : non modifie (hors corrections de niveaux de
   titres). Le SEO on-page de fond (mots-cles, intentions) depend de la strategie
   editoriale, pas du code.
-- **Le multilingue** : reporte a une phase dediee (creation de `/fr` `/en` `/de`,
-  hreflang reciproques, sitemap multilingue, selecteur de langue). C'est un gros
-  chantier (triple les pages + vraie traduction EN/DE).
+- **La strategie editoriale** (SEO on page) : le code n'est qu'une partie. Les mots cles, l'intention et la ligne editoriale restent une decision produit.
 - **Le formulaire de contact** : reste en `mailto:` (sans backend), inchange.
 
 ---
 
 ## 5. Points hors-code (a faire cote plateforme)
 
-Voir **PROD-READY.md** pour la liste des actions a realiser lors du passage en
-production sur `jgjpaystock.com` (DNS, dashboard Cloudflare, retrait du blocage
-d'indexation du domaine de test, verifications Search Console).
+Voir **PROD-READY.md** pour la mise en production sur `https://www.jgjpaystock.com` (Cloudflare Pages, redirections, Search Console).
