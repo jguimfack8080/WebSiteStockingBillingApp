@@ -2,6 +2,7 @@ const CANONICAL_HOST = "www.jgjpaystock.com";
 const APEX_HOST = CANONICAL_HOST.startsWith("www.") ? CANONICAL_HOST.slice(4) : CANONICAL_HOST;
 const DEFAULT_LANG = "fr";
 const SUPPORTED_LANGS = ["fr", "en", "de"];
+const DEFAULT_BILLING_API = "https://billing.jgjpaystock.com";
 
 function pickLanguage(acceptLanguage, defaultLang) {
   if (!acceptLanguage) return defaultLang;
@@ -25,6 +26,19 @@ export function onRequest({ request, next, env }) {
 
   if (url.hostname !== canonicalHost) {
     return next();
+  }
+
+  // Serve /config.js dynamically from env vars - never hardcode URLs in HTML
+  if (url.pathname === "/config.js") {
+    const billingApi = (env && env.BILLING_API_URL) || DEFAULT_BILLING_API;
+    const siteOrigin = (env && env.SITE_ORIGIN) || `${url.origin}`;
+    const js = `window.__ENV__={BILLING_API:${JSON.stringify(billingApi)},SITE_ORIGIN:${JSON.stringify(siteOrigin)}};`;
+    return new Response(js, {
+      headers: {
+        "Content-Type": "application/javascript; charset=utf-8",
+        "Cache-Control": "no-store",
+      },
+    });
   }
 
   if (url.pathname === "/" || url.pathname === "/index.html") {

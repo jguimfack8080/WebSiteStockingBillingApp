@@ -236,8 +236,9 @@
     select.form-input {cursor:pointer}
   </style>
 
+  <script src="/config.js"></script>
   <script>
-    const BILLING_API = 'http://192.168.178.27:9005';
+    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://billing.jgjpaystock.com';
     const LANG = 'en';
     const MSG = {
       required: 'This field is required',

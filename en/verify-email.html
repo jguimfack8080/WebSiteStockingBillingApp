@@ -139,8 +139,9 @@
     .form-input:focus {border-color:#4361ee;box-shadow:0 0 0 3px #4361ee20}
   </style>
 
+  <script src="/config.js"></script>
   <script>
-    const BILLING_API = 'http://192.168.178.27:9005';
+    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://billing.jgjpaystock.com';
 
     function show(id) {
       ['loading','success','expired','invalid','already','notoken'].forEach(s => {
