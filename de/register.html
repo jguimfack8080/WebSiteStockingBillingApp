@@ -66,7 +66,10 @@
     <section style="padding:3rem 0 4rem">
       <div class="container" style="max-width:600px;margin:0 auto">
         <h1 style="text-align:center;font-size:clamp(1.6rem,4vw,2.4rem);margin-bottom:.5rem">Starten Sie Ihren <span class="grad">kostenlosen Test</span></h1>
-        <p style="text-align:center;color:var(--neutral-500);margin-bottom:2rem">14 Tage kostenlos, keine Kreditkarte, keine Bindung.</p>
+        <p style="text-align:center;color:var(--neutral-500);margin-bottom:1.25rem">14 Tage kostenlos, keine Kreditkarte, keine Bindung.</p>
+
+        <!-- Plan indicator (populated by JS from ?plan= URL param) -->
+        <div id="plan-banner" style="display:none;justify-content:center;align-items:center;gap:.5rem;margin-bottom:1.25rem;background:#f8fafc;border:1.5px solid #e2e8f0;border-radius:10px;padding:.6rem 1rem;font-size:.875rem;"></div>
 
         <!-- Progress bar -->
         <div id="progress-bar" style="display:flex;gap:.5rem;margin-bottom:2rem;justify-content:center">
@@ -219,8 +222,8 @@
           <h2 style="font-size:1.5rem;margin-bottom:.5rem">E-Mail überprüfen!</h2>
           <p id="success-email-line" style="color:var(--neutral-500);margin-bottom:1rem">Eine Bestätigungs-E-Mail wurde gesendet an <strong id="success-email"></strong>.</p>
           <p style="color:var(--neutral-500);font-size:.9rem;margin-bottom:2rem">Klicken Sie auf den Link in der E-Mail, um Ihr Konto zu aktivieren. Der Link läuft in 24 Stunden ab.</p>
-          <button id="btn-resend" class="btn btn--ghost btn--md" onclick="resendEmail()">E-Mail erneut senden</button>
-          <p style="margin-top:1rem"><a href="javascript:void(0)" onclick="resetForm()" style="color:#4361ee;font-size:.9rem">E-Mail ändern</a></p>
+          <button id="btn-resend" class="btn btn--ghost btn--md" onclick="window.resendEmail()">E-Mail erneut senden</button>
+          <p style="margin-top:1rem"><a href="javascript:void(0)" onclick="window.resetForm()" style="color:#4361ee;font-size:.9rem">E-Mail ändern</a></p>
         </div>
       </div>
     </section>
@@ -253,6 +256,23 @@
     let currentStep = 1;
     let registeredEmail = '';
     let resendTimer = null;
+
+    // ── Plan selection from URL param ─────────────────────────────────────────
+    const PLAN_NAMES = {trial:'Kostenloser Test',basic:'Basic-Plan',professional:'Professional-Plan',enterprise:'Enterprise-Plan'};
+    const PLAN_COLORS = {trial:'#10b981',basic:'#3b82f6',professional:'#4361ee',enterprise:'#7c3aed'};
+    const PLAN_BGS    = {trial:'#dcfce7',basic:'#dbeafe',professional:'#eef2ff',enterprise:'#f3e8ff'};
+    const VALID_PLANS = new Set(['trial','basic','professional','enterprise']);
+    const _rawPlan = new URLSearchParams(window.location.search).get('plan') || 'trial';
+    const selectedPlan = VALID_PLANS.has(_rawPlan) ? _rawPlan : 'trial';
+    (function() {
+      const banner = document.getElementById('plan-banner');
+      const name = PLAN_NAMES[selectedPlan] || selectedPlan;
+      const color = PLAN_COLORS[selectedPlan] || '#4361ee';
+      const bg    = PLAN_BGS[selectedPlan]    || '#eef2ff';
+      banner.innerHTML = '<span style="color:#64748b;">Ausgewahlter Plan:</span>'
+        + '<span style="background:' + bg + ';color:' + color + ';font-weight:700;padding:3px 14px;border-radius:999px;margin-left:.4rem;">' + name + '</span>';
+      banner.style.display = 'flex';
+    })();
 
     // ── Password strength ──────────────────────────────────────────────────────
     document.getElementById('password').addEventListener('input', function() {
@@ -356,6 +376,7 @@
         timezone: Intl.DateTimeFormat().resolvedOptions().timeZone || 'Europe/Paris',
         accepted_terms: true,
         locale: LANG,
+        selected_plan: selectedPlan,
       };
 
       try {
@@ -398,7 +419,7 @@
       }, 1000);
     }
 
-    async function resendEmail() {
+    window.resendEmail = async function resendEmail_impl() {
       const btn = document.getElementById('btn-resend');
       btn.disabled = true;
       try {
@@ -411,7 +432,7 @@
       startResendTimer();
     }
 
-    function resetForm() {
+    window.resetForm = function resetForm_impl() {
       document.getElementById('reg-form').style.display = 'block';
       document.getElementById('progress-bar').style.display = 'flex';
       document.getElementById('success-screen').style.display = 'none';

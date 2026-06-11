@@ -183,6 +183,16 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
 
 ## Notes de version
 
+**Plan selection au formulaire d'inscription (register.html fr/en/de)**
+
+- Les pages `register.html` lisent le parametre URL `?plan=` (trial/basic/professional/enterprise)
+  et affichent un badge coloré au-dessus du formulaire pour confirmer le plan choisi.
+- Le champ `selected_plan` est transmis au backend billing lors de la soumission du formulaire
+  (`POST /billing/register`), permettant au service de créer la subscription avec le bon plan.
+- Les fonctions `resendEmail` et `resetForm` sont exposées en `window.*` pour compatibilité
+  strict-mode dans les navigateurs modernes.
+- Aucun changement de structure : uniquement fr/en/de register.html + ce README.
+
 **Integration modules Comptabilite et Achats + storytelling**
 
 - Ajout des modules **Achats et fournisseurs** et **Comptabilite** (compte de resultat, TVA collectee/deductible/due, tresorerie, valeur du stock au cout, comparaison de periodes, exports PDF/CSV et documents officiels) sur `features.html` (modules 9 et 10, renumerotation des suivants) avec ancres dediees.
