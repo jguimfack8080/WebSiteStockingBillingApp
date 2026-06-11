@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vérification de votre email - JGJPayStock</title>
+  <meta name="description" content="Vérification de votre adresse email pour activer votre compte JGJPayStock." />
+  <meta name="theme-color" content="#4361ee" />
+  <link rel="canonical" href="https://www.jgjpaystock.com/fr/verify-email" />
+  <meta name="robots" content="index, follow" />
+
+  <link rel="alternate" hreflang="fr" href="https://www.jgjpaystock.com/fr/verify-email" />
+  <link rel="alternate" hreflang="en" href="https://www.jgjpaystock.com/en/verify-email" />
+  <link rel="alternate" hreflang="de" href="https://www.jgjpaystock.com/de/verify-email" />
+  <link rel="alternate" hreflang="x-default" href="https://www.jgjpaystock.com/fr/verify-email" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/logo-96.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+  <link rel="preload" href="/assets/fonts/poppins-700.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="JGJPayStock" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:url" content="https://www.jgjpaystock.com/fr/verify-email" />
+  <meta property="og:title" content="Vérification de votre email - JGJPayStock" />
+  <meta property="og:description" content="Vérification de votre adresse email pour activer votre compte JGJPayStock." />
+  <meta property="og:image" content="https://www.jgjpaystock.com/assets/images/screenhot_app-1280.png" />
+
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="brand" aria-label="JGJPayStock, accueil">
+        <img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" />
+        <span>JGJ<b>PayStock</b></span>
+      </a>
+      <nav class="nav" id="primary-nav" aria-label="Navigation principale">
+        <a href="./">Accueil</a>
+        <a href="features">Fonctionnalités</a>
+        <a href="pricing">Tarifs</a>
+        <a href="download">Télécharger</a>
+        <a href="faq">FAQ</a>
+        <a href="about">À propos</a>
+        <a href="register" class="btn btn--primary btn--sm nav-cta">Essai gratuit 14j</a>
+      </nav>
+      <div class="header-actions">
+        <div class="lang-switch" role="group" aria-label="Choix de la langue">
+          <a href="/fr/" hreflang="fr" lang="fr" class="is-active" aria-current="page">FR</a>
+          <a href="/en/" hreflang="en" lang="en">EN</a>
+          <a href="/de/" hreflang="de" lang="de">DE</a>
+        </div>
+        <a href="register" class="btn btn--primary btn--sm btn-desktop">Essai gratuit 14j</a>
+        <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section style="padding:4rem 0;min-height:60vh;display:flex;align-items:center">
+      <div class="container" style="max-width:560px;margin:0 auto;text-align:center">
+        <h1 style="font-size:clamp(1.4rem,4vw,2rem);margin-bottom:2rem">Vérification de votre email</h1>
+
+        <!-- Loading state -->
+        <div id="state-loading">
+          <div style="width:56px;height:56px;border:3px solid #4361ee20;border-top-color:#4361ee;border-radius:50%;animation:spin 1s linear infinite;margin:0 auto 1.5rem"></div>
+          <p style="color:var(--neutral-500)">Vérification en cours...</p>
+        </div>
+
+        <!-- Success state -->
+        <div id="state-success" style="display:none">
+          <div style="width:72px;height:72px;background:#dcfce7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;margin-bottom:.5rem">Compte activé !</h2>
+          <p style="color:var(--neutral-500);margin-bottom:.5rem">Votre compte JGJPayStock est prêt. Téléchargez l'application ou accédez à la version web.</p>
+          <p style="color:var(--neutral-400);font-size:.875rem;margin-bottom:2rem">Vos identifiants ont été envoyés par email.</p>
+          <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center">
+            <a href="https://app.jgjpaystock.com" class="btn btn--primary btn--lg">Ouvrir la Web App</a>
+            <a href="download" class="btn btn--ghost btn--lg">Télécharger l'application</a>
+          </div>
+        </div>
+
+        <!-- Expired state -->
+        <div id="state-expired" style="display:none">
+          <div style="width:72px;height:72px;background:#fef3c7;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#d97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;margin-bottom:.5rem">Lien expiré</h2>
+          <p style="color:var(--neutral-500);margin-bottom:1.5rem">Ce lien de vérification a expiré (valable 24h). Saisissez votre email pour recevoir un nouveau lien.</p>
+          <div style="display:flex;gap:.75rem;max-width:400px;margin:0 auto">
+            <input class="form-input" type="email" id="resend-email" placeholder="Votre email" style="flex:1" />
+            <button class="btn btn--primary btn--md" onclick="resendVerification()">Recevoir un nouveau lien</button>
+          </div>
+          <div id="resend-msg" style="margin-top:.75rem;font-size:.875rem;color:var(--neutral-500)"></div>
+        </div>
+
+        <!-- Invalid state -->
+        <div id="state-invalid" style="display:none">
+          <div style="width:72px;height:72px;background:#fee2e2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;margin-bottom:.5rem">Lien invalide</h2>
+          <p style="color:var(--neutral-500);margin-bottom:1.5rem">Ce lien de vérification est invalide. Utilisez le lien dans votre dernier email.</p>
+          <a href="mailto:support@jgjpaystock.com" class="btn btn--ghost btn--md">Contacter le support</a>
+        </div>
+
+        <!-- Already verified state -->
+        <div id="state-already" style="display:none">
+          <div style="width:72px;height:72px;background:#dbeafe;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;margin-bottom:.5rem">Email déjà vérifié</h2>
+          <p style="color:var(--neutral-500);margin-bottom:1.5rem">Votre compte est déjà actif. Connectez-vous à l'application.</p>
+          <a href="https://app.jgjpaystock.com" class="btn btn--primary btn--lg">Ouvrir l'application</a>
+        </div>
+
+        <!-- No token state -->
+        <div id="state-notoken" style="display:none">
+          <div style="width:72px;height:72px;background:#fee2e2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 1.25rem">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#dc2626" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+          </div>
+          <h2 style="font-size:1.5rem;margin-bottom:.5rem">Lien incomplet</h2>
+          <p style="color:var(--neutral-500)">Le lien de vérification est incomplet. Assurez-vous de cliquer sur le bouton dans l'email.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <style>
+    @keyframes spin {from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+    .form-input {padding:.625rem .875rem;border:1.5px solid var(--neutral-200);border-radius:8px;font-size:.95rem;outline:none;transition:border .2s}
+    .form-input:focus {border-color:#4361ee;box-shadow:0 0 0 3px #4361ee20}
+  </style>
+
+  <script>
+    const BILLING_API = 'https://billing.jgjpaystock.com';
+
+    function show(id) {
+      ['loading','success','expired','invalid','already','notoken'].forEach(s => {
+        document.getElementById('state-'+s).style.display = s === id ? 'block' : 'none';
+      });
+    }
+
+    async function verify() {
+      const token = new URLSearchParams(window.location.search).get('token');
+      if (!token) { show('notoken'); return; }
+
+      try {
+        const resp = await fetch(BILLING_API + '/billing/verify-email', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({token}),
+        });
+        if (resp.ok) { show('success'); return; }
+        const data = await resp.json();
+        const code = data?.detail?.code || '';
+        if (code === 'TOKEN_EXPIRED') show('expired');
+        else if (code === 'ALREADY_VERIFIED') show('already');
+        else show('invalid');
+      } catch(e) {
+        show('invalid');
+      }
+    }
+
+    async function resendVerification() {
+      const email = document.getElementById('resend-email').value.trim();
+      if (!email) return;
+      try {
+        await fetch(BILLING_API + '/billing/resend-verification', {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json'},
+          body: JSON.stringify({email}),
+        });
+        document.getElementById('resend-msg').textContent = 'Email envoyé si votre adresse est connue.';
+      } catch(e) {
+        document.getElementById('resend-msg').textContent = 'Erreur. Réessayez dans un instant.';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', verify);
+  </script>
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-brand"><img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" /> JGJPayStock</span>
+          <p>La solution tout-en-un de gestion de stock, caisse, facturation, achats et comptabilite pour les commerces et les PME.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Produit</h3>
+          <ul>
+            <li><a href="features">Fonctionnalités</a></li>
+            <li><a href="pricing">Tarifs</a></li>
+            <li><a href="download">Télécharger</a></li>
+            <li><a href="./#securite">Sécurité</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Entreprise</h3>
+          <ul>
+            <li><a href="about">À propos</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li><a href="contact">Demander une démo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact</h3>
+          <ul class="footer-contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> <a href="mailto:contact@jgjpaystock.com">contact@jgjpaystock.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Allemagne</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span data-year>2026</span> JGJPayStock. Tous droits réservés.</p>
+        <div class="links">
+          <a href="faq">FAQ</a>
+          <a href="contact">Contact</a>
+          <a href="about">À propos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Revenir en haut de la page">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="/assets/js/site.js"></script>
+</body>
+</html>

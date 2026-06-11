@@ -7,3 +7,12 @@
 /faq.html /fr/faq 301
 /features.html /fr/features 301
 /pricing.html /fr/pricing 301
+
+/download       /fr/download    302
+/register       /fr/register    302
+/signup         /fr/register    301
+/essai          /fr/register    301
+/trial          /en/register    301
+/telecharger    /fr/download    301
+/verify-email   /fr/verify-email 302
+/pricing        /fr/pricing     302
