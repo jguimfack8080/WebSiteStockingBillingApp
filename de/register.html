@@ -329,6 +329,23 @@
     document.getElementById('btn-back').addEventListener('click', () => showStep(currentStep - 1));
 
     // ── Validation ─────────────────────────────────────────────────────────────
+    // Extrahiert eine lesbare Meldung aus einer API-Fehlerantwort.
+    // FastAPI liefert entweder detail=string oder detail=[{loc,msg,...}] (422-Validierung).
+    // Ohne dieses Parsing wird ein Array als "[object Object]" angezeigt.
+    function extractApiError(json, fallback) {
+      const d = json && json.detail;
+      if (typeof d === 'string' && d.trim()) return d;
+      if (Array.isArray(d)) {
+        const parts = d
+          .map(function (e) { return e && e.msg ? String(e.msg) : ''; })
+          .filter(Boolean)
+          .map(function (m) { return m.replace(/^Value error,\s*/i, ''); });
+        if (parts.length) return parts.join(' ');
+      }
+      if (d && typeof d === 'object' && d.message) return d.message;
+      return fallback;
+    }
+
     function setError(name, msg) {
       const el = document.querySelector('[data-for="'+name+'"]');
       const inp = document.getElementById(name) || document.querySelector('[name="'+name+'"]');
@@ -427,7 +444,7 @@
           startResendTimer();
         } else {
           const errBox = document.getElementById('form-global-error');
-          errBox.textContent = json.detail?.message || json.detail || 'Une erreur est survenue.';
+          errBox.textContent = extractApiError(json, 'Ein Fehler ist aufgetreten.');
           errBox.style.display = 'block';
         }
       } catch (err) {

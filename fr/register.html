@@ -330,6 +330,23 @@
     document.getElementById('btn-back').addEventListener('click', () => showStep(currentStep - 1));
 
     // ── Validation ─────────────────────────────────────────────────────────────
+    // Extrait un message lisible d'une reponse d'erreur API.
+    // FastAPI renvoie soit detail=string, soit detail=[{loc,msg,...}] (validation 422).
+    // Sans ce parsing, un tableau s'affiche en "[object Object]".
+    function extractApiError(json, fallback) {
+      const d = json && json.detail;
+      if (typeof d === 'string' && d.trim()) return d;
+      if (Array.isArray(d)) {
+        const parts = d
+          .map(function (e) { return e && e.msg ? String(e.msg) : ''; })
+          .filter(Boolean)
+          .map(function (m) { return m.replace(/^Value error,\s*/i, ''); });
+        if (parts.length) return parts.join(' ');
+      }
+      if (d && typeof d === 'object' && d.message) return d.message;
+      return fallback;
+    }
+
     function setError(name, msg) {
       const el = document.querySelector('[data-for="'+name+'"]');
       const inp = document.getElementById(name) || document.querySelector('[name="'+name+'"]');
@@ -428,7 +445,7 @@
           startResendTimer();
         } else {
           const errBox = document.getElementById('form-global-error');
-          errBox.textContent = json.detail?.message || json.detail || 'Une erreur est survenue.';
+          errBox.textContent = extractApiError(json, 'Une erreur est survenue.');
           errBox.style.display = 'block';
         }
       } catch (err) {
