@@ -109,6 +109,11 @@
               <label class="form-label" for="phone">Telefon (optional)</label>
               <input class="form-input" type="tel" id="phone" name="phone" autocomplete="tel" />
             </div>
+            <div class="form-group">
+              <label class="form-label" for="date_of_birth">Geburtsdatum * <span style="font-size:.78rem;color:var(--neutral-500)">(erforderlich für Passwort-Reset)</span></label>
+              <input class="form-input" type="date" id="date_of_birth" name="date_of_birth" required autocomplete="bday" max="" />
+              <span class="form-error" data-for="date_of_birth"></span>
+            </div>
           </div>
 
           <!-- Step 2 -->
@@ -243,9 +248,21 @@
   <script>
     const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://billing.jgjpaystock.com';
     const LANG = 'de';
+
+    (function() {
+      const dob = document.getElementById('date_of_birth');
+      if (!dob) return;
+      const today = new Date();
+      const maxDate = new Date(today.getFullYear() - 18, today.getMonth(), today.getDate());
+      const minDate = new Date(today.getFullYear() - 120, today.getMonth(), today.getDate());
+      dob.max = maxDate.toISOString().split('T')[0];
+      dob.min = minDate.toISOString().split('T')[0];
+    })();
     const MSG = {
       required: 'Dieses Feld ist erforderlich',
       email: 'Ungültige E-Mail',
+      dob_required: 'Geburtsdatum ist erforderlich',
+      dob_invalid: 'Sie müssen zwischen 18 und 120 Jahre alt sein',
       pwmatch: 'Passwörter stimmen nicht überein',
       terms: 'Sie müssen die Bedingungen akzeptieren',
       pwlen: 'Mindestens 8 Zeichen',
@@ -322,6 +339,19 @@
       document.querySelectorAll('.form-error').forEach(e => e.textContent = '');
       document.querySelectorAll('.is-invalid').forEach(e => e.classList.remove('is-invalid'));
     }
+    function validateDateOfBirth() {
+      const dobInput = document.getElementById('date_of_birth');
+      const value = dobInput.value;
+      if (!value) {
+        setError('date_of_birth', MSG.dob_required);
+        return false;
+      }
+      if ((dobInput.min && value < dobInput.min) || (dobInput.max && value > dobInput.max)) {
+        setError('date_of_birth', MSG.dob_invalid);
+        return false;
+      }
+      return true;
+    }
 
     function validateStep(step) {
       clearErrors();
@@ -333,6 +363,7 @@
         if (fn.length < 2) { setError('first_name', MSG.required); ok = false; }
         if (ln.length < 2) { setError('last_name', MSG.required); ok = false; }
         if (!em || !/^[^@]+@[^@]+\.[^@]+$/.test(em)) { setError('email', MSG.email); ok = false; }
+        if (!validateDateOfBirth()) ok = false;
       } else if (step === 2) {
         if (!document.getElementById('company_name').value.trim()) { setError('company_name', MSG.required); ok = false; }
         if (!document.getElementById('country').value) { setError('country', MSG.required); ok = false; }
@@ -365,6 +396,7 @@
         last_name: document.getElementById('last_name').value.trim(),
         email: document.getElementById('email').value.trim().toLowerCase(),
         phone: document.getElementById('phone').value.trim() || null,
+        date_of_birth: document.getElementById('date_of_birth').value,
         company_name: document.getElementById('company_name').value.trim(),
         country: document.getElementById('country').value,
         address: document.getElementById('address').value.trim() || null,
