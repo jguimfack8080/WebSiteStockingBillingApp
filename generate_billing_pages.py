@@ -1024,7 +1024,7 @@ def pricing_page(lang):
             "faq_title": "Questions fréquentes",
             "faqs": [
                 ("Puis-je annuler à tout moment ?", "Oui. Vous gardez l'accès jusqu'à la fin de la période payée. Aucun frais de résiliation."),
-                ("Quelles cartes bancaires acceptez-vous ?", "Visa, Mastercard, American Express, Apple Pay, Google Pay et PayPal via Stripe."),
+                ("Quels moyens de paiement acceptez-vous ?", "Cartes bancaires (Visa, Mastercard), Orange Money, MTN Mobile Money, M-Pesa et virement bancaire, via Flutterwave."),
                 ("Y a-t-il des frais de mise en place ?", "Non. Aucun frais caché, aucune installation payante."),
                 ("Mes données sont-elles sécurisées ?", "Oui. Chiffrement TLS, isolation des données par entreprise, conforme RGPD."),
                 ("Puis-je passer d'un plan à l'autre ?", "Oui, à tout moment depuis votre espace client. Le changement est instantané."),
@@ -1057,7 +1057,7 @@ def pricing_page(lang):
             "faq_title": "Frequently asked questions",
             "faqs": [
                 ("Can I cancel at any time?", "Yes. You keep access until the end of the paid period. No cancellation fees."),
-                ("What payment methods do you accept?", "Visa, Mastercard, American Express, Apple Pay, Google Pay and PayPal via Stripe."),
+                ("What payment methods do you accept?", "Bank cards (Visa, Mastercard), Orange Money, MTN Mobile Money, M-Pesa and bank transfer, via Flutterwave."),
                 ("Are there any setup fees?", "No. No hidden fees, no paid installation."),
                 ("Is my data secure?", "Yes. TLS encryption, data isolation per company, GDPR compliant."),
                 ("Can I switch plans?", "Yes, at any time from your account. The change is instant."),
@@ -1090,7 +1090,7 @@ def pricing_page(lang):
             "faq_title": "Häufig gestellte Fragen",
             "faqs": [
                 ("Kann ich jederzeit kündigen?", "Ja. Sie behalten den Zugang bis zum Ende des bezahlten Zeitraums. Keine Kündigungsgebühren."),
-                ("Welche Zahlungsmethoden akzeptieren Sie?", "Visa, Mastercard, American Express, Apple Pay, Google Pay und PayPal über Stripe."),
+                ("Welche Zahlungsmethoden akzeptieren Sie?", "Bankkarten (Visa, Mastercard), Orange Money, MTN Mobile Money, M-Pesa und Banküberweisung, über Flutterwave."),
                 ("Gibt es Einrichtungsgebühren?", "Nein. Keine versteckten Gebühren, keine kostenpflichtige Installation."),
                 ("Sind meine Daten sicher?", "Ja. TLS-Verschlüsselung, Datenisolierung pro Unternehmen, DSGVO-konform."),
                 ("Kann ich den Plan wechseln?", "Ja, jederzeit über Ihr Kundenkonto. Die Änderung ist sofort wirksam."),
