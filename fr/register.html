@@ -126,21 +126,15 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
               <div>
-                <label class="form-label" for="country">Pays *</label>
-                <select class="form-input" id="country" name="country" required>
-                  <option value="">Sélectionner un pays</option>
-                  <option value="France">France</option>
-                  <option value="Deutschland">Deutschland</option>
-                  <option value="Belgique">Belgique / België</option>
-                  <option value="Suisse">Suisse / Schweiz</option>
-                  <option value="Luxembourg">Luxembourg</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Maroc">Maroc</option>
-                  <option value="Senegal">Sénégal</option>
-                  <option value="Cote d Ivoire">Côte d'Ivoire</option>
-                  <option value="Cameroun">Cameroun</option>
-                  <option value="Other">Autre / Other</option>
-                </select>
+                <label class="form-label" for="country_search">Pays *</label>
+                <div class="country-combo">
+                  <input type="text" class="form-input country-combo__input" id="country_search"
+                         autocomplete="off" role="combobox" aria-expanded="false"
+                         aria-controls="country_listbox" aria-autocomplete="list"
+                         placeholder="Rechercher un pays..." />
+                  <input type="hidden" id="country" name="country" />
+                  <ul class="country-combo__list" id="country_listbox" role="listbox" hidden></ul>
+                </div>
                 <span class="form-error" data-for="country"></span>
               </div>
               <div>
@@ -245,9 +239,11 @@
   </style>
 
   <script src="/config.js"></script>
+  <script src="/assets/js/countries.js"></script>
   <script>
     const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.jgjpaystock.com';
     const LANG = 'fr';
+    initCountryCombobox({ lang: LANG, hiddenId: 'country', searchId: 'country_search', listId: 'country_listbox', noResults: 'Aucun pays trouve' });
 
     // Date de naissance : max = aujourd'hui - 18 ans, min = aujourd'hui - 120 ans
     (function() {
