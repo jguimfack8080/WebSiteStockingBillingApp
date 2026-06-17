@@ -2,7 +2,7 @@ const CANONICAL_HOST = "www.jgjpaystock.com";
 const APEX_HOST = CANONICAL_HOST.startsWith("www.") ? CANONICAL_HOST.slice(4) : CANONICAL_HOST;
 const DEFAULT_LANG = "fr";
 const SUPPORTED_LANGS = ["fr", "en", "de"];
-const DEFAULT_BILLING_API = "https://billing.jgjpaystock.com";
+const DEFAULT_BILLING_API = "https://api.jgjpaystock.com";
 
 function pickLanguage(acceptLanguage, defaultLang) {
   if (!acceptLanguage) return defaultLang;
