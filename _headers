@@ -10,7 +10,7 @@
   Referrer-Policy: strict-origin-when-cross-origin
   Permissions-Policy: geolocation=(), microphone=(), camera=()
   Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
-  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://billing.jgjpaystock.com; form-action 'self' https://billing.jgjpaystock.com; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; upgrade-insecure-requests
+  Content-Security-Policy: default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; font-src 'self'; script-src 'self' 'unsafe-inline'; connect-src 'self' https://api.jgjpaystock.com; form-action 'self' https://api.jgjpaystock.com; frame-src https://challenges.cloudflare.com; frame-ancestors 'none'; upgrade-insecure-requests
   X-Frame-Options: DENY
   Cache-Control: public, max-age=0, must-revalidate
 

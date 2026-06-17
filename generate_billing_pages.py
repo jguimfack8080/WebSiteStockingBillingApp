@@ -598,7 +598,7 @@ def register_page(lang):
   </style>
 
   <script>
-    const BILLING_API = 'https://billing.jgjpaystock.com';
+    const BILLING_API = 'https://api.jgjpaystock.com';
     const LANG = '{lang}';
     const MSG = {{
       required: '{t['err_required']}',
@@ -947,7 +947,7 @@ def verify_page(lang):
   </style>
 
   <script>
-    const BILLING_API = 'https://billing.jgjpaystock.com';
+    const BILLING_API = 'https://api.jgjpaystock.com';
 
     function show(id) {{
       ['loading','success','expired','invalid','already','notoken'].forEach(s => {{
