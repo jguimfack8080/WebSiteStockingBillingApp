@@ -1030,10 +1030,10 @@ def pricing_page(lang):
                 ("Puis-je passer d'un plan à l'autre ?", "Oui, à tout moment depuis votre espace client. Le changement est instantané."),
             ],
             "plans": [
-                ("Trial", "GRATUIT", "", "0", "", 5, "1 000", "support_email"),
-                ("Basic", "29", "290", "24", "242", 3, "1 000", "support_email"),
-                ("Professional", "79", "790", "65", "658", 10, "10 000", "support_chat"),
-                ("Enterprise", "199", "1 990", "165", "1 658", 0, "0", "support_dedicated"),
+                ("Trial", 5, "1 000", "support_email"),
+                ("Basic", 3, "1 000", "support_email"),
+                ("Professional", 10, "10 000", "support_chat"),
+                ("Enterprise", 0, "0", "support_dedicated"),
             ],
         },
         "en": {
@@ -1063,10 +1063,10 @@ def pricing_page(lang):
                 ("Can I switch plans?", "Yes, at any time from your account. The change is instant."),
             ],
             "plans": [
-                ("Trial", "FREE", "", "0", "", 5, "1,000", "support_email"),
-                ("Basic", "29", "290", "24", "242", 3, "1,000", "support_email"),
-                ("Professional", "79", "790", "65", "658", 10, "10,000", "support_chat"),
-                ("Enterprise", "199", "1,990", "165", "1,658", 0, "0", "support_dedicated"),
+                ("Trial", 5, "1,000", "support_email"),
+                ("Basic", 3, "1,000", "support_email"),
+                ("Professional", 10, "10,000", "support_chat"),
+                ("Enterprise", 0, "0", "support_dedicated"),
             ],
         },
         "de": {
@@ -1096,17 +1096,22 @@ def pricing_page(lang):
                 ("Kann ich den Plan wechseln?", "Ja, jederzeit über Ihr Kundenkonto. Die Änderung ist sofort wirksam."),
             ],
             "plans": [
-                ("Trial", "KOSTENLOS", "", "0", "", 5, "1.000", "support_email"),
-                ("Basic", "29", "290", "24", "242", 3, "1.000", "support_email"),
-                ("Professional", "79", "790", "65", "658", 10, "10.000", "support_chat"),
-                ("Enterprise", "199", "1.990", "165", "1.658", 0, "0", "support_dedicated"),
+                ("Trial", 5, "1.000", "support_email"),
+                ("Basic", 3, "1.000", "support_email"),
+                ("Professional", 10, "10.000", "support_chat"),
+                ("Enterprise", 0, "0", "support_dedicated"),
             ],
         },
     }[lang]
 
+    # Libelles dependant de la langue pour le rendu dynamique des prix (JS).
+    ccy_label = {"fr": "Devise :", "en": "Currency:", "de": "Waehrung:"}[lang]
+    unit_mo = {"fr": "/mois", "en": "/mo", "de": "/Monat"}[lang]
+    unit_yr = {"fr": "/an", "en": "/yr", "de": "/Jahr"}[lang]
+
     # Build plan cards
     plan_cards = ""
-    for i, (name, mo_price, yr_price, mo_annual, yr_annual, max_users, max_prod, support_key) in enumerate(t["plans"]):
+    for i, (name, max_users, max_prod, support_key) in enumerate(t["plans"]):
         is_popular = name == "Professional"
         is_trial = i == 0
         is_enterprise = max_users == 0
@@ -1118,8 +1123,11 @@ def pricing_page(lang):
         support_str = t[support_key]
         plan_slug = name.lower().replace(" ", "-")
 
-        price_html_mo = f'<span style="font-size:2.5rem;font-weight:800">{mo_price}</span> <span style="font-size:.9rem;color:var(--neutral-500)">{t["eur_mo"]}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
-        price_html_yr = f'<span style="font-size:2.5rem;font-weight:800">{yr_annual}</span> <span style="font-size:.9rem;color:var(--neutral-500)">{t["eur_yr"]}</span>' if yr_annual else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
+        # AUCUN prix code en dur : le montant est un placeholder rempli au chargement
+        # par /billing/plans (source unique = price book DB). data-plan + js-price/js-unit
+        # permettent au script de cibler chaque carte. Pour l'essai, pas de prix.
+        price_html_mo = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_mo}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
+        price_html_yr = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_yr}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
 
         cta_href = f"register?plan={plan_slug}" if not is_trial else "register"
         cta_label = t["cta_trial"] if is_trial else t["cta_plan"]
@@ -1129,8 +1137,8 @@ def pricing_page(lang):
           <div class="price-card" style="position:relative;{border};{bg};border-radius:16px;padding:2rem;display:flex;flex-direction:column">
             {popular_badge}
             <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 1rem">{name}</h3>
-            <div class="price-monthly" style="margin-bottom:1rem">{price_html_mo}</div>
-            <div class="price-yearly" style="margin-bottom:1rem;display:none">{price_html_yr}</div>
+            <div class="price-monthly" data-plan="{plan_slug}" data-period="monthly" style="margin-bottom:1rem">{price_html_mo}</div>
+            <div class="price-yearly" data-plan="{plan_slug}" data-period="yearly" style="margin-bottom:1rem;display:none">{price_html_yr}</div>
             <ul style="list-style:none;padding:0;margin:0 0 1.5rem;flex:1;display:flex;flex-direction:column;gap:.5rem">
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{users_str}</li>
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>{products_str}</li>
@@ -1172,6 +1180,14 @@ def pricing_page(lang):
             {t['yearly']} <span style="background:#dc2626;color:#fff;font-size:.65rem;padding:2px 6px;border-radius:99px;margin-left:.25rem">{t['save']}</span>
           </button>
         </div>
+
+        <!-- Selecteur de devise (international) : pilote les prix affiches via /billing/plans -->
+        <div style="margin-bottom:2rem">
+          <label for="ccy-select" style="font-size:.85rem;color:var(--neutral-500);margin-right:.5rem">{ccy_label}</label>
+          <select id="ccy-select" aria-label="{ccy_label}" style="padding:.4rem .9rem;border:1.5px solid var(--neutral-200);border-radius:99px;font-size:.9rem;background:#fff;cursor:pointer">
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
       </div>
     </section>
 
@@ -1205,6 +1221,65 @@ def pricing_page(lang):
       document.getElementById('toggle-monthly').style.borderRadius = '99px';
       document.getElementById('toggle-yearly').style.borderRadius = '99px';
     }}
+
+    // ── Prix dynamiques : source UNIQUE = price book DB via /billing/plans ──
+    // AUCUN prix code en dur dans le site : les montants sont des placeholders (—)
+    // remplis ici par l'API. Une modif de prix cote back-office est donc refletee
+    // immediatement (sans regeneration), pour toutes les devises. Si l'API est
+    // indisponible, le placeholder reste affiche (jamais un faux prix).
+    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.jgjpaystock.com';
+    const LANG = '{lang}';
+    const UNIT = {{ monthly: '{unit_mo}', yearly: '{unit_yr}' }};
+    let CCY = localStorage.getItem('jgj_ccy') || 'EUR';
+
+    function fmtAmount(n) {{
+      try {{ return new Intl.NumberFormat(LANG).format(n); }} catch (e) {{ return String(n); }}
+    }}
+    function fillPrices(data) {{
+      const cur = (data.currency || CCY).toUpperCase();
+      const byCode = {{}};
+      (data.plans || []).forEach(p => {{ byCode[p.code] = p; }});
+      document.querySelectorAll('[data-plan]').forEach(el => {{
+        const p = byCode[el.getAttribute('data-plan')];
+        const amtEl = el.querySelector('.js-price');
+        if (!p || !amtEl) return; // trial / sans prix -> inchange
+        const amount = el.getAttribute('data-period') === 'yearly' ? p.price_yearly : p.price_monthly;
+        if (amount == null) return;
+        amtEl.textContent = fmtAmount(amount);
+        const unitEl = el.querySelector('.js-unit');
+        if (unitEl) unitEl.textContent = cur + ' ' + UNIT[el.getAttribute('data-period')];
+      }});
+    }}
+    function fillCurrencySelector(data) {{
+      const sel = document.getElementById('ccy-select');
+      const list = (data.available_currencies || []).map(c => c.code);
+      if (!sel || !list.length) return;
+      const cur = (data.currency || CCY).toUpperCase();
+      sel.innerHTML = '';
+      list.forEach(code => {{
+        const o = document.createElement('option');
+        o.value = code; o.textContent = code;
+        if (code === cur) o.selected = true;
+        sel.appendChild(o);
+      }});
+    }}
+    async function loadPrices() {{
+      try {{
+        const r = await fetch(BILLING_API + '/billing/plans?currency=' + encodeURIComponent(CCY), {{ headers: {{ 'Accept-Language': LANG }} }});
+        if (!r.ok) return; // fallback = prix EUR bakes
+        const data = await r.json();
+        fillCurrencySelector(data);
+        fillPrices(data);
+        CCY = (data.currency || CCY).toUpperCase();
+        localStorage.setItem('jgj_ccy', CCY);
+      }} catch (e) {{ /* API indisponible -> on garde le fallback */ }}
+    }}
+    document.addEventListener('DOMContentLoaded', function () {{
+      const sel = document.getElementById('ccy-select');
+      if (sel) sel.addEventListener('change', function () {{ CCY = this.value; loadPrices(); }});
+      loadPrices();
+    }});
+
     // Preselect plan from URL param
     const plan = new URLSearchParams(window.location.search).get('plan');
     if (plan) {{

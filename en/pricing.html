@@ -76,6 +76,14 @@
             Yearly <span style="background:#dc2626;color:#fff;font-size:.65rem;padding:2px 6px;border-radius:99px;margin-left:.25rem">Save 2 months!</span>
           </button>
         </div>
+
+        <!-- Selecteur de devise (international) : pilote les prix affiches via /billing/plans -->
+        <div style="margin-bottom:2rem">
+          <label for="ccy-select" style="font-size:.85rem;color:var(--neutral-500);margin-right:.5rem">Currency:</label>
+          <select id="ccy-select" aria-label="Currency:" style="padding:.4rem .9rem;border:1.5px solid var(--neutral-200);border-radius:99px;font-size:.9rem;background:#fff;cursor:pointer">
+            <option value="EUR">EUR</option>
+          </select>
+        </div>
       </div>
     </section>
 
@@ -87,8 +95,8 @@
           <div class="price-card" style="position:relative;border:1.5px solid var(--neutral-200);background:#fff;border-radius:16px;padding:2rem;display:flex;flex-direction:column">
             
             <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 1rem">Trial</h3>
-            <div class="price-monthly" style="margin-bottom:1rem"><span style="font-size:2.5rem;font-weight:800">14 days free</span></div>
-            <div class="price-yearly" style="margin-bottom:1rem;display:none"><span style="font-size:2.5rem;font-weight:800">14 days free</span></div>
+            <div class="price-monthly" data-plan="trial" data-period="monthly" style="margin-bottom:1rem"><span style="font-size:2.5rem;font-weight:800">14 days free</span></div>
+            <div class="price-yearly" data-plan="trial" data-period="yearly" style="margin-bottom:1rem;display:none"><span style="font-size:2.5rem;font-weight:800">14 days free</span></div>
             <ul style="list-style:none;padding:0;margin:0 0 1.5rem;flex:1;display:flex;flex-direction:column;gap:.5rem">
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>5 users</li>
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1,000 products</li>
@@ -99,8 +107,8 @@
           <div class="price-card" style="position:relative;border:1.5px solid var(--neutral-200);background:#fff;border-radius:16px;padding:2rem;display:flex;flex-direction:column">
             
             <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 1rem">Basic</h3>
-            <div class="price-monthly" style="margin-bottom:1rem"><span style="font-size:2.5rem;font-weight:800">29</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/mo</span></div>
-            <div class="price-yearly" style="margin-bottom:1rem;display:none"><span style="font-size:2.5rem;font-weight:800">242</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/yr</span></div>
+            <div class="price-monthly" data-plan="basic" data-period="monthly" style="margin-bottom:1rem"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/mo</span></div>
+            <div class="price-yearly" data-plan="basic" data-period="yearly" style="margin-bottom:1rem;display:none"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/yr</span></div>
             <ul style="list-style:none;padding:0;margin:0 0 1.5rem;flex:1;display:flex;flex-direction:column;gap:.5rem">
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>3 users</li>
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>1,000 products</li>
@@ -111,8 +119,8 @@
           <div class="price-card" style="position:relative;border:2px solid #4361ee;background:#f8f9ff;border-radius:16px;padding:2rem;display:flex;flex-direction:column">
             <span style="position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:#4361ee;color:#fff;font-size:.7rem;font-weight:700;padding:3px 12px;border-radius:99px;white-space:nowrap">POPULAR</span>
             <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 1rem">Professional</h3>
-            <div class="price-monthly" style="margin-bottom:1rem"><span style="font-size:2.5rem;font-weight:800">79</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/mo</span></div>
-            <div class="price-yearly" style="margin-bottom:1rem;display:none"><span style="font-size:2.5rem;font-weight:800">658</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/yr</span></div>
+            <div class="price-monthly" data-plan="professional" data-period="monthly" style="margin-bottom:1rem"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/mo</span></div>
+            <div class="price-yearly" data-plan="professional" data-period="yearly" style="margin-bottom:1rem;display:none"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/yr</span></div>
             <ul style="list-style:none;padding:0;margin:0 0 1.5rem;flex:1;display:flex;flex-direction:column;gap:.5rem">
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10 users</li>
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>10,000 products</li>
@@ -123,8 +131,8 @@
           <div class="price-card" style="position:relative;border:1.5px solid var(--neutral-200);background:#fff;border-radius:16px;padding:2rem;display:flex;flex-direction:column">
             
             <h3 style="font-size:1.1rem;font-weight:700;margin:0 0 1rem">Enterprise</h3>
-            <div class="price-monthly" style="margin-bottom:1rem"><span style="font-size:2.5rem;font-weight:800">199</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/mo</span></div>
-            <div class="price-yearly" style="margin-bottom:1rem;display:none"><span style="font-size:2.5rem;font-weight:800">1,658</span> <span style="font-size:.9rem;color:var(--neutral-500)">EUR/yr</span></div>
+            <div class="price-monthly" data-plan="enterprise" data-period="monthly" style="margin-bottom:1rem"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/mo</span></div>
+            <div class="price-yearly" data-plan="enterprise" data-period="yearly" style="margin-bottom:1rem;display:none"><span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">/yr</span></div>
             <ul style="list-style:none;padding:0;margin:0 0 1.5rem;flex:1;display:flex;flex-direction:column;gap:.5rem">
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited</li>
               <li style="display:flex;gap:.5rem;align-items:center;font-size:.9rem"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>Unlimited</li>
@@ -187,6 +195,65 @@
       document.getElementById('toggle-monthly').style.borderRadius = '99px';
       document.getElementById('toggle-yearly').style.borderRadius = '99px';
     }
+
+    // ── Prix dynamiques : source UNIQUE = price book DB via /billing/plans ──
+    // AUCUN prix code en dur dans le site : les montants sont des placeholders (—)
+    // remplis ici par l'API. Une modif de prix cote back-office est donc refletee
+    // immediatement (sans regeneration), pour toutes les devises. Si l'API est
+    // indisponible, le placeholder reste affiche (jamais un faux prix).
+    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.jgjpaystock.com';
+    const LANG = 'en';
+    const UNIT = { monthly: '/mo', yearly: '/yr' };
+    let CCY = localStorage.getItem('jgj_ccy') || 'EUR';
+
+    function fmtAmount(n) {
+      try { return new Intl.NumberFormat(LANG).format(n); } catch (e) { return String(n); }
+    }
+    function fillPrices(data) {
+      const cur = (data.currency || CCY).toUpperCase();
+      const byCode = {};
+      (data.plans || []).forEach(p => { byCode[p.code] = p; });
+      document.querySelectorAll('[data-plan]').forEach(el => {
+        const p = byCode[el.getAttribute('data-plan')];
+        const amtEl = el.querySelector('.js-price');
+        if (!p || !amtEl) return; // trial / sans prix -> inchange
+        const amount = el.getAttribute('data-period') === 'yearly' ? p.price_yearly : p.price_monthly;
+        if (amount == null) return;
+        amtEl.textContent = fmtAmount(amount);
+        const unitEl = el.querySelector('.js-unit');
+        if (unitEl) unitEl.textContent = cur + ' ' + UNIT[el.getAttribute('data-period')];
+      });
+    }
+    function fillCurrencySelector(data) {
+      const sel = document.getElementById('ccy-select');
+      const list = (data.available_currencies || []).map(c => c.code);
+      if (!sel || !list.length) return;
+      const cur = (data.currency || CCY).toUpperCase();
+      sel.innerHTML = '';
+      list.forEach(code => {
+        const o = document.createElement('option');
+        o.value = code; o.textContent = code;
+        if (code === cur) o.selected = true;
+        sel.appendChild(o);
+      });
+    }
+    async function loadPrices() {
+      try {
+        const r = await fetch(BILLING_API + '/billing/plans?currency=' + encodeURIComponent(CCY), { headers: { 'Accept-Language': LANG } });
+        if (!r.ok) return; // fallback = prix EUR bakes
+        const data = await r.json();
+        fillCurrencySelector(data);
+        fillPrices(data);
+        CCY = (data.currency || CCY).toUpperCase();
+        localStorage.setItem('jgj_ccy', CCY);
+      } catch (e) { /* API indisponible -> on garde le fallback */ }
+    }
+    document.addEventListener('DOMContentLoaded', function () {
+      const sel = document.getElementById('ccy-select');
+      if (sel) sel.addEventListener('change', function () { CCY = this.value; loadPrices(); });
+      loadPrices();
+    });
+
     // Preselect plan from URL param
     const plan = new URLSearchParams(window.location.search).get('plan');
     if (plan) {
