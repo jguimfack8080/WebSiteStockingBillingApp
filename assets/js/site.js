@@ -1,5 +1,5 @@
 /* ==========================================================================
-   JGJPayStock - Site vitrine : interactions (vanilla, sans dependance)
+   BizCora - Site vitrine : interactions (vanilla, sans dependance)
    - Menu mobile
    - Header au scroll
    - Reveal au scroll (IntersectionObserver)
