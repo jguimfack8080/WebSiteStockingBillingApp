@@ -126,21 +126,15 @@
             </div>
             <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1rem">
               <div>
-                <label class="form-label" for="country">Country *</label>
-                <select class="form-input" id="country" name="country" required>
-                  <option value="">Select a country</option>
-                  <option value="France">France</option>
-                  <option value="Deutschland">Deutschland</option>
-                  <option value="Belgique">Belgique / België</option>
-                  <option value="Suisse">Suisse / Schweiz</option>
-                  <option value="Luxembourg">Luxembourg</option>
-                  <option value="Canada">Canada</option>
-                  <option value="Maroc">Maroc</option>
-                  <option value="Senegal">Sénégal</option>
-                  <option value="Cote d Ivoire">Côte d'Ivoire</option>
-                  <option value="Cameroun">Cameroun</option>
-                  <option value="Other">Autre / Other</option>
-                </select>
+                <label class="form-label" for="country_search">Country *</label>
+                <div class="country-combo">
+                  <input type="text" class="form-input country-combo__input" id="country_search"
+                         autocomplete="off" role="combobox" aria-expanded="false"
+                         aria-controls="country_listbox" aria-autocomplete="list"
+                         placeholder="Search for a country..." />
+                  <input type="hidden" id="country" name="country" />
+                  <ul class="country-combo__list" id="country_listbox" role="listbox" hidden></ul>
+                </div>
                 <span class="form-error" data-for="country"></span>
               </div>
               <div>
@@ -245,9 +239,11 @@
   </style>
 
   <script src="/config.js"></script>
+  <script src="/assets/js/countries.js"></script>
   <script>
     const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.jgjpaystock.com';
     const LANG = 'en';
+    initCountryCombobox({ lang: LANG, hiddenId: 'country', searchId: 'country_search', listId: 'country_listbox', noResults: 'No country found' });
 
     (function() {
       const dob = document.getElementById('date_of_birth');
