@@ -34,7 +34,7 @@ def head(lang, title, desc, canonical, hreflang_fr, hreflang_en, hreflang_de, og
   <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="JGJPayStock" />
+  <meta property="og:site_name" content="BizCora" />
   <meta property="og:locale" content="{lang_labels[lang]}" />
   <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{og_title}" />
@@ -79,9 +79,9 @@ def header_nav(lang, active_page):
     return f"""
   <header class="site-header">
     <div class="container">
-      <a href="./" class="brand" aria-label="JGJPayStock, accueil">
+      <a href="./" class="brand" aria-label="BizCora, accueil">
         <img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" />
-        <span>JGJ<b>PayStock</b></span>
+        <span>Biz<b>Cora</b></span>
       </a>
       <nav class="nav" id="primary-nav" aria-label="Navigation principale">{nav_items}
       </nav>
@@ -123,7 +123,7 @@ def footer(lang):
     <div class="container">
       <div class="footer-grid">
         <div>
-          <span class="footer-brand"><img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" /> JGJPayStock</span>
+          <span class="footer-brand"><img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" /> BizCora</span>
           <p>La solution tout-en-un de gestion de stock, caisse, facturation, achats et comptabilite pour les commerces et les PME.</p>
         </div>
         <div class="footer-col">
@@ -153,7 +153,7 @@ def footer(lang):
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> JGJPayStock. {t['rights']}</p>
+        <p>&copy; <span data-year>2026</span> BizCora. {t['rights']}</p>
         <div class="links">
           <a href="faq">{t['faq']}</a>
           <a href="contact">{t['contact_link']}</a>
@@ -175,15 +175,15 @@ def footer(lang):
 def download_page(lang):
     t = {
         "fr": {
-            "title": "Télécharger JGJPayStock - Windows, macOS, Linux & Web",
-            "desc": "Téléchargez JGJPayStock sur Windows, macOS ou Linux. Ou accédez directement à la web app sans installation.",
-            "h1": "Téléchargez <span class=\"grad\">JGJPayStock</span>",
+            "title": "Télécharger BizCora - Windows, macOS, Linux & Web",
+            "desc": "Téléchargez BizCora sur Windows, macOS ou Linux. Ou accédez directement à la web app sans installation.",
+            "h1": "Téléchargez <span class=\"grad\">BizCora</span>",
             "sub": "Disponible sur toutes les plateformes. Choisissez votre système d'exploitation ou accédez directement à la version web.",
             "win": "Télécharger pour Windows", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Télécharger pour macOS", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Télécharger pour Linux", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Ouvrir la Web App", "web_sub": "Aucune installation requise",
-            "web_desc": "Accédez à JGJPayStock depuis n'importe quel navigateur : Chrome, Firefox, Safari, Edge. Toutes les fonctionnalités disponibles.",
+            "web_desc": "Accédez à BizCora depuis n'importe quel navigateur : Chrome, Firefox, Safari, Edge. Toutes les fonctionnalités disponibles.",
             "mobile_title": "Application mobile", "mobile_soon": "Bientôt disponible",
             "mobile_sub": "iOS et Android - en cours de développement",
             "cta_title": "Pas encore de compte ?",
@@ -192,15 +192,15 @@ def download_page(lang):
             "detected": "Recommandé pour vous",
         },
         "en": {
-            "title": "Download JGJPayStock - Windows, macOS, Linux & Web",
-            "desc": "Download JGJPayStock on Windows, macOS or Linux. Or access the web app directly with no installation.",
-            "h1": "Download <span class=\"grad\">JGJPayStock</span>",
+            "title": "Download BizCora - Windows, macOS, Linux & Web",
+            "desc": "Download BizCora on Windows, macOS or Linux. Or access the web app directly with no installation.",
+            "h1": "Download <span class=\"grad\">BizCora</span>",
             "sub": "Available on all platforms. Choose your operating system or access the web version directly.",
             "win": "Download for Windows", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Download for macOS", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Download for Linux", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Open Web App", "web_sub": "No installation required",
-            "web_desc": "Access JGJPayStock from any browser: Chrome, Firefox, Safari, Edge. All features available.",
+            "web_desc": "Access BizCora from any browser: Chrome, Firefox, Safari, Edge. All features available.",
             "mobile_title": "Mobile app", "mobile_soon": "Coming soon",
             "mobile_sub": "iOS and Android - under development",
             "cta_title": "No account yet?",
@@ -209,15 +209,15 @@ def download_page(lang):
             "detected": "Recommended for you",
         },
         "de": {
-            "title": "JGJPayStock herunterladen - Windows, macOS, Linux & Web",
-            "desc": "Laden Sie JGJPayStock für Windows, macOS oder Linux herunter. Oder nutzen Sie die Web-App ohne Installation.",
-            "h1": "JGJPayStock <span class=\"grad\">herunterladen</span>",
+            "title": "BizCora herunterladen - Windows, macOS, Linux & Web",
+            "desc": "Laden Sie BizCora für Windows, macOS oder Linux herunter. Oder nutzen Sie die Web-App ohne Installation.",
+            "h1": "BizCora <span class=\"grad\">herunterladen</span>",
             "sub": "Verfügbar auf allen Plattformen. Wählen Sie Ihr Betriebssystem oder nutzen Sie direkt die Webversion.",
             "win": "Für Windows herunterladen", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Für macOS herunterladen", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Für Linux herunterladen", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Web-App öffnen", "web_sub": "Keine Installation erforderlich",
-            "web_desc": "Greifen Sie von jedem Browser auf JGJPayStock zu: Chrome, Firefox, Safari, Edge. Alle Funktionen verfügbar.",
+            "web_desc": "Greifen Sie von jedem Browser auf BizCora zu: Chrome, Firefox, Safari, Edge. Alle Funktionen verfügbar.",
             "mobile_title": "Mobile App", "mobile_soon": "Demnächst verfügbar",
             "mobile_sub": "iOS und Android - in Entwicklung",
             "cta_title": "Noch kein Konto?",
@@ -242,19 +242,19 @@ def download_page(lang):
 
         <!-- OS Download grid -->
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2rem">
-          <a href="https://github.com/jguimfack8080/JGJPayStock-releases/releases/latest/download/JGJPayStock-Setup.exe"
+          <a href="https://github.com/jguimfack8080/BizCora-releases/releases/latest/download/BizCora-Setup.exe"
              class="btn btn--ghost btn--lg" data-os="windows" style="flex-direction:column;padding:1.5rem;gap:.5rem;height:auto">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M3 5.5L11.5 4v7.5H3zm0 13L11.5 20v-7.5H3zM12.5 4L21 3v8.5h-8.5zm0 16L21 21v-8.5h-8.5z"/></svg>
             <span style="font-weight:700">{t['win']}</span>
             <span style="font-size:.8rem;opacity:.7">{t['win_sub']}</span>
           </a>
-          <a href="https://github.com/jguimfack8080/JGJPayStock-releases/releases/latest/download/JGJPayStock.dmg"
+          <a href="https://github.com/jguimfack8080/BizCora-releases/releases/latest/download/BizCora.dmg"
              class="btn btn--ghost btn--lg" data-os="mac" style="flex-direction:column;padding:1.5rem;gap:.5rem;height:auto">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98l-.09.06c-.22.15-2.19 1.28-2.17 3.81.03 3.02 2.65 4.03 2.68 4.04l-.06.27zM13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
             <span style="font-weight:700">{t['mac']}</span>
             <span style="font-size:.8rem;opacity:.7">{t['mac_sub']}</span>
           </a>
-          <a href="https://github.com/jguimfack8080/JGJPayStock-releases/releases/latest/download/JGJPayStock.AppImage"
+          <a href="https://github.com/jguimfack8080/BizCora-releases/releases/latest/download/BizCora.AppImage"
              class="btn btn--ghost btn--lg" data-os="linux" style="flex-direction:column;padding:1.5rem;gap:.5rem;height:auto">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
             <span style="font-weight:700">{t['linux']}</span>
@@ -317,8 +317,8 @@ def download_page(lang):
 def register_page(lang):
     t = {
         "fr": {
-            "title": "Inscription - Essai gratuit 14 jours - JGJPayStock",
-            "desc": "Créez votre compte JGJPayStock gratuitement. Essai 14 jours sans carte bancaire. Gestion de stock, caisse et facturation.",
+            "title": "Inscription - Essai gratuit 14 jours - BizCora",
+            "desc": "Créez votre compte BizCora gratuitement. Essai 14 jours sans carte bancaire. Gestion de stock, caisse et facturation.",
             "h1": "Commencez votre essai <span class=\"grad\">gratuit</span>",
             "sub": "14 jours gratuits, sans carte bancaire, sans engagement.",
             "step1": "Informations personnelles", "step2": "Votre entreprise", "step3": "Votre compte",
@@ -352,8 +352,8 @@ def register_page(lang):
             "of": "sur",
         },
         "en": {
-            "title": "Sign Up - 14-Day Free Trial - JGJPayStock",
-            "desc": "Create your JGJPayStock account for free. 14-day trial, no credit card required. Stock management, POS and invoicing.",
+            "title": "Sign Up - 14-Day Free Trial - BizCora",
+            "desc": "Create your BizCora account for free. 14-day trial, no credit card required. Stock management, POS and invoicing.",
             "h1": "Start your <span class=\"grad\">free trial</span>",
             "sub": "14 days free, no credit card, no commitment.",
             "step1": "Personal information", "step2": "Your company", "step3": "Your account",
@@ -387,8 +387,8 @@ def register_page(lang):
             "of": "of",
         },
         "de": {
-            "title": "Registrieren - 14 Tage kostenlos - JGJPayStock",
-            "desc": "Erstellen Sie Ihr JGJPayStock-Konto kostenlos. 14 Tage testen, keine Kreditkarte erforderlich. Lagerverwaltung, Kasse und Rechnungsstellung.",
+            "title": "Registrieren - 14 Tage kostenlos - BizCora",
+            "desc": "Erstellen Sie Ihr BizCora-Konto kostenlos. 14 Tage testen, keine Kreditkarte erforderlich. Lagerverwaltung, Kasse und Rechnungsstellung.",
             "h1": "Starten Sie Ihren <span class=\"grad\">kostenlosen Test</span>",
             "sub": "14 Tage kostenlos, keine Kreditkarte, keine Bindung.",
             "step1": "Persönliche Daten", "step2": "Ihr Unternehmen", "step3": "Ihr Konto",
@@ -791,12 +791,12 @@ def register_page(lang):
 def verify_page(lang):
     t = {
         "fr": {
-            "title": "Vérification de votre email - JGJPayStock",
-            "desc": "Vérification de votre adresse email pour activer votre compte JGJPayStock.",
+            "title": "Vérification de votre email - BizCora",
+            "desc": "Vérification de votre adresse email pour activer votre compte BizCora.",
             "h1": "Vérification de votre email",
             "loading": "Vérification en cours...",
             "success_title": "Compte activé !",
-            "success_body": "Votre compte JGJPayStock est prêt. Téléchargez l'application ou accédez à la version web.",
+            "success_body": "Votre compte BizCora est prêt. Téléchargez l'application ou accédez à la version web.",
             "success_creds": "Vos identifiants ont été envoyés par email.",
             "expired_title": "Lien expiré",
             "expired_body": "Ce lien de vérification a expiré (valable 24h). Saisissez votre email pour recevoir un nouveau lien.",
@@ -814,12 +814,12 @@ def verify_page(lang):
             "open_app": "Ouvrir l'application",
         },
         "en": {
-            "title": "Email Verification - JGJPayStock",
-            "desc": "Email address verification to activate your JGJPayStock account.",
+            "title": "Email Verification - BizCora",
+            "desc": "Email address verification to activate your BizCora account.",
             "h1": "Email verification",
             "loading": "Verifying...",
             "success_title": "Account activated!",
-            "success_body": "Your JGJPayStock account is ready. Download the app or access the web version.",
+            "success_body": "Your BizCora account is ready. Download the app or access the web version.",
             "success_creds": "Your credentials have been sent by email.",
             "expired_title": "Link expired",
             "expired_body": "This verification link has expired (valid 24h). Enter your email to receive a new link.",
@@ -837,12 +837,12 @@ def verify_page(lang):
             "open_app": "Open the app",
         },
         "de": {
-            "title": "E-Mail-Verifizierung - JGJPayStock",
-            "desc": "E-Mail-Adressverifizierung zur Aktivierung Ihres JGJPayStock-Kontos.",
+            "title": "E-Mail-Verifizierung - BizCora",
+            "desc": "E-Mail-Adressverifizierung zur Aktivierung Ihres BizCora-Kontos.",
             "h1": "E-Mail-Verifizierung",
             "loading": "Wird überprüft...",
             "success_title": "Konto aktiviert!",
-            "success_body": "Ihr JGJPayStock-Konto ist bereit. Laden Sie die App herunter oder nutzen Sie die Webversion.",
+            "success_body": "Ihr BizCora-Konto ist bereit. Laden Sie die App herunter oder nutzen Sie die Webversion.",
             "success_creds": "Ihre Zugangsdaten wurden per E-Mail gesendet.",
             "expired_title": "Link abgelaufen",
             "expired_body": "Dieser Verifizierungslink ist abgelaufen (24h gültig). Geben Sie Ihre E-Mail ein, um einen neuen Link zu erhalten.",
@@ -1004,8 +1004,8 @@ def verify_page(lang):
 def pricing_page(lang):
     t = {
         "fr": {
-            "title": "Tarifs JGJPayStock - Plans Starter, Basic, Pro, Enterprise",
-            "desc": "Choisissez le plan JGJPayStock adapté à votre commerce. Essai gratuit 14 jours, sans carte bancaire.",
+            "title": "Tarifs BizCora - Plans Starter, Basic, Pro, Enterprise",
+            "desc": "Choisissez le plan BizCora adapté à votre commerce. Essai gratuit 14 jours, sans carte bancaire.",
             "h1": "Des tarifs <span class=\"grad\">simples et transparents</span>",
             "sub": "Essai gratuit 14 jours - Aucune carte bancaire - Annulez quand vous voulez",
             "monthly": "Mensuel", "yearly": "Annuel",
@@ -1036,8 +1036,8 @@ def pricing_page(lang):
             ],
         },
         "en": {
-            "title": "JGJPayStock Pricing - Starter, Basic, Pro, Enterprise Plans",
-            "desc": "Choose the JGJPayStock plan for your business. 14-day free trial, no credit card required.",
+            "title": "BizCora Pricing - Starter, Basic, Pro, Enterprise Plans",
+            "desc": "Choose the BizCora plan for your business. 14-day free trial, no credit card required.",
             "h1": "Simple and <span class=\"grad\">transparent pricing</span>",
             "sub": "14-day free trial - No credit card - Cancel anytime",
             "monthly": "Monthly", "yearly": "Yearly",
@@ -1068,8 +1068,8 @@ def pricing_page(lang):
             ],
         },
         "de": {
-            "title": "JGJPayStock Preise - Starter, Basic, Pro, Enterprise Pläne",
-            "desc": "Wählen Sie den JGJPayStock-Plan für Ihr Unternehmen. 14 Tage kostenlos testen, keine Kreditkarte.",
+            "title": "BizCora Preise - Starter, Basic, Pro, Enterprise Pläne",
+            "desc": "Wählen Sie den BizCora-Plan für Ihr Unternehmen. 14 Tage kostenlos testen, keine Kreditkarte.",
             "h1": "Einfache und <span class=\"grad\">transparente Preise</span>",
             "sub": "14 Tage kostenlos testen - Keine Kreditkarte - Jederzeit kündbar",
             "monthly": "Monatlich", "yearly": "Jährlich",
