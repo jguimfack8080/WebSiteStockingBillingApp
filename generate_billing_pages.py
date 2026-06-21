@@ -1004,8 +1004,8 @@ def verify_page(lang):
 def pricing_page(lang):
     t = {
         "fr": {
-            "title": "Tarifs BizCora - Essai gratuit, Basic, Pro & Enterprise",
-            "desc": "Choisissez le plan BizCora adapté à votre commerce. Essai gratuit 14 jours, sans carte bancaire.",
+            "title": "Tarifs BizCora - logiciel de caisse, stock et facturation",
+            "desc": "Tarifs de BizCora, logiciel tout-en-un de caisse, gestion de stock et facturation. Essai gratuit 14 jours, sans carte bancaire. Plans mensuels ou annuels.",
             "h1": "Des tarifs <span class=\"grad\">simples et transparents</span>",
             "sub": "Essai gratuit 14 jours - Aucune carte bancaire - Annulez quand vous voulez",
             "monthly": "Mensuel", "yearly": "Annuel",
@@ -1036,8 +1036,8 @@ def pricing_page(lang):
             ],
         },
         "en": {
-            "title": "BizCora Pricing - Free trial, Basic, Pro & Enterprise",
-            "desc": "Choose the BizCora plan for your business. 14-day free trial, no credit card required.",
+            "title": "BizCora pricing - POS, inventory and invoicing software",
+            "desc": "BizCora pricing for the all-in-one POS, inventory and invoicing software. 14-day free trial, no credit card. Simple monthly or yearly plans.",
             "h1": "Simple and <span class=\"grad\">transparent pricing</span>",
             "sub": "14-day free trial - No credit card - Cancel anytime",
             "monthly": "Monthly", "yearly": "Yearly",
@@ -1068,8 +1068,8 @@ def pricing_page(lang):
             ],
         },
         "de": {
-            "title": "BizCora Preise - Kostenlose Testphase, Basic, Pro & Enterprise",
-            "desc": "Wählen Sie den BizCora-Plan für Ihr Unternehmen. 14 Tage kostenlos testen, keine Kreditkarte.",
+            "title": "BizCora Preise - Kassensystem und Warenwirtschaft",
+            "desc": "Preise von BizCora, der All-in-one-Software für Kasse, Warenwirtschaft und Rechnungen. 14 Tage kostenlos, keine Kreditkarte. Monatlich oder jährlich.",
             "h1": "Einfache und <span class=\"grad\">transparente Preise</span>",
             "sub": "14 Tage kostenlos testen - Keine Kreditkarte - Jederzeit kündbar",
             "monthly": "Monatlich", "yearly": "Jährlich",
