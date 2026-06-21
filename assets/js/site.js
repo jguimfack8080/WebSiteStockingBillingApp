@@ -1,5 +1,5 @@
 /* ==========================================================================
-   BizCora - Site vitrine : interactions (vanilla, sans dependance)
+   BizCoRa - Site vitrine : interactions (vanilla, sans dependance)
    - Menu mobile
    - Header au scroll
    - Reveal au scroll (IntersectionObserver)

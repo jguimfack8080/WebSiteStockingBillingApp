@@ -1,6 +1,6 @@
-# Site vitrine BizCora
+# Site vitrine BizCoRa
 
-Site web officiel de **BizCora**, la solution tout-en-un de gestion de
+Site web officiel de **BizCoRa**, la solution tout-en-un de gestion de
 stock, de caisse (point de vente) et de facturation pour les commerces et les
 PME. Ce site a pour unique objectif de **presenter et vendre l'application** :
 mettre en valeur toutes ses fonctionnalites et repondre directement aux
@@ -9,7 +9,7 @@ questions des clients.
 Cette version est une **reconstruction complete a partir de zero**. L'ancien
 site (oriente agence / portfolio, avec des dependances externes lourdes) a ete
 remplace par un site vitrine produit, moderne, rapide et entierement dedie a
-BizCora.
+BizCoRa.
 
 ---
 
