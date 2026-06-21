@@ -96,11 +96,40 @@ WebSiteStockingBillingApp/
         ├── favicon-32.png        # Favicon
         ├── apple-touch-icon.png  # Icone iOS (180x180)
         ├── icon-192.png          # Icone (logo schema.org / PWA)
-        ├── screenhot_app.webp    # Capture de l'application (WebP, 1280px)
-        ├── screenhot_app-1280.png# Capture (repli PNG pour navigateurs sans WebP)
+        ├── <ecran>.svg           # Vignette produit (francais) - voir Generate.Thumbnail/
+        ├── <ecran>.en.svg        # Vignette produit (anglais)
+        ├── <ecran>.de.svg        # Vignette produit (allemand)
+        ├── screenhot_app-1280.png# Image OG/Twitter raster (regeneree depuis le SVG dashboard)
         ├── jordanjeuna.webp      # Photo du createur (WebP, 640px)
         └── jordanjeuna-640.jpg   # Photo du createur (repli JPEG)
+
+# Generateur des vignettes (thumbnails) produit :
+Generate.Thumbnail/
+├── generate_thumbnails.py   # Genere les 33 SVG (11 ecrans x 3 langues) dans assets/images/
+├── render_preview.py        # Rendu PNG de QA + regeneration de l'image OG raster
+└── README.md                # Comment regenerer / personnaliser
 ```
+
+### Vignettes produit (thumbnails)
+
+Les vignettes qui presentent l'application (dashboard, gestion de stock, caisse,
+facturation, devis, envoi de documents, fidelite, comptabilite, achats,
+performance des caissiers, tableau de bord des transactions) sont des **SVG
+vectoriels** generes, recrees fidelement a partir des ecrans reels de
+l'application et de son Design System. Elles existent dans les **3 langues**
+(`<ecran>.svg` fr, `<ecran>.en.svg` en, `<ecran>.de.svg` de), avec formatage des
+montants et des dates par locale.
+
+Pour modifier le contenu ou regenerer, voir **`Generate.Thumbnail/README.md`** :
+
+```bash
+cd WebSiteStockingBillingApp/Generate.Thumbnail
+python generate_thumbnails.py     # regenere les 33 SVG
+python render_preview.py og       # regenere l'image OG raster (apres modif du dashboard)
+```
+
+> SVG en production (nettete infinie, poids minime, ideal SEO/CLS). L'image
+> `og:image` reste un PNG raster, car les reseaux sociaux n'affichent pas le SVG.
 
 ---
 
@@ -175,13 +204,29 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
 |---|---|
 | Couleurs et typographie | `assets/css/theme.css` (variables `--brand-*`, `--font-*`) |
 | Coordonnees de contact | Pied de page de chaque langue (`/fr/*.html`, `/en/*.html`, `/de/*.html`) et pages `contact.html` |
-| Capture d'ecran | Regenerer `assets/images/screenhot_app.webp` et `screenhot_app-1280.png` (memes dimensions 1280x676) |
+| Vignettes produit (thumbnails) | Editer puis lancer `Generate.Thumbnail/generate_thumbnails.py` (voir son README). Image OG : `Generate.Thumbnail/render_preview.py og` |
 | Logo et favicons | Regenerer `logo-96.png`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png` depuis le logo source |
 | Textes et offres | Directement dans les fichiers `.html` correspondants |
 
 ---
 
 ## Notes de version
+
+**Vignettes produit en SVG vectoriel, multilingues et fideles a l'app**
+
+- Remplacement des anciennes captures raster (PNG/WebP), partiellement dupliquees
+  et a l'ancienne marque, par **11 vignettes SVG par langue** (33 au total)
+  recreees fidelement a partir des ecrans reels et du Design System de
+  l'application : dashboard, transactions, stock (avec illustrations produit),
+  caisse, factures, devis, envoi par e-mail, fidelite, comptabilite, achats,
+  performance des caissiers.
+- Generateur unique et documente dans **`Generate.Thumbnail/`** (un seul fichier
+  source pour une identite visuelle 100% coherente), avec formatage des montants
+  et dates par locale (fr/en/de).
+- Pages `index`, `features` et `about` (fr/en/de) referencent les SVG via `<img>`
+  (plus de `<picture>`/WebP) ; preload du hero en SVG ; image `og:image`/`twitter`
+  conservee en PNG raster (regeneree depuis le SVG dashboard).
+- Anciennes vignettes raster orphelines supprimees.
 
 **Plan selection au formulaire d'inscription (register.html fr/en/de)**
 
