@@ -274,7 +274,7 @@ def download_page(lang):
         <!-- Mobile coming soon -->
         <div style="background:var(--neutral-50);border:1px solid var(--neutral-100);border-radius:12px;padding:1.5rem;margin-bottom:2.5rem;text-align:center">
           <p style="font-weight:600;margin:0 0 .25rem">{t['mobile_title']}</p>
-          <p style="color:var(--neutral-500);margin:0;font-size:.9rem">{t['mobile_soon']} &mdash; {t['mobile_sub']}</p>
+          <p style="color:var(--neutral-500);margin:0;font-size:.9rem">{t['mobile_soon']} - {t['mobile_sub']}</p>
         </div>
 
         <!-- CTA register -->
@@ -1004,7 +1004,7 @@ def verify_page(lang):
 def pricing_page(lang):
     t = {
         "fr": {
-            "title": "Tarifs BizCora - Plans Starter, Basic, Pro, Enterprise",
+            "title": "Tarifs BizCora - Essai gratuit, Basic, Pro & Enterprise",
             "desc": "Choisissez le plan BizCora adapté à votre commerce. Essai gratuit 14 jours, sans carte bancaire.",
             "h1": "Des tarifs <span class=\"grad\">simples et transparents</span>",
             "sub": "Essai gratuit 14 jours - Aucune carte bancaire - Annulez quand vous voulez",
@@ -1036,7 +1036,7 @@ def pricing_page(lang):
             ],
         },
         "en": {
-            "title": "BizCora Pricing - Starter, Basic, Pro, Enterprise Plans",
+            "title": "BizCora Pricing - Free trial, Basic, Pro & Enterprise",
             "desc": "Choose the BizCora plan for your business. 14-day free trial, no credit card required.",
             "h1": "Simple and <span class=\"grad\">transparent pricing</span>",
             "sub": "14-day free trial - No credit card - Cancel anytime",
@@ -1068,7 +1068,7 @@ def pricing_page(lang):
             ],
         },
         "de": {
-            "title": "BizCora Preise - Starter, Basic, Pro, Enterprise Pläne",
+            "title": "BizCora Preise - Kostenlose Testphase, Basic, Pro & Enterprise",
             "desc": "Wählen Sie den BizCora-Plan für Ihr Unternehmen. 14 Tage kostenlos testen, keine Kreditkarte.",
             "h1": "Einfache und <span class=\"grad\">transparente Preise</span>",
             "sub": "14 Tage kostenlos testen - Keine Kreditkarte - Jederzeit kündbar",
@@ -1123,8 +1123,8 @@ def pricing_page(lang):
         # AUCUN prix code en dur : le montant est un placeholder rempli au chargement
         # par /billing/plans (source unique = price book DB). data-plan + js-price/js-unit
         # permettent au script de cibler chaque carte. Pour l'essai, pas de prix.
-        price_html_mo = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_mo}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
-        price_html_yr = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&mdash;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_yr}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
+        price_html_mo = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&hellip;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_mo}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
+        price_html_yr = f'<span class="js-price" style="font-size:2.5rem;font-weight:800">&hellip;</span> <span class="js-unit" style="font-size:.9rem;color:var(--neutral-500)">{unit_yr}</span>' if not is_trial else f'<span style="font-size:2.5rem;font-weight:800">{t["free_trial"]}</span>'
 
         cta_href = f"register?plan={plan_slug}" if not is_trial else "register"
         cta_label = t["cta_trial"] if is_trial else t["cta_plan"]
@@ -1220,7 +1220,7 @@ def pricing_page(lang):
     }}
 
     // ── Prix dynamiques : source UNIQUE = price book DB via /billing/plans ──
-    // AUCUN prix code en dur dans le site : les montants sont des placeholders (—)
+    // AUCUN prix code en dur dans le site : les montants sont des placeholders charges via /billing/plans
     // remplis ici par l'API. Une modif de prix cote back-office est donc refletee
     // immediatement (sans regeneration), pour toutes les devises. Si l'API est
     // indisponible, le placeholder reste affiche (jamais un faux prix).
