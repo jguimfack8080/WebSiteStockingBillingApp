@@ -34,7 +34,7 @@ def head(lang, title, desc, canonical, hreflang_fr, hreflang_en, hreflang_de, og
   <link rel="preload" href="/assets/fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="BizCora" />
+  <meta property="og:site_name" content="BizCoRa" />
   <meta property="og:locale" content="{lang_labels[lang]}" />
   <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{og_title}" />
@@ -79,9 +79,9 @@ def header_nav(lang, active_page):
     return f"""
   <header class="site-header">
     <div class="container">
-      <a href="./" class="brand" aria-label="BizCora, accueil">
+      <a href="./" class="brand" aria-label="BizCoRa, accueil">
         <img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" />
-        <span>Biz<b>Cora</b></span>
+        <span>Biz<b>CoRa</b></span>
       </a>
       <nav class="nav" id="primary-nav" aria-label="Navigation principale">{nav_items}
       </nav>
@@ -123,7 +123,7 @@ def footer(lang):
     <div class="container">
       <div class="footer-grid">
         <div>
-          <span class="footer-brand"><img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" /> BizCora</span>
+          <span class="footer-brand"><img src="/assets/images/logo-96.png" alt="" width="38" height="38" decoding="async" /> BizCoRa</span>
           <p>La solution tout-en-un de gestion de stock, caisse, facturation, achats et comptabilite pour les commerces et les PME.</p>
         </div>
         <div class="footer-col">
@@ -153,7 +153,7 @@ def footer(lang):
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; <span data-year>2026</span> BizCora. {t['rights']}</p>
+        <p>&copy; <span data-year>2026</span> BizCoRa. {t['rights']}</p>
         <div class="links">
           <a href="faq">{t['faq']}</a>
           <a href="contact">{t['contact_link']}</a>
@@ -175,15 +175,15 @@ def footer(lang):
 def download_page(lang):
     t = {
         "fr": {
-            "title": "Télécharger BizCora - Windows, macOS, Linux & Web",
-            "desc": "Téléchargez BizCora sur Windows, macOS ou Linux. Ou accédez directement à la web app sans installation.",
-            "h1": "Téléchargez <span class=\"grad\">BizCora</span>",
+            "title": "Télécharger BizCoRa - Windows, macOS, Linux & Web",
+            "desc": "Téléchargez BizCoRa sur Windows, macOS ou Linux. Ou accédez directement à la web app sans installation.",
+            "h1": "Téléchargez <span class=\"grad\">BizCoRa</span>",
             "sub": "Disponible sur toutes les plateformes. Choisissez votre système d'exploitation ou accédez directement à la version web.",
             "win": "Télécharger pour Windows", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Télécharger pour macOS", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Télécharger pour Linux", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Ouvrir la Web App", "web_sub": "Aucune installation requise",
-            "web_desc": "Accédez à BizCora depuis n'importe quel navigateur : Chrome, Firefox, Safari, Edge. Toutes les fonctionnalités disponibles.",
+            "web_desc": "Accédez à BizCoRa depuis n'importe quel navigateur : Chrome, Firefox, Safari, Edge. Toutes les fonctionnalités disponibles.",
             "mobile_title": "Application mobile", "mobile_soon": "Bientôt disponible",
             "mobile_sub": "iOS et Android - en cours de développement",
             "cta_title": "Pas encore de compte ?",
@@ -192,15 +192,15 @@ def download_page(lang):
             "detected": "Recommandé pour vous",
         },
         "en": {
-            "title": "Download BizCora - Windows, macOS, Linux & Web",
-            "desc": "Download BizCora on Windows, macOS or Linux. Or access the web app directly with no installation.",
-            "h1": "Download <span class=\"grad\">BizCora</span>",
+            "title": "Download BizCoRa - Windows, macOS, Linux & Web",
+            "desc": "Download BizCoRa on Windows, macOS or Linux. Or access the web app directly with no installation.",
+            "h1": "Download <span class=\"grad\">BizCoRa</span>",
             "sub": "Available on all platforms. Choose your operating system or access the web version directly.",
             "win": "Download for Windows", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Download for macOS", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Download for Linux", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Open Web App", "web_sub": "No installation required",
-            "web_desc": "Access BizCora from any browser: Chrome, Firefox, Safari, Edge. All features available.",
+            "web_desc": "Access BizCoRa from any browser: Chrome, Firefox, Safari, Edge. All features available.",
             "mobile_title": "Mobile app", "mobile_soon": "Coming soon",
             "mobile_sub": "iOS and Android - under development",
             "cta_title": "No account yet?",
@@ -209,15 +209,15 @@ def download_page(lang):
             "detected": "Recommended for you",
         },
         "de": {
-            "title": "BizCora herunterladen - Windows, macOS, Linux & Web",
-            "desc": "Laden Sie BizCora für Windows, macOS oder Linux herunter. Oder nutzen Sie die Web-App ohne Installation.",
-            "h1": "BizCora <span class=\"grad\">herunterladen</span>",
+            "title": "BizCoRa herunterladen - Windows, macOS, Linux & Web",
+            "desc": "Laden Sie BizCoRa für Windows, macOS oder Linux herunter. Oder nutzen Sie die Web-App ohne Installation.",
+            "h1": "BizCoRa <span class=\"grad\">herunterladen</span>",
             "sub": "Verfügbar auf allen Plattformen. Wählen Sie Ihr Betriebssystem oder nutzen Sie direkt die Webversion.",
             "win": "Für Windows herunterladen", "win_sub": "Windows 10 / 11 (.exe)",
             "mac": "Für macOS herunterladen", "mac_sub": "macOS 12+ (.dmg)",
             "linux": "Für Linux herunterladen", "linux_sub": "Ubuntu, Debian, Fedora (.AppImage)",
             "web": "Web-App öffnen", "web_sub": "Keine Installation erforderlich",
-            "web_desc": "Greifen Sie von jedem Browser auf BizCora zu: Chrome, Firefox, Safari, Edge. Alle Funktionen verfügbar.",
+            "web_desc": "Greifen Sie von jedem Browser auf BizCoRa zu: Chrome, Firefox, Safari, Edge. Alle Funktionen verfügbar.",
             "mobile_title": "Mobile App", "mobile_soon": "Demnächst verfügbar",
             "mobile_sub": "iOS und Android - in Entwicklung",
             "cta_title": "Noch kein Konto?",
@@ -317,8 +317,8 @@ def download_page(lang):
 def register_page(lang):
     t = {
         "fr": {
-            "title": "Inscription - Essai gratuit 14 jours - BizCora",
-            "desc": "Créez votre compte BizCora gratuitement. Essai 14 jours sans carte bancaire. Gestion de stock, caisse et facturation.",
+            "title": "Inscription - Essai gratuit 14 jours - BizCoRa",
+            "desc": "Créez votre compte BizCoRa gratuitement. Essai 14 jours sans carte bancaire. Gestion de stock, caisse et facturation.",
             "h1": "Commencez votre essai <span class=\"grad\">gratuit</span>",
             "sub": "14 jours gratuits, sans carte bancaire, sans engagement.",
             "step1": "Informations personnelles", "step2": "Votre entreprise", "step3": "Votre compte",
@@ -352,8 +352,8 @@ def register_page(lang):
             "of": "sur",
         },
         "en": {
-            "title": "Sign Up - 14-Day Free Trial - BizCora",
-            "desc": "Create your BizCora account for free. 14-day trial, no credit card required. Stock management, POS and invoicing.",
+            "title": "Sign Up - 14-Day Free Trial - BizCoRa",
+            "desc": "Create your BizCoRa account for free. 14-day trial, no credit card required. Stock management, POS and invoicing.",
             "h1": "Start your <span class=\"grad\">free trial</span>",
             "sub": "14 days free, no credit card, no commitment.",
             "step1": "Personal information", "step2": "Your company", "step3": "Your account",
@@ -387,8 +387,8 @@ def register_page(lang):
             "of": "of",
         },
         "de": {
-            "title": "Registrieren - 14 Tage kostenlos - BizCora",
-            "desc": "Erstellen Sie Ihr BizCora-Konto kostenlos. 14 Tage testen, keine Kreditkarte erforderlich. Lagerverwaltung, Kasse und Rechnungsstellung.",
+            "title": "Registrieren - 14 Tage kostenlos - BizCoRa",
+            "desc": "Erstellen Sie Ihr BizCoRa-Konto kostenlos. 14 Tage testen, keine Kreditkarte erforderlich. Lagerverwaltung, Kasse und Rechnungsstellung.",
             "h1": "Starten Sie Ihren <span class=\"grad\">kostenlosen Test</span>",
             "sub": "14 Tage kostenlos, keine Kreditkarte, keine Bindung.",
             "step1": "Persönliche Daten", "step2": "Ihr Unternehmen", "step3": "Ihr Konto",
@@ -791,12 +791,12 @@ def register_page(lang):
 def verify_page(lang):
     t = {
         "fr": {
-            "title": "Vérification de votre email - BizCora",
-            "desc": "Vérification de votre adresse email pour activer votre compte BizCora.",
+            "title": "Vérification de votre email - BizCoRa",
+            "desc": "Vérification de votre adresse email pour activer votre compte BizCoRa.",
             "h1": "Vérification de votre email",
             "loading": "Vérification en cours...",
             "success_title": "Compte activé !",
-            "success_body": "Votre compte BizCora est prêt. Téléchargez l'application ou accédez à la version web.",
+            "success_body": "Votre compte BizCoRa est prêt. Téléchargez l'application ou accédez à la version web.",
             "success_creds": "Vos identifiants ont été envoyés par email.",
             "expired_title": "Lien expiré",
             "expired_body": "Ce lien de vérification a expiré (valable 24h). Saisissez votre email pour recevoir un nouveau lien.",
@@ -814,12 +814,12 @@ def verify_page(lang):
             "open_app": "Ouvrir l'application",
         },
         "en": {
-            "title": "Email Verification - BizCora",
-            "desc": "Email address verification to activate your BizCora account.",
+            "title": "Email Verification - BizCoRa",
+            "desc": "Email address verification to activate your BizCoRa account.",
             "h1": "Email verification",
             "loading": "Verifying...",
             "success_title": "Account activated!",
-            "success_body": "Your BizCora account is ready. Download the app or access the web version.",
+            "success_body": "Your BizCoRa account is ready. Download the app or access the web version.",
             "success_creds": "Your credentials have been sent by email.",
             "expired_title": "Link expired",
             "expired_body": "This verification link has expired (valid 24h). Enter your email to receive a new link.",
@@ -837,12 +837,12 @@ def verify_page(lang):
             "open_app": "Open the app",
         },
         "de": {
-            "title": "E-Mail-Verifizierung - BizCora",
-            "desc": "E-Mail-Adressverifizierung zur Aktivierung Ihres BizCora-Kontos.",
+            "title": "E-Mail-Verifizierung - BizCoRa",
+            "desc": "E-Mail-Adressverifizierung zur Aktivierung Ihres BizCoRa-Kontos.",
             "h1": "E-Mail-Verifizierung",
             "loading": "Wird überprüft...",
             "success_title": "Konto aktiviert!",
-            "success_body": "Ihr BizCora-Konto ist bereit. Laden Sie die App herunter oder nutzen Sie die Webversion.",
+            "success_body": "Ihr BizCoRa-Konto ist bereit. Laden Sie die App herunter oder nutzen Sie die Webversion.",
             "success_creds": "Ihre Zugangsdaten wurden per E-Mail gesendet.",
             "expired_title": "Link abgelaufen",
             "expired_body": "Dieser Verifizierungslink ist abgelaufen (24h gültig). Geben Sie Ihre E-Mail ein, um einen neuen Link zu erhalten.",
@@ -1004,8 +1004,8 @@ def verify_page(lang):
 def pricing_page(lang):
     t = {
         "fr": {
-            "title": "Tarifs BizCora - logiciel de caisse, stock et facturation",
-            "desc": "Tarifs de BizCora, logiciel tout-en-un de caisse, gestion de stock et facturation. Essai gratuit 14 jours, sans carte bancaire. Plans mensuels ou annuels.",
+            "title": "Tarifs BizCoRa - logiciel de caisse, stock et facturation",
+            "desc": "Tarifs de BizCoRa, logiciel tout-en-un de caisse, gestion de stock et facturation. Essai gratuit 14 jours, sans carte bancaire. Plans mensuels ou annuels.",
             "h1": "Des tarifs <span class=\"grad\">simples et transparents</span>",
             "sub": "Essai gratuit 14 jours - Aucune carte bancaire - Annulez quand vous voulez",
             "monthly": "Mensuel", "yearly": "Annuel",
@@ -1036,8 +1036,8 @@ def pricing_page(lang):
             ],
         },
         "en": {
-            "title": "BizCora pricing - POS, inventory and invoicing software",
-            "desc": "BizCora pricing for the all-in-one POS, inventory and invoicing software. 14-day free trial, no credit card. Simple monthly or yearly plans.",
+            "title": "BizCoRa pricing - POS, inventory and invoicing software",
+            "desc": "BizCoRa pricing for the all-in-one POS, inventory and invoicing software. 14-day free trial, no credit card. Simple monthly or yearly plans.",
             "h1": "Simple and <span class=\"grad\">transparent pricing</span>",
             "sub": "14-day free trial - No credit card - Cancel anytime",
             "monthly": "Monthly", "yearly": "Yearly",
@@ -1068,8 +1068,8 @@ def pricing_page(lang):
             ],
         },
         "de": {
-            "title": "BizCora Preise - Kassensystem und Warenwirtschaft",
-            "desc": "Preise von BizCora, der All-in-one-Software für Kasse, Warenwirtschaft und Rechnungen. 14 Tage kostenlos, keine Kreditkarte. Monatlich oder jährlich.",
+            "title": "BizCoRa Preise - Kassensystem und Warenwirtschaft",
+            "desc": "Preise von BizCoRa, der All-in-one-Software für Kasse, Warenwirtschaft und Rechnungen. 14 Tage kostenlos, keine Kreditkarte. Monatlich oder jährlich.",
             "h1": "Einfache und <span class=\"grad\">transparente Preise</span>",
             "sub": "14 Tage kostenlos testen - Keine Kreditkarte - Jederzeit kündbar",
             "monthly": "Monatlich", "yearly": "Jährlich",

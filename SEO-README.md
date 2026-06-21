@@ -1,6 +1,6 @@
 # SEO-README - Optimisation SEO technique & performance
 
-Ce document decrit **tout** ce qui a ete fait sur le site vitrine BizCora
+Ce document decrit **tout** ce qui a ete fait sur le site vitrine BizCoRa
 lors de la passe d'optimisation SEO technique et performance, et **a quoi chaque
 changement sert**. Il sert de reference durable : avant de modifier le site,
 relire cette page pour ne pas casser ce qui a ete mis en place.
@@ -107,7 +107,7 @@ divise par ~2 a 3** sur les pages a visuels (de ~6 s a ~2-3 s).
   police systeme occupe exactement la meme place que la police finale : la
   bascule ne provoque **aucun** decalage (CLS ~0).
 - **Suppression des fichiers images originaux** devenus inutilises (`-766 Ko`
-  environ : `BizCora.jpeg` a la racine, `screenhot_app.png`, l'ancien logo et
+  environ : `BizCoRa.jpeg` a la racine, `screenhot_app.png`, l'ancien logo et
   l'ancienne photo). *Sert a* ne pas deployer de poids mort.
 
 ### 3.3 Accessibilite (A11y a 100)
