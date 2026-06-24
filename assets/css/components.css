@@ -102,16 +102,72 @@
 
 .hero-visual { position: relative; }
 .hero-visual .glow { position: absolute; inset: -40px; background: radial-gradient(circle at 60% 40%, rgba(67, 97, 238, 0.25), transparent 65%); filter: blur(20px); z-index: 0; }
-.device {
-  position: relative; z-index: 1;
-  background: #0b1020; border-radius: 22px; padding: 12px;
-  box-shadow: var(--shadow-lg); border: 1px solid rgba(255, 255, 255, 0.08);
-  transform: perspective(1600px) rotateY(-9deg) rotateX(3deg);
-  transition: transform 400ms ease;
+/* ===========================================================================
+   Cadre "tablette" hyper realiste - mutualise par le visuel hero (.device)
+   et toutes les captures d'ecran (.shot). Donne aux illustrations l'aspect
+   d'un vrai appareil (chassis metallique, camera frontale, reflet vitre,
+   ombre portee profonde) au lieu d'une simple vignette plate.
+   =========================================================================== */
+.device, .shot {
+  --tbl-bezel: 16px;          /* epaisseur du contour (bordure de l'ecran) */
+  --tbl-radius: 30px;         /* arrondi du chassis */
+  --tbl-screen-radius: 14px;  /* arrondi de la dalle */
+  position: relative;
+  z-index: 1;
+  display: block;
+  padding: var(--tbl-bezel);
+  border-radius: var(--tbl-radius);
+  background: linear-gradient(160deg, #323b51 0%, #1b2233 24%, #0c1019 62%, #070a12 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow:
+    inset 0 1px 1px rgba(255, 255, 255, 0.22),   /* arete brillante superieure */
+    inset 0 -2px 6px rgba(0, 0, 0, 0.6),         /* ombre interne inferieure */
+    0 2px 6px rgba(13, 18, 38, 0.18),
+    0 26px 50px -18px rgba(13, 18, 38, 0.45),    /* ombre portee profonde */
+    0 44px 90px -34px rgba(13, 18, 38, 0.38);
+  cursor: zoom-in;
+  transition: transform 500ms cubic-bezier(0.22, 0.61, 0.36, 1), box-shadow 500ms ease;
 }
+/* Camera frontale, centree sur le contour superieur */
+.device::before, .shot::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--tbl-bezel) * 0.5);
+  left: 50%;
+  width: 6px;
+  height: 6px;
+  margin: -3px 0 0 -3px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 30%, #51648a 0%, #18203a 55%, #05070d 100%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55), 0 0 3px rgba(120, 160, 255, 0.35);
+  z-index: 4;
+  pointer-events: none;
+}
+/* La dalle : l'illustration occupe tout l'ecran, coins arrondis */
+.device img, .shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: var(--tbl-screen-radius);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.55);
+  background: #fff;
+}
+/* Reflet vitre diagonal pose sur la dalle (purement decoratif) */
+.device::after, .shot::after {
+  content: "";
+  position: absolute;
+  inset: var(--tbl-bezel);
+  border-radius: var(--tbl-screen-radius);
+  background: linear-gradient(125deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0.06) 16%, rgba(255, 255, 255, 0) 34%);
+  pointer-events: none;
+  z-index: 3;
+}
+/* Inclinaison 3D du visuel hero (premiere image, reference de l'identite) */
+.device { transform: perspective(1600px) rotateY(-9deg) rotateX(3deg); }
 .device:hover { transform: perspective(1600px) rotateY(-3deg) rotateX(1deg); }
-.device::before { content: ""; position: absolute; top: 8px; left: 50%; transform: translateX(-50%); width: 90px; height: 5px; border-radius: 4px; background: rgba(255, 255, 255, 0.18); }
-.device img { border-radius: 14px; width: 100%; }
+/* Captures : meme appareil, inclinaison plus douce, se redresse au survol */
+.shot { transform: perspective(1600px) rotateY(-6deg) rotateX(2deg); }
+.shot:hover { transform: perspective(1600px) rotateY(0deg) rotateX(0deg) translateY(-5px); }
 .floating {
   position: absolute; z-index: 2;
   background: #fff; border: 1px solid var(--border); box-shadow: var(--shadow-md);
@@ -132,7 +188,7 @@
   .hero-content { text-align: center; }
   .hero-badge, .hero-cta { justify-content: center; }
   .hero-trust { justify-content: center; }
-  .device { transform: none; max-width: 460px; margin: 0 auto; }
+  .device { transform: none; max-width: 460px; margin: 0 auto; --tbl-bezel: 13px; --tbl-radius: 26px; }
   .floating--tl { left: 8px; }
   .floating--br { right: 8px; }
 }
@@ -182,17 +238,32 @@
 /* ----- Split (texte + visuel) ----- */
 .split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
 .split--reverse .split__media { order: 2; }
-.split__media img { border-radius: var(--radius-lg); border: 1px solid var(--border); box-shadow: var(--shadow-md); }
+.split__media img { display: block; width: 100%; }
 .split h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); margin-bottom: 16px; }
 .split p.lead { color: var(--text-muted); font-size: 1.05rem; margin-bottom: 22px; }
 @media (max-width: 920px) {
   .split { grid-template-columns: 1fr; gap: 36px; }
   .split--reverse .split__media { order: 0; }
+  /* Sur mobile, l'appareil se redresse et se centre, contour plus fin */
+  .shot { transform: none; max-width: 540px; margin: 0 auto; --tbl-bezel: 13px; --tbl-radius: 26px; }
 }
 
-/* Capture stylisee dans un cadre */
-.shot { background: var(--grad-brand-soft); border: 1px solid var(--border); border-radius: var(--radius-xl); padding: 26px; box-shadow: var(--shadow-md); }
-.shot img { border-radius: var(--radius-md); box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,0.6); }
+/* Le rendu "tablette" des captures (.shot) est defini avec .device plus haut.
+   Variante photo (portrait, ex. createur) : simple cadre image, sans chassis. */
+.shot--photo {
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-md);
+  transform: none;
+  cursor: default;
+  overflow: hidden;
+}
+.shot--photo::before, .shot--photo::after { content: none; }
+.shot--photo:hover { transform: none; }
+.shot--photo picture { display: block; }
+.shot--photo img { border-radius: var(--radius-xl); box-shadow: none; background: none; }
 
 /* ----- Etapes "comment ca marche" ----- */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; counter-reset: step; }
@@ -355,3 +426,80 @@ main p a:not(.btn):hover { text-decoration: none; }
 .story__close { font-weight: 600; }
 .section--dark .story__close { color: #fff; }
 @media (max-width: 560px) { .story p { font-size: 1.04rem; line-height: 1.8; } }
+
+/* ===========================================================================
+   Lightbox - apercu agrandi des captures au clic (cree dynamiquement par
+   site.js, aucun balisage en dur dans les pages). L'apercu reprend le cadre
+   "tablette" pour rester coherent avec le reste du site.
+   =========================================================================== */
+body.lb-open { overflow: hidden; }
+.lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(20px, 5vw, 64px);
+  background: rgba(8, 11, 22, 0.86);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 280ms ease, visibility 280ms ease;
+}
+.lightbox.is-open { opacity: 1; visibility: visible; }
+.lightbox__frame {
+  position: relative;
+  width: 100%;
+  max-width: min(1180px, 100%);
+  padding: clamp(10px, 1.6vw, 20px);
+  background: linear-gradient(160deg, #323b51 0%, #1b2233 28%, #0c1019 70%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: clamp(18px, 2.4vw, 30px);
+  box-shadow: 0 40px 120px rgba(0, 0, 0, 0.6);
+  transform: scale(0.94) translateY(10px);
+  transition: transform 320ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+.lightbox.is-open .lightbox__frame { transform: none; }
+.lightbox__img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 80vh;
+  object-fit: contain;
+  border-radius: clamp(8px, 1.2vw, 14px);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.5);
+  background: #fff;
+}
+.lightbox__close {
+  position: absolute;
+  top: -16px;
+  right: -16px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background: #fff;
+  color: var(--ink-900);
+  display: grid;
+  place-items: center;
+  box-shadow: var(--shadow-lg);
+  transition: transform 150ms ease, background 150ms ease;
+}
+.lightbox__close:hover { transform: scale(1.06); background: var(--ink-50); }
+.lightbox__close svg { width: 20px; height: 20px; }
+.lightbox__caption {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -38px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9rem;
+  padding: 0 12px;
+}
+@media (max-width: 560px) {
+  .lightbox__close { top: -10px; right: -10px; width: 40px; height: 40px; }
+  .lightbox__caption { bottom: -32px; font-size: 0.82rem; }
+}
