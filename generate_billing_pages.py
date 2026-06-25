@@ -588,13 +588,8 @@ def register_page(lang):
   </main>
 
   <style>
+    /* Styles de formulaire mutualises dans assets/css/components.css (systeme unifie). */
     @keyframes spin {{from{{transform:rotate(0deg)}}to{{transform:rotate(360deg)}}}}
-    .form-label {{display:block;font-size:.875rem;font-weight:500;color:var(--neutral-700);margin-bottom:.375rem}}
-    .form-input {{width:100%;padding:.625rem .875rem;border:1.5px solid var(--neutral-200);border-radius:8px;font-size:.95rem;outline:none;transition:border .2s,box-shadow .2s;background:#fff}}
-    .form-input:focus {{border-color:#4361ee;box-shadow:0 0 0 3px #4361ee20}}
-    .form-input.is-invalid {{border-color:#dc2626}}
-    .form-error {{display:block;font-size:.78rem;color:#dc2626;margin-top:.25rem;min-height:1em}}
-    select.form-input {{cursor:pointer}}
   </style>
 
   <script>
@@ -941,9 +936,8 @@ def verify_page(lang):
   </main>
 
   <style>
+    /* Styles de formulaire mutualises dans assets/css/components.css (systeme unifie). */
     @keyframes spin {{from{{transform:rotate(0deg)}}to{{transform:rotate(360deg)}}}}
-    .form-input {{padding:.625rem .875rem;border:1.5px solid var(--neutral-200);border-radius:8px;font-size:.95rem;outline:none;transition:border .2s}}
-    .form-input:focus {{border-color:#4361ee;box-shadow:0 0 0 3px #4361ee20}}
   </style>
 
   <script>
