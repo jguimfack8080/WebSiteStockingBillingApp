@@ -2,11 +2,14 @@
 """Generate the BizCoRa social share image (Open Graph / Twitter card).
 
 Outputs:
-  - ../assets/images/og-cover-1200x630.png  -> the PUBLISHED image referenced by
-                              og:image / twitter:image on every page.
+  - ../assets/images/og-cover-1200x630.jpg  -> the PUBLISHED image referenced by
+                              og:image / twitter:image on every page. JPEG q90,
+                              ~95 KB: kept well under WhatsApp's ~300 KB preview
+                              limit (above it, WhatsApp shows no thumbnail even
+                              though Facebook/Telegram do).
   - ./og-cover-1200x630.svg  -> the EDITABLE vector source (open in Figma /
                               Illustrator / Inkscape / a browser, tweak
-                              text/colours, re-export a 1200x630 PNG over the .png).
+                              text/colours, re-export a 1200x630 image).
 
 Both are emitted from the same geometry so they never drift. The emblem is
 embedded as base64 in the SVG, so the file is self-contained and portable.
@@ -29,7 +32,7 @@ W, H = 1200, 630
 ROOT = Path(__file__).resolve().parent.parent          # site root
 REPO = ROOT.parent                                      # stocking_billing_app
 EMBLEM = REPO / "assets/logo/brand/bizcora_1024.png"
-OUT_PNG = ROOT / "assets/images/og-cover-1200x630.png"
+OUT_IMG = ROOT / "assets/images/og-cover-1200x630.jpg"   # JPEG: stays < WhatsApp's 300 KB limit
 OUT_SVG = ROOT / "Generate.Thumbnail/og-cover-1200x630.svg"   # editable source, not a served asset
 
 FONTS = Path("C:/Windows/Fonts")
@@ -163,9 +166,9 @@ d.rounded_rectangle([X0, BADGE_Y, X0 + bw, BADGE_Y + bh], radius=bh // 2, fill=(
 d.text((X0 + BADGE_PAD, BADGE_Y + BADGE_PH - 1), "14-day free trial", font=f_badge, fill=(12, 20, 48, 255))
 
 img = Image.alpha_composite(img, ov)
-OUT_PNG.parent.mkdir(parents=True, exist_ok=True)
-img.convert("RGB").save(OUT_PNG, "PNG", optimize=True)
-print(f"Wrote {OUT_PNG.name} ({OUT_PNG.stat().st_size // 1024} KB)")
+OUT_IMG.parent.mkdir(parents=True, exist_ok=True)
+img.convert("RGB").save(OUT_IMG, "JPEG", quality=90, optimize=True, progressive=True)
+print(f"Wrote {OUT_IMG.name} ({OUT_IMG.stat().st_size // 1024} KB)")
 
 # ============================================================================
 # SVG (same geometry; text as real editable elements; emblem embedded)
