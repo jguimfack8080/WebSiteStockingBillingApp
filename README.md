@@ -99,7 +99,7 @@ WebSiteStockingBillingApp/
         ├── <ecran>.svg           # Vignette produit (francais) - voir Generate.Thumbnail/
         ├── <ecran>.en.svg        # Vignette produit (anglais)
         ├── <ecran>.de.svg        # Vignette produit (allemand)
-        ├── og-cover-1200x630.png # Image de partage social (og:image/twitter) - carte marketing designee
+        ├── og-cover-1200x630.jpg # Image de partage social (og:image/twitter) - carte marketing designee
         ├── screenhot_app-1280.png# Ancien raster du dashboard (legacy, plus utilise comme image de partage)
         ├── jordanjeuna.webp      # Photo du createur (WebP, 640px)
         └── jordanjeuna-640.jpg   # Photo du createur (repli JPEG)
@@ -107,7 +107,7 @@ WebSiteStockingBillingApp/
 # Generateur des vignettes (thumbnails) produit :
 Generate.Thumbnail/
 ├── generate_thumbnails.py     # Genere les 33 SVG (11 ecrans x 3 langues) dans assets/images/
-├── generate_og_cover.py       # Genere l'image de partage social og-cover-1200x630.png + sa source SVG (Pillow + numpy)
+├── generate_og_cover.py       # Genere l'image de partage social og-cover-1200x630.jpg + sa source SVG (Pillow + numpy)
 ├── og-cover-1200x630.svg      # Source vectorielle editable de l'image de partage
 ├── render_preview.py          # Rendu PNG de QA (mode og historique = ancien raster dashboard)
 └── README.md                  # Comment regenerer / personnaliser
@@ -136,7 +136,7 @@ python generate_thumbnails.py     # regenere les 33 SVG d'ecran
 ### Image de partage social (Open Graph / le "thumbnail")
 
 C'est l'image affichee quand on partage le lien du site sur LinkedIn, WhatsApp,
-Facebook ou X. Les 27 pages pointent vers `assets/images/og-cover-1200x630.png`
+Facebook ou X. Les 27 pages pointent vers `assets/images/og-cover-1200x630.jpg`
 (carte marketing designee : degrade de marque + emblème + nom + accroche + chips
 + badge d'essai). Pour la changer :
 
@@ -144,7 +144,7 @@ Facebook ou X. Les 27 pages pointent vers `assets/images/og-cover-1200x630.png`
 cd WebSiteStockingBillingApp/Generate.Thumbnail
 pip install pillow numpy          # une seule fois
 # editer les "Layout constants" de generate_og_cover.py (EYEBROW, LINE1, LINE2, CHIPS, GRAD...)
-python generate_og_cover.py       # regenere og-cover-1200x630.png + sa source .svg
+python generate_og_cover.py       # regenere og-cover-1200x630.jpg + sa source .svg
 ```
 
 Alternative sans code : ouvrir `Generate.Thumbnail/og-cover-1200x630.svg` (source
@@ -239,6 +239,16 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
 
 ## Notes de version
 
+**Apercu WhatsApp : image de partage en JPEG (< 300 Ko)**
+
+- WhatsApp n'affichait aucun apercu (alors que Facebook et Telegram oui) : son
+  scraper ignore l'image `og:image` si elle depasse ~300 Ko. L'image PNG faisait
+  ~340 Ko.
+- Image publiee passee en **JPEG q90 (~95 Ko)**, rendu visuellement identique,
+  sous la limite WhatsApp. `og:image`/`twitter:image` -> `og-cover-1200x630.jpg`,
+  `og:image:type` -> `image/jpeg` sur les 27 pages. Le generateur
+  `Generate.Thumbnail/generate_og_cover.py` produit desormais le JPEG.
+
 **Cartes de partage social (Open Graph / Twitter) + image de preview dediee**
 
 - Harmonisation des balises Open Graph et Twitter Card sur les **27 pages**
@@ -246,7 +256,7 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
   n'avaient ni Twitter Card ni `og:image:alt`. Ajout aussi de
   `og:image:type/width/height` (1200x630) pour un rendu fiable des le premier
   scrape (LinkedIn / WhatsApp).
-- Nouvelle **image de partage designee** `assets/images/og-cover-1200x630.png`
+- Nouvelle **image de partage designee** `assets/images/og-cover-1200x630.jpg`
   (degrade de marque + emblème + nom + accroche + chips + badge d'essai), a la
   place de l'ancienne capture brute du dashboard, peu valorisante.
 - **Generateur reproductible** `Generate.Thumbnail/generate_og_cover.py`

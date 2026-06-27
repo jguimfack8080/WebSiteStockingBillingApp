@@ -34,7 +34,7 @@ regenerer en une commande, autant de fois que tu veux.
 | Fichier | Role |
 |---|---|
 | `generate_thumbnails.py` | Genere les 33 SVG (11 ecrans x 3 langues) dans `../assets/images/`. |
-| `generate_og_cover.py` | Genere l'image de partage social (Open Graph / Twitter) `../assets/images/og-cover-1200x630.png` + sa source vectorielle editable `og-cover-1200x630.svg`. Necessite Pillow + numpy. |
+| `generate_og_cover.py` | Genere l'image de partage social (Open Graph / Twitter) `../assets/images/og-cover-1200x630.jpg` + sa source vectorielle editable `og-cover-1200x630.svg`. Necessite Pillow + numpy. |
 | `og-cover-1200x630.svg` | Source vectorielle editable de l'image de partage (emblème embarque en base64). |
 | `render_preview.py` | Rend les SVG d'ecran en PNG pour inspection (QA). (Mode `og` historique : rend le dashboard en raster, plus utilise par le site depuis l'image de partage dediee.) |
 | `previews/` | (cree a la demande) PNG jetables de QA. Peut etre supprime. |
@@ -98,11 +98,16 @@ Les PNG sont ecrits dans `previews/` (jetables, non servis en production).
 
 C'est l'image qui s'affiche quand on partage le lien du site sur LinkedIn,
 WhatsApp, Facebook ou X. Les balises `og:image` / `twitter:image` des 27 pages
-pointent toutes vers `assets/images/og-cover-1200x630.png` (un PNG **raster** :
+pointent toutes vers `assets/images/og-cover-1200x630.jpg` (un **JPEG raster** :
 les reseaux sociaux n'affichent pas le SVG en apercu de lien).
 
 Ce n'est PAS une capture brute du dashboard : c'est une carte marketing designee
 (degrade de marque + emblème + nom + accroche + chips + badge d'essai).
+
+> **Important - limite WhatsApp (~300 Ko).** WhatsApp n'affiche AUCUN apercu si
+> l'image `og:image` depasse ~300 Ko, meme quand Facebook et Telegram l'affichent.
+> C'est pourquoi l'image publiee est un **JPEG (q90, ~95 Ko)** et non un PNG (qui
+> faisait ~340 Ko). Si tu changes le rendu, garde le fichier final sous 300 Ko.
 
 ### Changer le thumbnail
 
@@ -118,14 +123,15 @@ Ce n'est PAS une capture brute du dashboard : c'est une carte marketing designee
 python generate_og_cover.py
 ```
 
-Cela reecrit `../assets/images/og-cover-1200x630.png` (l'image publiee, 1200x630)
+Cela reecrit `../assets/images/og-cover-1200x630.jpg` (l'image publiee, 1200x630)
 ET `og-cover-1200x630.svg` (la source vectorielle, meme rendu).
 
 ### Alternative : editer le SVG dans un outil graphique
 
 `og-cover-1200x630.svg` est auto-suffisant (emblème embarque). Tu peux l'ouvrir
 dans Figma / Illustrator / Inkscape / un navigateur, retoucher visuellement, puis
-**exporter un PNG 1200x630** par-dessus `../assets/images/og-cover-1200x630.png`.
+**exporter une image 1200x630 (JPEG < 300 Ko)** par-dessus
+`../assets/images/og-cover-1200x630.jpg`.
 
 ### Apres regeneration
 
@@ -136,7 +142,7 @@ Card Validator.
 
 > Note : `render_preview.py og` (mode historique) rend l'ancien raster du
 > dashboard `screenhot_app-1280.png`. Le site ne l'utilise plus comme image de
-> partage depuis l'introduction de `og-cover-1200x630.png`.
+> partage depuis l'introduction de `og-cover-1200x630.jpg`.
 
 ---
 
