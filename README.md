@@ -99,15 +99,18 @@ WebSiteStockingBillingApp/
         ├── <ecran>.svg           # Vignette produit (francais) - voir Generate.Thumbnail/
         ├── <ecran>.en.svg        # Vignette produit (anglais)
         ├── <ecran>.de.svg        # Vignette produit (allemand)
-        ├── screenhot_app-1280.png# Image OG/Twitter raster (regeneree depuis le SVG dashboard)
+        ├── og-cover-1200x630.png # Image de partage social (og:image/twitter) - carte marketing designee
+        ├── screenhot_app-1280.png# Ancien raster du dashboard (legacy, plus utilise comme image de partage)
         ├── jordanjeuna.webp      # Photo du createur (WebP, 640px)
         └── jordanjeuna-640.jpg   # Photo du createur (repli JPEG)
 
 # Generateur des vignettes (thumbnails) produit :
 Generate.Thumbnail/
-├── generate_thumbnails.py   # Genere les 33 SVG (11 ecrans x 3 langues) dans assets/images/
-├── render_preview.py        # Rendu PNG de QA + regeneration de l'image OG raster
-└── README.md                # Comment regenerer / personnaliser
+├── generate_thumbnails.py     # Genere les 33 SVG (11 ecrans x 3 langues) dans assets/images/
+├── generate_og_cover.py       # Genere l'image de partage social og-cover-1200x630.png + sa source SVG (Pillow + numpy)
+├── og-cover-1200x630.svg      # Source vectorielle editable de l'image de partage
+├── render_preview.py          # Rendu PNG de QA (mode og historique = ancien raster dashboard)
+└── README.md                  # Comment regenerer / personnaliser
 ```
 
 ### Vignettes produit (thumbnails)
@@ -124,12 +127,35 @@ Pour modifier le contenu ou regenerer, voir **`Generate.Thumbnail/README.md`** :
 
 ```bash
 cd WebSiteStockingBillingApp/Generate.Thumbnail
-python generate_thumbnails.py     # regenere les 33 SVG
-python render_preview.py og       # regenere l'image OG raster (apres modif du dashboard)
+python generate_thumbnails.py     # regenere les 33 SVG d'ecran
 ```
 
 > SVG en production (nettete infinie, poids minime, ideal SEO/CLS). L'image
 > `og:image` reste un PNG raster, car les reseaux sociaux n'affichent pas le SVG.
+
+### Image de partage social (Open Graph / le "thumbnail")
+
+C'est l'image affichee quand on partage le lien du site sur LinkedIn, WhatsApp,
+Facebook ou X. Les 27 pages pointent vers `assets/images/og-cover-1200x630.png`
+(carte marketing designee : degrade de marque + emblème + nom + accroche + chips
++ badge d'essai). Pour la changer :
+
+```bash
+cd WebSiteStockingBillingApp/Generate.Thumbnail
+pip install pillow numpy          # une seule fois
+# editer les "Layout constants" de generate_og_cover.py (EYEBROW, LINE1, LINE2, CHIPS, GRAD...)
+python generate_og_cover.py       # regenere og-cover-1200x630.png + sa source .svg
+```
+
+Alternative sans code : ouvrir `Generate.Thumbnail/og-cover-1200x630.svg` (source
+vectorielle auto-suffisante) dans Figma / Illustrator / Inkscape / un navigateur,
+retoucher, puis exporter un PNG 1200x630 par-dessus l'image publiee.
+
+> Apres regeneration : visible en partage seulement apres deploiement (push sur
+> `main` -> Cloudflare Pages), puis forcer un re-scan dans les debuggers
+> (Facebook Sharing Debugger, LinkedIn Post Inspector, X Card Validator), car
+> l'ancien apercu est mis en cache plusieurs jours. Details dans
+> `Generate.Thumbnail/README.md`.
 
 ---
 
@@ -204,13 +230,29 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
 |---|---|
 | Couleurs et typographie | `assets/css/theme.css` (variables `--brand-*`, `--font-*`) |
 | Coordonnees de contact | Pied de page de chaque langue (`/fr/*.html`, `/en/*.html`, `/de/*.html`) et pages `contact.html` |
-| Vignettes produit (thumbnails) | Editer puis lancer `Generate.Thumbnail/generate_thumbnails.py` (voir son README). Image OG : `Generate.Thumbnail/render_preview.py og` |
+| Vignettes produit (thumbnails) | Editer puis lancer `Generate.Thumbnail/generate_thumbnails.py` (voir son README) |
+| Image de partage social (og:image) | Editer puis lancer `Generate.Thumbnail/generate_og_cover.py` (Pillow + numpy), ou editer `Generate.Thumbnail/og-cover-1200x630.svg` |
 | Logo et favicons | Regenerer `logo-96.png`, `favicon-32.png`, `apple-touch-icon.png`, `icon-192.png` depuis le logo source |
 | Textes et offres | Directement dans les fichiers `.html` correspondants |
 
 ---
 
 ## Notes de version
+
+**Cartes de partage social (Open Graph / Twitter) + image de preview dediee**
+
+- Harmonisation des balises Open Graph et Twitter Card sur les **27 pages**
+  (fr/en/de). Avant : 12 pages (download, pricing, register, verify-email)
+  n'avaient ni Twitter Card ni `og:image:alt`. Ajout aussi de
+  `og:image:type/width/height` (1200x630) pour un rendu fiable des le premier
+  scrape (LinkedIn / WhatsApp).
+- Nouvelle **image de partage designee** `assets/images/og-cover-1200x630.png`
+  (degrade de marque + emblème + nom + accroche + chips + badge d'essai), a la
+  place de l'ancienne capture brute du dashboard, peu valorisante.
+- **Generateur reproductible** `Generate.Thumbnail/generate_og_cover.py`
+  (Pillow + numpy) + **source vectorielle editable**
+  `Generate.Thumbnail/og-cover-1200x630.svg`. Voir la section "Image de partage
+  social" plus haut et `Generate.Thumbnail/README.md`.
 
 **Vignettes produit en SVG vectoriel, multilingues et fideles a l'app**
 

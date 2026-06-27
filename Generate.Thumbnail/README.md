@@ -34,7 +34,9 @@ regenerer en une commande, autant de fois que tu veux.
 | Fichier | Role |
 |---|---|
 | `generate_thumbnails.py` | Genere les 33 SVG (11 ecrans x 3 langues) dans `../assets/images/`. |
-| `render_preview.py` | Rend les SVG en PNG pour inspection (QA), et regenere l'image OG raster pour le partage social. |
+| `generate_og_cover.py` | Genere l'image de partage social (Open Graph / Twitter) `../assets/images/og-cover-1200x630.png` + sa source vectorielle editable `og-cover-1200x630.svg`. Necessite Pillow + numpy. |
+| `og-cover-1200x630.svg` | Source vectorielle editable de l'image de partage (emblème embarque en base64). |
+| `render_preview.py` | Rend les SVG d'ecran en PNG pour inspection (QA). (Mode `og` historique : rend le dashboard en raster, plus utilise par le site depuis l'image de partage dediee.) |
 | `previews/` | (cree a la demande) PNG jetables de QA. Peut etre supprime. |
 | `README.md` | Ce fichier. |
 
@@ -92,18 +94,49 @@ Les PNG sont ecrits dans `previews/` (jetables, non servis en production).
 
 ---
 
-## Regenerer l'image de partage social (Open Graph)
+## Regenerer l'image de partage social (Open Graph / le "thumbnail")
 
-Les balises `og:image` / `twitter:image` du site pointent vers un PNG
-**raster** (`assets/images/screenhot_app-1280.png`), car les reseaux sociaux ne
-savent pas afficher du SVG en apercu de lien. Si tu modifies le dashboard,
-regenere ce raster :
+C'est l'image qui s'affiche quand on partage le lien du site sur LinkedIn,
+WhatsApp, Facebook ou X. Les balises `og:image` / `twitter:image` des 27 pages
+pointent toutes vers `assets/images/og-cover-1200x630.png` (un PNG **raster** :
+les reseaux sociaux n'affichent pas le SVG en apercu de lien).
+
+Ce n'est PAS une capture brute du dashboard : c'est une carte marketing designee
+(degrade de marque + emblème + nom + accroche + chips + badge d'essai).
+
+### Changer le thumbnail
+
+1. Ouvre `generate_og_cover.py` et edite la partie "Layout constants" en haut :
+   - `EYEBROW`, `LINE1`, `LINE2` : les textes (accroche + benefice).
+   - `CHIPS` : la liste des fonctionnalites affichees en pastilles.
+   - `GRAD` : les couleurs du degrade de fond.
+   - `EMB_CX`, `EMB_CY`, `SIZE` : position / taille de l'emblème.
+2. (Prerequis une seule fois : `pip install pillow numpy`.)
+3. Regenere, depuis ce dossier :
 
 ```bash
-python render_preview.py og
+python generate_og_cover.py
 ```
 
-(Rendu du `screenhot_app.svg` francais en PNG 1280x676.)
+Cela reecrit `../assets/images/og-cover-1200x630.png` (l'image publiee, 1200x630)
+ET `og-cover-1200x630.svg` (la source vectorielle, meme rendu).
+
+### Alternative : editer le SVG dans un outil graphique
+
+`og-cover-1200x630.svg` est auto-suffisant (emblème embarque). Tu peux l'ouvrir
+dans Figma / Illustrator / Inkscape / un navigateur, retoucher visuellement, puis
+**exporter un PNG 1200x630** par-dessus `../assets/images/og-cover-1200x630.png`.
+
+### Apres regeneration
+
+L'image n'est visible en partage qu'une fois **deployee** (Cloudflare Pages, au
+push sur `main`). Les reseaux sociaux gardent l'ancien apercu en cache : force un
+re-scan via le Facebook Sharing Debugger, le LinkedIn Post Inspector et le X
+Card Validator.
+
+> Note : `render_preview.py og` (mode historique) rend l'ancien raster du
+> dashboard `screenhot_app-1280.png`. Le site ne l'utilise plus comme image de
+> partage depuis l'introduction de `og-cover-1200x630.png`.
 
 ---
 
