@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact BizCoRa - démo du logiciel de caisse et gestion</title>
-  <meta name="description" content="Contactez BizCoRa pour une démo ou un devis du logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
+  <title>Contact BizCoRa - logiciel de caisse et gestion</title>
+  <meta name="description" content="Contactez l’équipe BizCoRa pour un devis ou toute question sur le logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
   <meta name="theme-color" content="#4361ee" />
   <link rel="canonical" href="https://www.bizcorasystems.com/fr/contact" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -28,8 +28,8 @@
   <meta property="og:site_name" content="BizCoRa" />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:url" content="https://www.bizcorasystems.com/fr/contact" />
-  <meta property="og:title" content="Contact BizCoRa - démo du logiciel de caisse et gestion" />
-  <meta property="og:description" content="Contactez BizCoRa pour une démo ou un devis du logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
+  <meta property="og:title" content="Contact BizCoRa - logiciel de caisse et gestion" />
+  <meta property="og:description" content="Contactez l’équipe BizCoRa pour un devis ou toute question sur le logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
   <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.jpg" />
   <meta property="og:image:type" content="image/jpeg" />
   <meta property="og:image:width" content="1200" />
@@ -38,8 +38,8 @@
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Contact BizCoRa - démo du logiciel de caisse et gestion" />
-  <meta name="twitter:description" content="Contactez BizCoRa pour une démo ou un devis du logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
+  <meta name="twitter:title" content="Contact BizCoRa - logiciel de caisse et gestion" />
+  <meta name="twitter:description" content="Contactez l’équipe BizCoRa pour un devis ou toute question sur le logiciel de caisse, gestion de stock et facturation pour les commerces et PME." />
   <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.jpg" />
 
 
@@ -72,8 +72,8 @@
       "@type": "WebPage",
       "@id": "https://www.bizcorasystems.com/fr/contact#webpage",
       "url": "https://www.bizcorasystems.com/fr/contact",
-      "name": "Contact - BizCoRa | Demandez une démonstration",
-      "description": "Contactez l'equipe BizCoRa pour une demonstration personnalisee ou un devis. Solution de gestion de stock, caisse et facturation pour les commerces et PME.",
+      "name": "Contact - BizCoRa | Contactez-nous",
+      "description": "Contactez l'equipe BizCoRa pour vos questions ou un besoin specifique. Solution de gestion de stock, caisse et facturation pour les commerces et PME.",
       "inLanguage": "fr-FR",
       "isPartOf": {
         "@id": "https://www.bizcorasystems.com/#website"
@@ -141,7 +141,7 @@
           <!-- Formulaire -->
           <div class="reveal">
             <div class="card" style="padding:32px">
-              <h2 style="font-size:1.4rem;margin-bottom:6px">Demander une démonstration</h2>
+              <h2 style="font-size:1.4rem;margin-bottom:6px">Écrivez-nous</h2>
               <p class="muted" style="margin-bottom:24px">Remplissez ce formulaire : votre messagerie s'ouvrira avec votre demande prête à envoyer.</p>
               <form class="form" id="contact-form" novalidate>
                 <div class="row2">
@@ -237,7 +237,7 @@
             <li><a href="about">À propos</a></li>
             <li><a href="faq">FAQ</a></li>
             <li><a href="contact">Contact</a></li>
-            <li><a href="contact">Demander une démo</a></li>
+            <li><a href="register">Essai gratuit</a></li>
           </ul>
         </div>
         <div class="footer-col">
@@ -269,7 +269,7 @@
 
   <script src="/assets/js/site.js"></script>
   <script>
-    // Demande de démo : ouvre la messagerie avec un email pré-rempli (sans backend).
+    // Formulaire de contact : ouvre la messagerie avec un email pré-rempli (sans backend).
     (function () {
       var form = document.getElementById("contact-form");
       var note = document.getElementById("form-note");
@@ -287,7 +287,7 @@
         var company = form.company.value.trim();
         var phone = form.phone.value.trim();
         var type = form.type.value;
-        var subject = "Demande de démo BizCoRa - " + (company || name);
+        var subject = "Contact BizCoRa - " + (company || name);
         var body =
           "Nom: " + name + "\n" +
           "Entreprise: " + (company || "-") + "\n" +
