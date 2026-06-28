@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BizCoRa — Logiciel de caisse, stock et facturation pour PME</title>
+  <meta name="description" content="BizCoRa : logiciel de gestion commerciale tout-en-un (caisse, stock, facturation, achats, comptabilité) pour commerces et PME. Essai gratuit." />
+
+  <!-- Redirection vers la langue : page de routage, ne pas indexer ce hub -->
+  <meta name="robots" content="noindex, follow" />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/" />
+
+  <!-- hreflang : Google découvre les 3 versions depuis la racine -->
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+
+  <!-- Détection de langue côté navigateur, fallback FR (x-default) -->
+  <script>
+    (function () {
+      var supported = ['fr', 'en', 'de'];
+      var lang = (navigator.language || navigator.userLanguage || 'fr').slice(0, 2).toLowerCase();
+      if (supported.indexOf(lang) === -1) { lang = 'fr'; }
+      window.location.replace('/' + lang + '/');
+    })();
+  </script>
+  <!-- Fallback sans JavaScript -->
+  <noscript>
+    <meta http-equiv="refresh" content="0; url=/fr/" />
+  </noscript>
+</head>
+<body>
+  <p style="font-family: system-ui, sans-serif; text-align: center; margin-top: 4rem;">
+    Redirection vers BizCoRa…
+    <a href="/fr/">Français</a> · <a href="/en/">English</a> · <a href="/de/">Deutsch</a>
+  </p>
+</body>
+</html>
