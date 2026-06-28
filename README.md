@@ -177,7 +177,7 @@ retoucher, puis exporter un PNG 1200x630 par-dessus l'image publiee.
   `loading="lazy"` hors ecran, prechargement de l'image hero (LCP), polices Google
   chargees en non bloquant.
 
-> Domaine canonique : `https://www.jgjpaystock.com` (voir `.env`).
+> Domaine canonique : `https://www.bizcorasystems.com` (voir `.env`).
 
 ---
 
@@ -316,6 +316,6 @@ Le script met a jour automatiquement canonical, hreflang, JSON-LD, `robots.txt` 
 
 ## Contact
 
-- Email : contact@jgjpaystock.com
+- Email : contact@bizcorasystems.com
 - Telephone : +49 152 585 75 909
 - LinkedIn : https://www.linkedin.com/in/jordan-guimfack-jeuna-08b821211/

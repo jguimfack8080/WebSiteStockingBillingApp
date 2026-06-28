@@ -102,7 +102,7 @@ def update_sitemap():
     new_urls = []
     for lang in ["fr", "en", "de"]:
         for page in ["download", "register", "pricing"]:
-            url = f"https://www.jgjpaystock.com/{lang}/{page}"
+            url = f"https://www.bizcorasystems.com/{lang}/{page}"
             if url not in content:
                 new_urls.append(f"""  <url>
     <loc>{url}</loc>

@@ -39,7 +39,7 @@ def head(lang, title, desc, canonical, hreflang_fr, hreflang_en, hreflang_de, og
   <meta property="og:url" content="{canonical}" />
   <meta property="og:title" content="{og_title}" />
   <meta property="og:description" content="{desc}" />
-  <meta property="og:image" content="https://www.jgjpaystock.com/assets/images/screenhot_app-1280.png" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/screenhot_app-1280.png" />
 
   <link rel="stylesheet" href="/assets/css/theme.css" />
   <link rel="stylesheet" href="/assets/css/components.css" />
@@ -147,7 +147,7 @@ def footer(lang):
         <div class="footer-col">
           <h3>{t['contact']}</h3>
           <ul class="footer-contact">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> <a href="mailto:contact@jgjpaystock.com">contact@jgjpaystock.com</a></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg> <a href="mailto:contact@bizcorasystems.com">contact@bizcorasystems.com</a></li>
             <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> {t['country']}</li>
           </ul>
         </div>
@@ -226,11 +226,11 @@ def download_page(lang):
             "detected": "Empfohlen für Sie",
         },
     }[lang]
-    canonical = f"https://www.jgjpaystock.com/{lang}/download"
+    canonical = f"https://www.bizcorasystems.com/{lang}/download"
     return f"""{head(lang, t['title'], t['desc'], canonical,
-        'https://www.jgjpaystock.com/fr/download',
-        'https://www.jgjpaystock.com/en/download',
-        'https://www.jgjpaystock.com/de/download')}
+        'https://www.bizcorasystems.com/fr/download',
+        'https://www.bizcorasystems.com/en/download',
+        'https://www.bizcorasystems.com/de/download')}
 <body>
 {header_nav(lang, 'download')}
 
@@ -260,7 +260,7 @@ def download_page(lang):
             <span style="font-weight:700">{t['linux']}</span>
             <span style="font-size:.8rem;opacity:.7">{t['linux_sub']}</span>
           </a>
-          <a href="https://app.jgjpaystock.com" target="_blank" rel="noopener"
+          <a href="https://app.bizcorasystems.com" target="_blank" rel="noopener"
              class="btn btn--primary btn--lg" data-os="web" style="flex-direction:column;padding:1.5rem;gap:.5rem;height:auto">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
             <span style="font-weight:700">{t['web']}</span>
@@ -328,7 +328,7 @@ def register_page(lang):
             "industry": "Secteur d'activité",
             "employees": "Nombre d'employés",
             "password": "Mot de passe", "password_confirm": "Confirmer le mot de passe",
-            "terms": "J'accepte les <a href='../fr/faq' target='_blank'>Conditions d'utilisation</a> et la <a href='mailto:contact@jgjpaystock.com' target='_blank'>Politique de confidentialité</a>",
+            "terms": "J'accepte les <a href='../fr/faq' target='_blank'>Conditions d'utilisation</a> et la <a href='mailto:contact@bizcorasystems.com' target='_blank'>Politique de confidentialité</a>",
             "submit": "Créer mon compte",
             "next": "Suivant", "back": "Retour",
             "pw_weak": "Très faible", "pw_fair": "Faible", "pw_good": "Bon", "pw_strong": "Fort",
@@ -363,7 +363,7 @@ def register_page(lang):
             "industry": "Industry",
             "employees": "Number of employees",
             "password": "Password", "password_confirm": "Confirm password",
-            "terms": "I accept the <a href='../en/faq' target='_blank'>Terms of service</a> and the <a href='mailto:contact@jgjpaystock.com' target='_blank'>Privacy policy</a>",
+            "terms": "I accept the <a href='../en/faq' target='_blank'>Terms of service</a> and the <a href='mailto:contact@bizcorasystems.com' target='_blank'>Privacy policy</a>",
             "submit": "Create my account",
             "next": "Next", "back": "Back",
             "pw_weak": "Very weak", "pw_fair": "Weak", "pw_good": "Good", "pw_strong": "Strong",
@@ -398,7 +398,7 @@ def register_page(lang):
             "industry": "Branche",
             "employees": "Anzahl Mitarbeiter",
             "password": "Passwort", "password_confirm": "Passwort bestätigen",
-            "terms": "Ich akzeptiere die <a href='../de/faq' target='_blank'>Nutzungsbedingungen</a> und die <a href='mailto:contact@jgjpaystock.com' target='_blank'>Datenschutzrichtlinie</a>",
+            "terms": "Ich akzeptiere die <a href='../de/faq' target='_blank'>Nutzungsbedingungen</a> und die <a href='mailto:contact@bizcorasystems.com' target='_blank'>Datenschutzrichtlinie</a>",
             "submit": "Konto erstellen",
             "next": "Weiter", "back": "Zurück",
             "pw_weak": "Sehr schwach", "pw_fair": "Schwach", "pw_good": "Gut", "pw_strong": "Stark",
@@ -425,12 +425,12 @@ def register_page(lang):
 
     industry_options = "\n".join(f'            <option value="{v}">{v}</option>' for v in t["industries"])
     emp_options = "\n".join(f'            <option value="{v}">{v}</option>' for v in t["emp_options"])
-    canonical = f"https://www.jgjpaystock.com/{lang}/register"
+    canonical = f"https://www.bizcorasystems.com/{lang}/register"
 
     return f"""{head(lang, t['title'], t['desc'], canonical,
-        'https://www.jgjpaystock.com/fr/register',
-        'https://www.jgjpaystock.com/en/register',
-        'https://www.jgjpaystock.com/de/register')}
+        'https://www.bizcorasystems.com/fr/register',
+        'https://www.bizcorasystems.com/en/register',
+        'https://www.bizcorasystems.com/de/register')}
 <body>
 {header_nav(lang, 'register')}
 
@@ -593,7 +593,7 @@ def register_page(lang):
   </style>
 
   <script>
-    const BILLING_API = 'https://api.jgjpaystock.com';
+    const BILLING_API = 'https://api.bizcorasystems.com';
     const LANG = '{lang}';
     const MSG = {{
       required: '{t['err_required']}',
@@ -855,12 +855,12 @@ def verify_page(lang):
             "open_app": "App öffnen",
         },
     }[lang]
-    canonical = f"https://www.jgjpaystock.com/{lang}/verify-email"
+    canonical = f"https://www.bizcorasystems.com/{lang}/verify-email"
 
     return f"""{head(lang, t['title'], t['desc'], canonical,
-        'https://www.jgjpaystock.com/fr/verify-email',
-        'https://www.jgjpaystock.com/en/verify-email',
-        'https://www.jgjpaystock.com/de/verify-email')}
+        'https://www.bizcorasystems.com/fr/verify-email',
+        'https://www.bizcorasystems.com/en/verify-email',
+        'https://www.bizcorasystems.com/de/verify-email')}
 <body>
 {header_nav(lang, '')}
 
@@ -884,7 +884,7 @@ def verify_page(lang):
           <p style="color:var(--neutral-500);margin-bottom:.5rem">{t['success_body']}</p>
           <p style="color:var(--neutral-400);font-size:.875rem;margin-bottom:2rem">{t['success_creds']}</p>
           <div style="display:flex;flex-wrap:wrap;gap:.75rem;justify-content:center">
-            <a href="https://app.jgjpaystock.com" class="btn btn--primary btn--lg">{t['open_web']}</a>
+            <a href="https://app.bizcorasystems.com" class="btn btn--primary btn--lg">{t['open_web']}</a>
             <a href="download" class="btn btn--ghost btn--lg">{t['download_title']}</a>
           </div>
         </div>
@@ -910,7 +910,7 @@ def verify_page(lang):
           </div>
           <h2 style="font-size:1.5rem;margin-bottom:.5rem">{t['invalid_title']}</h2>
           <p style="color:var(--neutral-500);margin-bottom:1.5rem">{t['invalid_body']}</p>
-          <a href="mailto:support@jgjpaystock.com" class="btn btn--ghost btn--md">{t['invalid_btn']}</a>
+          <a href="mailto:support@bizcorasystems.com" class="btn btn--ghost btn--md">{t['invalid_btn']}</a>
         </div>
 
         <!-- Already verified state -->
@@ -920,7 +920,7 @@ def verify_page(lang):
           </div>
           <h2 style="font-size:1.5rem;margin-bottom:.5rem">{t['already_title']}</h2>
           <p style="color:var(--neutral-500);margin-bottom:1.5rem">{t['already_body']}</p>
-          <a href="https://app.jgjpaystock.com" class="btn btn--primary btn--lg">{t['open_app']}</a>
+          <a href="https://app.bizcorasystems.com" class="btn btn--primary btn--lg">{t['open_app']}</a>
         </div>
 
         <!-- No token state -->
@@ -941,7 +941,7 @@ def verify_page(lang):
   </style>
 
   <script>
-    const BILLING_API = 'https://api.jgjpaystock.com';
+    const BILLING_API = 'https://api.bizcorasystems.com';
 
     function show(id) {{
       ['loading','success','expired','invalid','already','notoken'].forEach(s => {{
@@ -1149,11 +1149,11 @@ def pricing_page(lang):
             <p style="color:var(--neutral-500);margin:.5rem 0 0;font-size:.95rem">{a}</p>
           </details>"""
 
-    canonical = f"https://www.jgjpaystock.com/{lang}/pricing"
+    canonical = f"https://www.bizcorasystems.com/{lang}/pricing"
     return f"""{head(lang, t['title'], t['desc'], canonical,
-        'https://www.jgjpaystock.com/fr/pricing',
-        'https://www.jgjpaystock.com/en/pricing',
-        'https://www.jgjpaystock.com/de/pricing')}
+        'https://www.bizcorasystems.com/fr/pricing',
+        'https://www.bizcorasystems.com/en/pricing',
+        'https://www.bizcorasystems.com/de/pricing')}
 <body>
 {header_nav(lang, 'pricing')}
 
@@ -1218,7 +1218,7 @@ def pricing_page(lang):
     // remplis ici par l'API. Une modif de prix cote back-office est donc refletee
     // immediatement (sans regeneration), pour toutes les devises. Si l'API est
     // indisponible, le placeholder reste affiche (jamais un faux prix).
-    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.jgjpaystock.com';
+    const BILLING_API = (window.__ENV__ && window.__ENV__.BILLING_API) || 'https://api.bizcorasystems.com';
     const LANG = '{lang}';
     const UNIT = {{ monthly: '{unit_mo}', yearly: '{unit_yr}' }};
     let CCY = localStorage.getItem('jgj_ccy') || 'EUR';

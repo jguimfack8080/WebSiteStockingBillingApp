@@ -152,4 +152,4 @@ Fichier `_headers` (format Cloudflare Pages / Workers Static Assets) :
 
 ## 5. Points hors-code (a faire cote plateforme)
 
-Voir **PROD-READY.md** pour la mise en production sur `https://www.jgjpaystock.com` (Cloudflare Pages, redirections, Search Console).
+Voir **PROD-READY.md** pour la mise en production sur `https://www.bizcorasystems.com` (Cloudflare Pages, redirections, Search Console).

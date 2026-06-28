@@ -1,8 +1,8 @@
-# TO-DO - Mise en ligne et visibilite de jgjpaystock.com
+# TO-DO - Mise en ligne et visibilite de bizcorasystems.com
 
 Plan d'action ordonne, de la mise en ligne jusqu'au referencement. A cocher au fur et a mesure.
 
-- Domaine canonique : **https://www.jgjpaystock.com**
+- Domaine canonique : **https://www.bizcorasystems.com**
 - Hebergement : **Cloudflare Pages** (projet `websitestockingbillingapp`) connecte a GitHub
 - DNS : reste chez **STRATO** (on NE bascule PAS les nameservers, pour ne pas casser l'e-mail)
 - Langues : FR / EN / DE (`/fr/ /en/ /de/`)
@@ -12,21 +12,21 @@ Plan d'action ordonne, de la mise en ligne jusqu'au referencement. A cocher au f
 ## PHASE 0 - Finir la mise en ligne (DNS)
 
 ### 0.1 CNAME www (chez STRATO) - FAIT / a verifier
-- [ ] STRATO -> Domains -> Domainverwaltung -> `jgjpaystock.com` -> DNS -> **TXT- und CNAME-Records verwalten**
+- [ ] STRATO -> Domains -> Domainverwaltung -> `bizcorasystems.com` -> DNS -> **TXT- und CNAME-Records verwalten**
   - Typ : `CNAME` · Prafix : `www` · Ziel : `websitestockingbillingapp.pages.dev`
 - [ ] (Si conflit) supprimer l'ancien enregistrement `www` dans **A-Record verwalten**, puis reessayer le CNAME
 - [ ] NE PAS toucher : **MX-Record** (e-mail) ni les **TXT** SPF/DKIM existants
 
 ### 0.2 Activer le domaine sur Cloudflare Pages
-- [ ] Cloudflare -> **Workers & Pages** -> `websitestockingbillingapp` -> **Custom domains** -> garder `www.jgjpaystock.com`
+- [ ] Cloudflare -> **Workers & Pages** -> `websitestockingbillingapp` -> **Custom domains** -> garder `www.bizcorasystems.com`
 - [ ] Cliquer **Check DNS records** -> attendre l'activation + le certificat HTTPS (quelques minutes a 24 h)
 
-### 0.3 Domaine nu jgjpaystock.com (sans www) -> redirige vers www
-- [ ] STRATO -> Domainverwaltung -> `jgjpaystock.com` -> definir une **Weiterleitung (301)** vers `https://www.jgjpaystock.com`
-  - Non bloquant : le site marche deja sur `www.jgjpaystock.com`. Mais a faire pour pouvoir communiquer l'adresse courte `jgjpaystock.com`.
+### 0.3 Domaine nu bizcorasystems.com (sans www) -> redirige vers www
+- [ ] STRATO -> Domainverwaltung -> `bizcorasystems.com` -> definir une **Weiterleitung (301)** vers `https://www.bizcorasystems.com`
+  - Non bloquant : le site marche deja sur `www.bizcorasystems.com`. Mais a faire pour pouvoir communiquer l'adresse courte `bizcorasystems.com`.
 
 ### 0.4 Nettoyage Cloudflare (eviter la confusion)
-- [ ] Supprimer la **zone DNS "Full"** `jgjpaystock.com` cote **Websites** (Overview -> Advanced Actions -> Remove Site from Cloudflare). Elle est inutile et affiche de fausses alertes e-mail.
+- [ ] Supprimer la **zone DNS "Full"** `bizcorasystems.com` cote **Websites** (Overview -> Advanced Actions -> Remove Site from Cloudflare). Elle est inutile et affiche de fausses alertes e-mail.
   - Cela NE supprime PAS le projet Pages ni le Custom domain `www`.
 - [ ] NE PAS changer les nameservers chez STRATO (sinon l'e-mail `contact@` / `no-reply@` casse).
 
@@ -34,13 +34,13 @@ Plan d'action ordonne, de la mise en ligne jusqu'au referencement. A cocher au f
 
 ## PHASE 1 - Verifier que tout marche (apres activation HTTPS)
 
-- [ ] `https://www.jgjpaystock.com/` redirige vers `/fr/` (ou `/en/` `/de/` selon la langue du navigateur)
-- [ ] `https://jgjpaystock.com` (sans www) renvoie vers `www` (apres la redirection 0.3)
-- [ ] Une page directe charge : `https://www.jgjpaystock.com/en/features.html`
+- [ ] `https://www.bizcorasystems.com/` redirige vers `/fr/` (ou `/en/` `/de/` selon la langue du navigateur)
+- [ ] `https://bizcorasystems.com` (sans www) renvoie vers `www` (apres la redirection 0.3)
+- [ ] Une page directe charge : `https://www.bizcorasystems.com/en/features.html`
 - [ ] Le selecteur de langue FR/EN/DE fonctionne sur chaque page
-- [ ] `https://www.jgjpaystock.com/sitemap.xml` s'affiche
-- [ ] `https://www.jgjpaystock.com/robots.txt` s'affiche
-- [ ] L'e-mail fonctionne toujours : envoyer un test a `contact@jgjpaystock.com`
+- [ ] `https://www.bizcorasystems.com/sitemap.xml` s'affiche
+- [ ] `https://www.bizcorasystems.com/robots.txt` s'affiche
+- [ ] L'e-mail fonctionne toujours : envoyer un test a `contact@bizcorasystems.com`
 - [ ] Mobile : ouvrir le site sur telephone, verifier l'affichage et la vitesse
 
 ---
@@ -48,9 +48,9 @@ Plan d'action ordonne, de la mise en ligne jusqu'au referencement. A cocher au f
 ## PHASE 2 - Indexation (etre trouvable par Google) - PRIORITAIRE
 
 ### 2.1 Google Search Console (gratuit, indispensable)
-- [ ] Aller sur search.google.com/search-console -> ajouter la propriete **`https://www.jgjpaystock.com`**
+- [ ] Aller sur search.google.com/search-console -> ajouter la propriete **`https://www.bizcorasystems.com`**
 - [ ] Verifier la propriete (methode "balise HTML" ou "DNS TXT" chez STRATO)
-- [ ] Menu **Sitemaps** -> soumettre : `https://www.jgjpaystock.com/sitemap.xml`
+- [ ] Menu **Sitemaps** -> soumettre : `https://www.bizcorasystems.com/sitemap.xml`
 - [ ] Outil **Inspection d'URL** -> demander l'indexation de la page d'accueil
 
 ### 2.2 Bing Webmaster Tools (gratuit ; alimente Bing + ChatGPT/Copilot)
