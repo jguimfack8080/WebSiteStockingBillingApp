@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sécurité de session et déconnexion automatique - Documentation BizCoRa</title>
+  <meta name="description" content="Comprendre pourquoi l&#x27;application peut vous déconnecter (session expirée, compte désactivé, inactivité), comment rester connecté, et régler le délai d&#x27;inactivité." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/session_security" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Sécurité de session et déconnexion automatique - Documentation BizCoRa" />
+  <meta property="og:description" content="Comprendre pourquoi l&#x27;application peut vous déconnecter (session expirée, compte désactivé, inactivité), comment rester connecté, et régler le délai d&#x27;inactivité." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Sécurité de session et déconnexion automatique - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Comprendre pourquoi l&#x27;application peut vous déconnecter (session expirée, compte désactivé, inactivité), comment rester connecté, et régler le délai d&#x27;inactivité." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/fr/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Centre de documentation</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Rechercher dans la documentation..." data-index="/fr/docs/search-index.json" aria-label="Rechercher dans la documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="Aucun résultat"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/fr/">Retour au site</a>
+    <span class="doc-lang"><a href="/fr/docs/settings/session_security" class="is-active" hreflang="fr">FR</a><a href="/en/docs/settings/session_security" class="" hreflang="en">EN</a><a href="/de/docs/settings/session_security" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/fr/docs/">Tout le centre de documentation</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Premiers pas</div>
+<a class="nav-link" href="/fr/docs/getting_started/profile_photo">Ajouter ou changer sa photo de profil</a>
+<a class="nav-link" href="/fr/docs/getting_started/login">Se connecter à l&#x27;application</a>
+<a class="nav-link" href="/fr/docs/getting_started/biometric_login">Connexion biométrique (empreinte / visage)</a>
+<a class="nav-link" href="/fr/docs/getting_started/password_reset">Réinitialiser un mot de passe oublié</a>
+<a class="nav-link" href="/fr/docs/getting_started/home_navigation">Comprendre votre tableau de bord et naviguer</a>
+<a class="nav-link" href="/fr/docs/getting_started/scan_intro">Scanner un code-barres (douchette, caméra ou saisie)</a>
+<a class="nav-link" href="/fr/docs/getting_started/help_center_usage">Utiliser le Centre d&#x27;Aide et la recherche</a>
+<a class="nav-link" href="/fr/docs/getting_started/my_profile">Mon profil et mon mot de passe</a>
+<a class="nav-link" href="/fr/docs/getting_started/signup_company_account">Créer son entreprise et son compte</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Tableau de bord</div>
+<a class="nav-link" href="/fr/docs/dashboard/manager_dashboard">Lire le tableau de bord et les indicateurs du jour</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Ventes / Caisse</div>
+<a class="nav-link" href="/fr/docs/sales/refunds">Suivre les remboursements</a>
+<a class="nav-link" href="/fr/docs/sales/refund_cancel_sale">Rembourser ou annuler une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sale_checkout">Encaisser une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sales_history">Consulter l&#x27;historique des ventes</a>
+<a class="nav-link" href="/fr/docs/sales/quotes">Créer et gérer les devis</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventaire</div>
+<a class="nav-link" href="/fr/docs/stock/inventory_overview">Gérer le stock (vue inventaire)</a>
+<a class="nav-link" href="/fr/docs/stock/product_categories">Gérer les catégories de produits</a>
+<a class="nav-link" href="/fr/docs/stock/expiring_products">Surveiller les produits bientôt périmés</a>
+<a class="nav-link" href="/fr/docs/stock/inventory_adjustment">Ajuster l&#x27;inventaire (corriger le stock)</a>
+<a class="nav-link" href="/fr/docs/stock/products_management">Gérer les produits et leurs codes-barres</a>
+<a class="nav-link" href="/fr/docs/stock/stock_movements">Enregistrer les mouvements de stock</a>
+<a class="nav-link" href="/fr/docs/stock/data_import">Importer des données : produits, clients et stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Clients</div>
+<a class="nav-link" href="/fr/docs/customers/new_customer">Ajouter un client</a>
+<a class="nav-link" href="/fr/docs/customers/customer_loyalty">Consulter la fidélité d&#x27;un client</a>
+<a class="nav-link" href="/fr/docs/customers/customers_loyalty_list">Voir tous les clients fidèles et leurs points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Facturation</div>
+<a class="nav-link" href="/fr/docs/billing/invoices">Consulter les factures</a>
+<a class="nav-link" href="/fr/docs/billing/subscription_payment">Mon abonnement et le paiement</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_manager">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_manager">Consulter les avoirs</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_admin">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_admin">Consulter les avoirs</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Paiements</div>
+<a class="nav-link" href="/fr/docs/transactions/cashier_performance">Analyser la performance des caissiers</a>
+<a class="nav-link" href="/fr/docs/transactions/transactions">Analyser les transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Achats / Fournisseurs</div>
+<a class="nav-link" href="/fr/docs/purchasing/suppliers">Gérer les fournisseurs</a>
+<a class="nav-link" href="/fr/docs/purchasing/purchases">Enregistrer les achats et réceptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Comptabilité</div>
+<a class="nav-link" href="/fr/docs/accounting/accounting">Comptabilité : tableau de bord et rapports</a>
+<a class="nav-link" href="/fr/docs/accounting/understanding_vat">Comprendre la TVA</a>
+<a class="nav-link" href="/fr/docs/accounting/accounting_formulas">Comptabilité : que signifie chaque terme et comment chaque montant est calculé</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Utilisateurs &amp; rôles</div>
+<a class="nav-link" href="/fr/docs/users/users_management">Gérer les utilisateurs et les rôles</a>
+<a class="nav-link" href="/fr/docs/users/manage_user_permissions">Gérer les droits d&#x27;un utilisateur</a>
+<a class="nav-link" href="/fr/docs/users/employee_onboarding">Créer un employé et l&#x27;inviter à rejoindre</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Paramètres</div>
+<a class="nav-link is-active" href="/fr/docs/settings/session_security">Sécurité de session et déconnexion automatique</a>
+<a class="nav-link" href="/fr/docs/settings/business_timezone">Heure et fuseau horaire de l&#x27;entreprise</a>
+<a class="nav-link" href="/fr/docs/settings/settings">Régler les paramètres (langue, thème, notifications)</a>
+<a class="nav-link" href="/fr/docs/settings/company_settings">Configurer les paramètres de l&#x27;entreprise</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Supervision</div>
+<a class="nav-link" href="/fr/docs/administration/audit_logs">Consulter le journal d&#x27;audit</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/fr/docs/notifications/push_notifications">Notifications push (même application fermée)</a>
+<a class="nav-link" href="/fr/docs/notifications/notifications">Notifications et alertes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Assistant IA</div>
+<a class="nav-link" href="/fr/docs/ai/ai_chat">Utiliser l&#x27;Assistant IA</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/fr/docs/">Documentation</a><span class="sep">/</span><a href="/fr/docs/#settings">Paramètres</a><span class="sep">/</span><span>Sécurité de session et déconnexion automatique</span></nav>
+    <article class="doc-article">
+      <h1>Sécurité de session et déconnexion automatique</h1>
+      <div class="doc-badges"><span class="role-badge all">Tous les rôles</span></div>
+      <p class="doc-lead">Comprendre pourquoi l&#x27;application peut vous déconnecter (session expirée, compte désactivé, inactivité), comment rester connecté, et régler le délai d&#x27;inactivité.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Présentation</h2>
+<p>Pour protéger vos données, l&#x27;application peut mettre fin à votre session dans trois cas : (1) votre session a expiré (après une longue durée), (2) un administrateur a désactivé votre compte, (3) vous êtes resté INACTIF trop longtemps (aucune action). Dans tous les cas, vous êtes ramené à l&#x27;écran de connexion avec un message qui explique pourquoi.</p>
+<p>La déconnexion pour inactivité est importante sur un poste partagé (une caisse) : si vous vous éloignez sans vous déconnecter, personne ne peut agir à votre place. Avant de vous déconnecter, l&#x27;application vous prévient avec un compte à rebours et vous laisse le choix de rester connecté.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Accès</h2>
+<p>Le réglage du délai d&#x27;inactivité se trouve dans Réglages &gt; Sécurité &gt; &quot;Déconnexion automatique&quot;. L&#x27;avertissement d&#x27;inactivité apparaît tout seul quand vous restez sans rien faire. Le message expliquant une déconnexion s&#x27;affiche sur l&#x27;écran de connexion.</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
+<ul>
+<li>Avertissement d&#x27;inactivité : une fenêtre &quot;Toujours là ?&quot; avec un compte à rebours. Deux boutons : &quot;Rester connecté&quot; (poursuit la session) et &quot;Se déconnecter&quot;. Si le compte à rebours atteint zéro, vous êtes déconnecté automatiquement.</li>
+<li>Message de raison (écran de connexion) : une bannière sur l&#x27;écran de connexion indique pourquoi la session a pris fin : session expirée, compte désactivé, ou inactivité.</li>
+<li>Sélecteur &quot;Déconnexion automatique&quot; : dans Réglages &gt; Sécurité : un menu pour choisir le délai d&#x27;inactivité (5, 10, 15, 30 ou 60 minutes), ou &quot;Jamais&quot; pour le désactiver. Valeur par défaut : 10 minutes.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Procédure pas à pas</h2>
+<ol>
+<li>Pour changer le délai : ouvrez Réglages &gt; Sécurité &gt; &quot;Déconnexion automatique&quot; et choisissez une durée (ou &quot;Jamais&quot;). -&gt; Le nouveau délai est appliqué immédiatement et conservé sur cet appareil (même après redémarrage). (Vérif : rouvrez le menu : la valeur choisie est bien affichée.)</li>
+<li>Quand l&#x27;avertissement &quot;Toujours là ?&quot; apparaît : cliquez sur &quot;Rester connecté&quot; pour poursuivre, ou &quot;Se déconnecter&quot; pour fermer la session tout de suite. -&gt; &quot;Rester connecté&quot; remet le compteur à zéro. Sinon, à la fin du compte à rebours, vous êtes ramené à la connexion.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Exemples</h2>
+<p>Je reviens à temps : vous laissez la caisse 14 minutes. L&#x27;avertissement apparaît : vous cliquez &quot;Rester connecté&quot;. Vous continuez sans avoir à ressaisir votre mot de passe.</p>
+<p>Pause déjeuner : vous partez 30 minutes sans vous déconnecter (délai réglé à 15 min). À votre retour, vous êtes sur l&#x27;écran de connexion avec le message &quot;déconnecté pour inactivité&quot;. Vous vous reconnectez : tout est intact.</p>
+<p>Compte désactivé en cours de session : un administrateur désactive votre compte pendant que vous travaillez. À votre action suivante, vous êtes immédiatement déconnecté avec le message &quot;compte désactivé&quot;. C&#x27;est normal : contactez votre administrateur.</p>
+<p>Option &quot;Jamais&quot; : la déconnexion par inactivité est désactivée. À réserver à un appareil PERSONNEL de confiance ; déconseillé sur une caisse partagée.</p>
+<p>Après une mise à jour de sécurité, il peut être nécessaire de se reconnecter une fois, même si rien d&#x27;autre n&#x27;a changé. C&#x27;est normal.</p>
+<p>Au moment de payer, un double-clic ou un réessai après coupure réseau n&#x27;encaisse jamais deux fois : l&#x27;opération est protégée.</p>
+</section>
+<section class="doc-section errors" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Messages d&#x27;erreur</h2>
+<div class="err"><div class="msg">Votre session a expiré. Veuillez vous reconnecter.</div><div class="sol">Cause : la durée de validité de votre connexion a été atteinte, ou la connexion n&#x27;est plus valide. - Solution : reconnectez-vous avec votre e-mail et votre mot de passe.</div></div>
+<div class="err"><div class="msg">Votre compte a été désactivé. Contactez votre administrateur.</div><div class="sol">Cause : un administrateur a désactivé votre compte ; vos accès sont suspendus. - Solution : contactez votre administrateur pour réactiver le compte.</div></div>
+</section>
+<section class="doc-section tips" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Conseils</h2>
+<ul>
+<li>Sur une caisse partagée, choisissez un délai court (5 ou 10 min) et déconnectez-vous toujours en partant.</li>
+<li>Ne restez connecté que sur un appareil de confiance : tant que la session est ouverte, une autre personne pourrait agir en votre nom.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/fr/docs/users/employee_onboarding"><div class="dir">Précédent</div><div class="ttl">Créer un employé et l&#x27;inviter à rejoindre</div></a><a class="next" href="/fr/docs/settings/business_timezone"><div class="dir">Suivant</div><div class="ttl">Heure et fuseau horaire de l&#x27;entreprise</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">Sur cette page</div><a href="#sec-0">Présentation</a>
+<a href="#sec-1">Accès</a>
+<a href="#sec-2">Interface</a>
+<a href="#sec-3">Procédure pas à pas</a>
+<a href="#sec-4">Exemples</a>
+<a href="#sec-5">Messages d&#x27;erreur</a>
+<a href="#sec-6">Conseils</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Sécurité de session et déconnexion automatique", "description": "Comprendre pourquoi l'application peut vous déconnecter (session expirée, compte désactivé, inactivité), comment rester connecté, et régler le délai d'inactivité.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/settings/session_security", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Paramètres", "item": "https://www.bizcorasystems.com/fr/docs/#settings"}, {"@type": "ListItem", "position": 3, "name": "Sécurité de session et déconnexion automatique", "item": "https://www.bizcorasystems.com/fr/docs/settings/session_security"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Votre session a expiré. Veuillez vous reconnecter.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : la durée de validité de votre connexion a été atteinte, ou la connexion n'est plus valide. - Solution : reconnectez-vous avec votre e-mail et votre mot de passe."}}, {"@type": "Question", "name": "Votre compte a été désactivé. Contactez votre administrateur.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : un administrateur a désactivé votre compte ; vos accès sont suspendus. - Solution : contactez votre administrateur pour réactiver le compte."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

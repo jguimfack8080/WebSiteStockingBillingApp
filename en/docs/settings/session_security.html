@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Session security and automatic sign-out - Documentation BizCoRa</title>
+  <meta name="description" content="Understand why the app may sign you out (session expired, account deactivated, inactivity), how to stay signed in, and how to set the inactivity delay." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/session_security" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Session security and automatic sign-out - Documentation BizCoRa" />
+  <meta property="og:description" content="Understand why the app may sign you out (session expired, account deactivated, inactivity), how to stay signed in, and how to set the inactivity delay." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Session security and automatic sign-out - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Understand why the app may sign you out (session expired, account deactivated, inactivity), how to stay signed in, and how to set the inactivity delay." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/en/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Documentation center</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Search the documentation..." data-index="/en/docs/search-index.json" aria-label="Search the documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="No results"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/en/">Back to site</a>
+    <span class="doc-lang"><a href="/fr/docs/settings/session_security" class="" hreflang="fr">FR</a><a href="/en/docs/settings/session_security" class="is-active" hreflang="en">EN</a><a href="/de/docs/settings/session_security" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/en/docs/">Full documentation center</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Getting started</div>
+<a class="nav-link" href="/en/docs/getting_started/profile_photo">Add or change your profile photo</a>
+<a class="nav-link" href="/en/docs/getting_started/login">Sign in to the application</a>
+<a class="nav-link" href="/en/docs/getting_started/biometric_login">Biometric login (fingerprint / face)</a>
+<a class="nav-link" href="/en/docs/getting_started/password_reset">Reset a forgotten password</a>
+<a class="nav-link" href="/en/docs/getting_started/home_navigation">Understand your dashboard and navigate</a>
+<a class="nav-link" href="/en/docs/getting_started/scan_intro">Scan a barcode (scanner gun, camera or manual)</a>
+<a class="nav-link" href="/en/docs/getting_started/help_center_usage">Use the Help Center and search</a>
+<a class="nav-link" href="/en/docs/getting_started/my_profile">My profile and my password</a>
+<a class="nav-link" href="/en/docs/getting_started/signup_company_account">Create your company and account</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Dashboard</div>
+<a class="nav-link" href="/en/docs/dashboard/manager_dashboard">Read the dashboard and daily indicators</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Sales / Checkout</div>
+<a class="nav-link" href="/en/docs/sales/refunds">Track refunds</a>
+<a class="nav-link" href="/en/docs/sales/refund_cancel_sale">Refund or cancel a sale</a>
+<a class="nav-link" href="/en/docs/sales/sale_checkout">Process a sale</a>
+<a class="nav-link" href="/en/docs/sales/sales_history">View the sales history</a>
+<a class="nav-link" href="/en/docs/sales/quotes">Create and manage quotes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventory</div>
+<a class="nav-link" href="/en/docs/stock/inventory_overview">Manage stock (inventory view)</a>
+<a class="nav-link" href="/en/docs/stock/product_categories">Manage product categories</a>
+<a class="nav-link" href="/en/docs/stock/expiring_products">Monitor soon-to-expire products</a>
+<a class="nav-link" href="/en/docs/stock/inventory_adjustment">Adjust inventory (correct stock)</a>
+<a class="nav-link" href="/en/docs/stock/products_management">Manage products and their barcodes</a>
+<a class="nav-link" href="/en/docs/stock/stock_movements">Record stock movements</a>
+<a class="nav-link" href="/en/docs/stock/data_import">Import data: products, customers and stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Customers</div>
+<a class="nav-link" href="/en/docs/customers/new_customer">Add a customer</a>
+<a class="nav-link" href="/en/docs/customers/customer_loyalty">View a customer loyalty</a>
+<a class="nav-link" href="/en/docs/customers/customers_loyalty_list">View all loyal customers and their points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Billing</div>
+<a class="nav-link" href="/en/docs/billing/invoices">View invoices</a>
+<a class="nav-link" href="/en/docs/billing/subscription_payment">My subscription and payment</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_manager">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_manager">View credit notes</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_admin">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_admin">View credit notes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Payments</div>
+<a class="nav-link" href="/en/docs/transactions/cashier_performance">Analyze cashier performance</a>
+<a class="nav-link" href="/en/docs/transactions/transactions">Analyze transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Purchasing / Suppliers</div>
+<a class="nav-link" href="/en/docs/purchasing/suppliers">Manage suppliers</a>
+<a class="nav-link" href="/en/docs/purchasing/purchases">Record purchases and receptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Accounting</div>
+<a class="nav-link" href="/en/docs/accounting/accounting">Accounting: dashboard and reports</a>
+<a class="nav-link" href="/en/docs/accounting/understanding_vat">Understanding VAT</a>
+<a class="nav-link" href="/en/docs/accounting/accounting_formulas">Accounting: what each term means and how each amount is computed</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Users &amp; roles</div>
+<a class="nav-link" href="/en/docs/users/users_management">Manage users and roles</a>
+<a class="nav-link" href="/en/docs/users/manage_user_permissions">Manage a user&#x27;s permissions</a>
+<a class="nav-link" href="/en/docs/users/employee_onboarding">Create an employee and invite them to join</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Settings</div>
+<a class="nav-link is-active" href="/en/docs/settings/session_security">Session security and automatic sign-out</a>
+<a class="nav-link" href="/en/docs/settings/business_timezone">Company time and timezone</a>
+<a class="nav-link" href="/en/docs/settings/settings">Adjust settings (language, theme, notifications)</a>
+<a class="nav-link" href="/en/docs/settings/company_settings">Configure company settings</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Oversight</div>
+<a class="nav-link" href="/en/docs/administration/audit_logs">View the audit log</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/en/docs/notifications/push_notifications">Push notifications (even when the app is closed)</a>
+<a class="nav-link" href="/en/docs/notifications/notifications">Notifications and alerts</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>AI Assistant</div>
+<a class="nav-link" href="/en/docs/ai/ai_chat">Using the AI Assistant</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/en/docs/">Documentation</a><span class="sep">/</span><a href="/en/docs/#settings">Settings</a><span class="sep">/</span><span>Session security and automatic sign-out</span></nav>
+    <article class="doc-article">
+      <h1>Session security and automatic sign-out</h1>
+      <div class="doc-badges"><span class="role-badge all">All roles</span></div>
+      <p class="doc-lead">Understand why the app may sign you out (session expired, account deactivated, inactivity), how to stay signed in, and how to set the inactivity delay.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Presentation</h2>
+<p>To protect your data, the app may end your session in three cases: (1) your session expired (after a long period), (2) an administrator deactivated your account, (3) you stayed INACTIVE too long (no action). In every case you are returned to the sign-in screen with a message explaining why.</p>
+<p>Inactivity sign-out matters on a shared terminal (a till): if you walk away without signing out, nobody can act in your place. Before signing you out, the app warns you with a countdown and lets you choose to stay signed in.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Access</h2>
+<p>The inactivity delay is set in Settings &gt; Security &gt; &quot;Automatic sign-out&quot;. The inactivity warning appears on its own when you stay idle. The message explaining a sign-out is shown on the sign-in screen.</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
+<ul>
+<li>Inactivity warning: A &quot;Still there?&quot; dialog with a countdown. Two buttons: &quot;Stay signed in&quot; (keeps the session) and &quot;Sign out&quot;. If the countdown reaches zero, you are signed out automatically.</li>
+<li>Reason message (sign-in screen): A banner on the sign-in screen tells you why the session ended: session expired, account deactivated, or inactivity.</li>
+<li>&quot;Automatic sign-out&quot; selector: In Settings &gt; Security: a menu to choose the inactivity delay (5, 10, 15, 30 or 60 minutes), or &quot;Never&quot; to disable it. Default: 10 minutes.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Step-by-step procedure</h2>
+<ol>
+<li>To change the delay: open Settings &gt; Security &gt; &quot;Automatic sign-out&quot; and pick a duration (or &quot;Never&quot;). -&gt; The new delay applies immediately and is kept on this device (even after a restart). (Check: Reopen the menu: the chosen value is shown.)</li>
+<li>When the &quot;Still there?&quot; warning appears: click &quot;Stay signed in&quot; to continue, or &quot;Sign out&quot; to end the session now. -&gt; &quot;Stay signed in&quot; resets the timer. Otherwise, when the countdown ends, you are returned to sign-in.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Examples</h2>
+<p>I come back in time: You leave the till for 14 minutes. The warning appears: you click &quot;Stay signed in&quot;. You carry on without re-entering your password.</p>
+<p>Lunch break: You leave for 30 minutes without signing out (delay set to 15 min). On return you are on the sign-in screen with the &quot;signed out for inactivity&quot; message. You sign in again: everything is intact.</p>
+<p>Account deactivated mid-session: An administrator deactivates your account while you work. On your next action you are immediately signed out with the &quot;account deactivated&quot; message. This is expected: contact your administrator.</p>
+<p>&quot;Never&quot; option: inactivity sign-out is disabled. Use only on a trusted PERSONAL device; not advised on a shared till.</p>
+<p>After a security update, you may need to sign in once again, even if nothing else changed. This is normal.</p>
+<p>When paying, a double-click or a retry after a network drop never charges twice: the operation is protected.</p>
+</section>
+<section class="doc-section errors" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Error messages</h2>
+<div class="err"><div class="msg">Your session has expired. Please sign in again.</div><div class="sol">Cause: Your sign-in validity period was reached, or the sign-in is no longer valid. - Solution: Sign in again with your email and password.</div></div>
+<div class="err"><div class="msg">Your account has been deactivated. Please contact your administrator.</div><div class="sol">Cause: An administrator deactivated your account; your access is suspended. - Solution: Contact your administrator to reactivate the account.</div></div>
+</section>
+<section class="doc-section tips" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Tips</h2>
+<ul>
+<li>On a shared till, choose a short delay (5 or 10 min) and always sign out when you leave.</li>
+<li>Only stay signed in on a trusted device: while the session is open, someone else could act on your behalf.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/en/docs/users/employee_onboarding"><div class="dir">Previous</div><div class="ttl">Create an employee and invite them to join</div></a><a class="next" href="/en/docs/settings/business_timezone"><div class="dir">Next</div><div class="ttl">Company time and timezone</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">On this page</div><a href="#sec-0">Presentation</a>
+<a href="#sec-1">Access</a>
+<a href="#sec-2">Interface</a>
+<a href="#sec-3">Step-by-step procedure</a>
+<a href="#sec-4">Examples</a>
+<a href="#sec-5">Error messages</a>
+<a href="#sec-6">Tips</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Session security and automatic sign-out", "description": "Understand why the app may sign you out (session expired, account deactivated, inactivity), how to stay signed in, and how to set the inactivity delay.", "inLanguage": "en", "url": "https://www.bizcorasystems.com/en/docs/settings/session_security", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/en/docs/"}, {"@type": "ListItem", "position": 2, "name": "Settings", "item": "https://www.bizcorasystems.com/en/docs/#settings"}, {"@type": "ListItem", "position": 3, "name": "Session security and automatic sign-out", "item": "https://www.bizcorasystems.com/en/docs/settings/session_security"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Your session has expired. Please sign in again.", "acceptedAnswer": {"@type": "Answer", "text": "Cause: Your sign-in validity period was reached, or the sign-in is no longer valid. - Solution: Sign in again with your email and password."}}, {"@type": "Question", "name": "Your account has been deactivated. Please contact your administrator.", "acceptedAnswer": {"@type": "Answer", "text": "Cause: An administrator deactivated your account; your access is suspended. - Solution: Contact your administrator to reactivate the account."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>
