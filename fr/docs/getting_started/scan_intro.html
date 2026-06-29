@@ -6,21 +6,32 @@
   <title>Scanner un code-barres (douchette, caméra ou saisie) - Documentation BizCoRa</title>
   <meta name="description" content="Comprendre les 3 façons de scanner et le scan automatique dès qu&#x27;on est sur un écran de flux." />
   <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
   <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/scan_intro" />
   <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/scan_intro" />
-  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/getting_started/scan_intro" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="Scanner un code-barres (douchette, caméra ou saisie) - Documentation BizCoRa" />
   <meta property="og:description" content="Comprendre les 3 façons de scanner et le scan automatique dès qu&#x27;on est sur un écran de flux." />
   <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
-  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.jpg" />
   <meta property="og:site_name" content="BizCoRa" />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:locale:alternate" content="de_DE" />
+  <meta property="og:image:type" content="image/jpeg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Aperçu de l'application BizCoRa" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Scanner un code-barres (douchette, caméra ou saisie) - Documentation BizCoRa" />
   <meta name="twitter:description" content="Comprendre les 3 façons de scanner et le scan automatique dès qu&#x27;on est sur un écran de flux." />
-  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
-  <link rel="icon" href="/assets/images/favicon.ico" />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.jpg" />
+  <meta name="twitter:image:alt" content="Aperçu de l'application BizCoRa" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/logo-96.png" />
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
   <link rel="stylesheet" href="/assets/css/theme.css" />
   <link rel="stylesheet" href="/assets/css/docs.css" />
 </head>
@@ -135,7 +146,7 @@
 <section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
 <ul>
 <li>Douchette (lecteur USB / Bluetooth) : fonctionne sur tous les appareils. Aucun bouton à presser : on scanne, l&#x27;action se déclenche.</li>
-<li>Bouton scan (caméra) : ouvre la caméra pour viser un code (Android, iOS, macOS, Web). Non disponible sur Windows / Linux de bureau.</li>
+<li>Bouton scan (caméra) : ouvre la caméra pour viser un code (Android et navigateur web). Sur un poste Windows sans caméra, utilisez une douchette connectée ou la saisie manuelle.</li>
 <li>Saisie manuelle : permet de taper le code à la main, disponible sur tous les appareils.</li>
 </ul>
 </section>
@@ -151,7 +162,7 @@
 <p>Téléphone sans douchette : sur mobile, vous touchez le bouton scan et visez le code-barres avec la caméra.</p>
 <p>Pendant que vous tapez dans un champ (recherche, quantité), le scan automatique ne vous dérange pas : il ne prend la main que si aucun champ n&#x27;est en cours de saisie.</p>
 <p>Sur les écrans avec une barre de recherche (Produits, Mouvements), vous pouvez scanner même si le curseur est dans la recherche : un vrai code-barres est reconnu comme un scan et traité tout de suite, tandis que votre frappe au clavier reste une recherche normale. Vous n&#x27;avez donc jamais besoin de cliquer ailleurs avant de scanner.</p>
-<p>Sur Windows / Linux de bureau, la caméra n&#x27;est pas disponible : utilisez une douchette ou la saisie manuelle.</p>
+<p>Sur Windows (poste de bureau), la caméra n&#x27;est pas disponible : utilisez une douchette ou la saisie manuelle.</p>
 </section>
 <section class="doc-section errors" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Messages d&#x27;erreur</h2>
 <div class="err"><div class="msg">Code inconnu</div><div class="sol">Cause : aucun produit de votre entreprise n&#x27;est associé à ce code-barres. - Solution : sur l&#x27;écran Produits, un code inconnu ouvre directement la création du produit avec le code pré-rempli. Ailleurs, créez d&#x27;abord le produit.</div></div>
@@ -172,7 +183,7 @@
 <a href="#sec-5">Messages d&#x27;erreur</a>
 <a href="#sec-6">Conseils</a></aside>
 </div>
-<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Scanner un code-barres (douchette, caméra ou saisie)", "description": "Comprendre les 3 façons de scanner et le scan automatique dès qu'on est sur un écran de flux.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Premiers pas", "item": "https://www.bizcorasystems.com/fr/docs/#getting_started"}, {"@type": "ListItem", "position": 3, "name": "Scanner un code-barres (douchette, caméra ou saisie)", "item": "https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Code inconnu", "acceptedAnswer": {"@type": "Answer", "text": "Cause : aucun produit de votre entreprise n'est associé à ce code-barres. - Solution : sur l'écran Produits, un code inconnu ouvre directement la création du produit avec le code pré-rempli. Ailleurs, créez d'abord le produit."}}]}]</script>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Scanner un code-barres (douchette, caméra ou saisie)", "description": "Comprendre les 3 façons de scanner et le scan automatique dès qu'on est sur un écran de flux.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/icon-192.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Premiers pas", "item": "https://www.bizcorasystems.com/fr/docs/#getting_started"}, {"@type": "ListItem", "position": 3, "name": "Scanner un code-barres (douchette, caméra ou saisie)", "item": "https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Code inconnu", "acceptedAnswer": {"@type": "Answer", "text": "Cause : aucun produit de votre entreprise n'est associé à ce code-barres. - Solution : sur l'écran Produits, un code inconnu ouvre directement la création du produit avec le code pré-rempli. Ailleurs, créez d'abord le produit."}}]}]</script>
 <script src="/assets/js/docs.js"></script>
 </body>
 </html>
