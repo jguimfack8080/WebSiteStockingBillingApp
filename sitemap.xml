@@ -7,183 +7,29 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/fr/features</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/features</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/features</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bizcorasystems.com/fr/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/pricing</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.bizcorasystems.com/fr/faq</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/faq</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/faq</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
   <url>
     <loc>https://www.bizcorasystems.com/fr/about</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/about" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/about" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/about" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/about" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/about</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/about" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/about</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/about" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/about" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/about" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/about" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
   <url>
     <loc>https://www.bizcorasystems.com/fr/contact</loc>
     <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/contact" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/contact" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/contact" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/contact" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/en/contact</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/contact" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/contact" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.bizcorasystems.com/de/contact</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/contact" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/contact" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/contact" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/contact" />
-    <lastmod>2026-06-28</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.6</priority>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://www.bizcorasystems.com/fr/download</loc>
@@ -191,27 +37,37 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/download" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/download" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/download" />
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bizcorasystems.com/en/download</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/download" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/download" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/download" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/download" />
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://www.bizcorasystems.com/fr/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.bizcorasystems.com/de/download</loc>
-    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/download" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/download" />
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/download" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/download" />
-    <lastmod>2026-06-28</lastmod>
+    <loc>https://www.bizcorasystems.com/fr/features</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -221,7 +77,577 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/register" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/register" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/register" />
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/accounting/accounting</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/administration/audit_logs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/ai/ai_chat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/invoices</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/billing/subscription_payment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/customers/new_customer</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/my_profile</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/password_reset</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/notifications/notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/notifications/push_notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/purchasing/purchases</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/purchasing/suppliers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/sales/quotes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/sales/refunds</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/sales/sale_checkout</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/sales/sales_history</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/settings/business_timezone</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/settings/company_settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/settings/session_security</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/settings/settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/data_import</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/expiring_products</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/inventory_overview</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/product_categories</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/products_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/stock/stock_movements</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/transactions/transactions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/users/employee_onboarding</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/fr/docs/users/users_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/about" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/contact" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/download</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/download" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/download" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/download" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/download" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/features</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -231,7 +657,577 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/register" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/register" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/register" />
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/accounting/accounting</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/accounting/understanding_vat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/administration/audit_logs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/ai/ai_chat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/credit_notes_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/credit_notes_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/invoices</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/billing/subscription_payment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/customers/customer_loyalty</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/customers/customers_loyalty_list</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/customers/new_customer</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/dashboard/manager_dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/biometric_login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/help_center_usage</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/home_navigation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/my_profile</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/password_reset</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/profile_photo</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/scan_intro</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/getting_started/signup_company_account</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/notifications/notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/notifications/push_notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/purchasing/purchases</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/purchasing/suppliers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/sales/quotes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/sales/refund_cancel_sale</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/sales/refunds</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/sales/sale_checkout</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/sales/sales_history</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/settings/business_timezone</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/settings/company_settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/settings/session_security</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/settings/settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/data_import</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/expiring_products</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/inventory_adjustment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/inventory_overview</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/product_categories</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/products_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/stock/stock_movements</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/transactions/cashier_performance</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/transactions/transactions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/users/employee_onboarding</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/users/manage_user_permissions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/en/docs/users/users_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/about</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/about" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/about" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/about" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/about" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/contact</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/contact" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/contact" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/contact" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/contact" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/download</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/download" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/download" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/download" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/download" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/faq</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/faq" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/faq" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/faq" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/faq" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/features</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/features" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/features" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/features" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/features" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/pricing</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/pricing" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/pricing" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/pricing" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/pricing" />
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -241,158 +1237,508 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/register" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/register" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/register" />
-    <lastmod>2026-06-28</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
   </url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/password_reset</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/my_profile</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/sales/refunds</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/sales/sale_checkout</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/sales/sales_history</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/sales/quotes</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/inventory_overview</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/product_categories</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/expiring_products</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/products_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/stock_movements</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/stock/data_import</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/customers/new_customer</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/invoices</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/subscription_payment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/transactions/transactions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/purchasing/suppliers</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/purchasing/purchases</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/accounting/accounting</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/users/users_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/users/employee_onboarding</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/settings/session_security</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/settings/business_timezone</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/settings/settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/settings/company_settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/administration/audit_logs</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/notifications/push_notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/notifications/notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/fr/docs/ai/ai_chat</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/profile_photo</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/biometric_login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/password_reset</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/home_navigation</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/scan_intro</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/help_center_usage</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/my_profile</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/getting_started/signup_company_account</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/dashboard/manager_dashboard</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/sales/refunds</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/sales/refund_cancel_sale</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/sales/sale_checkout</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/sales/sales_history</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/sales/quotes</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/inventory_overview</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/product_categories</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/expiring_products</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/inventory_adjustment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/products_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/stock_movements</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/stock/data_import</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/customers/new_customer</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/customers/customer_loyalty</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/customers/customers_loyalty_list</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/invoices</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/subscription_payment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/credit_notes_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/billing/credit_notes_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/transactions/cashier_performance</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/transactions/transactions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/purchasing/suppliers</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/purchasing/purchases</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/accounting/accounting</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/accounting/understanding_vat</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/users/users_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/users/manage_user_permissions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/users/employee_onboarding</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/settings/session_security</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/settings/business_timezone</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/settings/settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/settings/company_settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/administration/audit_logs</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/notifications/push_notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/notifications/notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/en/docs/ai/ai_chat</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/profile_photo</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/biometric_login</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/password_reset</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/home_navigation</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/scan_intro</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/help_center_usage</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/my_profile</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/getting_started/signup_company_account</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/dashboard/manager_dashboard</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/sales/refunds</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/sales/refund_cancel_sale</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/sales/sale_checkout</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/sales/sales_history</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/sales/quotes</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/inventory_overview</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/product_categories</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/expiring_products</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/inventory_adjustment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/products_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/stock_movements</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/stock/data_import</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/customers/new_customer</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/customers/customer_loyalty</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/customers/customers_loyalty_list</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/invoices</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/subscription_payment</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/credit_notes_manager</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/billing/credit_notes_admin</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/transactions/cashier_performance</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/transactions/transactions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/purchasing/suppliers</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/purchasing/purchases</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/accounting/accounting</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/accounting/understanding_vat</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/users/users_management</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/users/manage_user_permissions</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/users/employee_onboarding</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/settings/session_security</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/settings/business_timezone</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/settings/settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/settings/company_settings</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/administration/audit_logs</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/notifications/push_notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/notifications/notifications</loc></url>
-  <url><loc>https://www.bizcorasystems.com/de/docs/ai/ai_chat</loc></url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/accounting/accounting</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/accounting/understanding_vat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/understanding_vat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/accounting/understanding_vat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/administration/audit_logs</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/administration/audit_logs" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/administration/audit_logs" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/ai/ai_chat</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/ai/ai_chat" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/ai/ai_chat" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/credit_notes_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/credit_notes_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/credit_notes_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/credit_notes_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_admin</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_admin" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_admin" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_manager</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoice_manual_create_manager" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoice_manual_create_manager" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/invoices</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/invoices" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/invoices" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/billing/subscription_payment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/billing/subscription_payment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/billing/subscription_payment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/customers/customer_loyalty</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customer_loyalty" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customer_loyalty" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/customers/customers_loyalty_list</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/customers_loyalty_list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/customers_loyalty_list" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/customers/new_customer</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/customers/new_customer" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/customers/new_customer" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/dashboard/manager_dashboard</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/dashboard/manager_dashboard" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/dashboard/manager_dashboard" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/biometric_login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/biometric_login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/help_center_usage</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/help_center_usage" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/help_center_usage" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/home_navigation</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/home_navigation" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/home_navigation" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/login</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/login" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/login" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/my_profile</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/my_profile" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/my_profile" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/password_reset</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/password_reset" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/password_reset" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/profile_photo</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/profile_photo" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/profile_photo" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/scan_intro</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/scan_intro" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/scan_intro" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/getting_started/signup_company_account</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/signup_company_account" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/getting_started/signup_company_account" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/notifications/notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/notifications/push_notifications</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/notifications/push_notifications" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/notifications/push_notifications" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/purchasing/purchases</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/purchases" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/purchasing/suppliers</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/suppliers" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/purchasing/suppliers" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/sales/quotes</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/quotes" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/quotes" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/sales/refund_cancel_sale</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refund_cancel_sale" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refund_cancel_sale" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/sales/refunds</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/refunds" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/refunds" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/sales/sale_checkout</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sale_checkout" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sale_checkout" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/sales/sales_history</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/sales/sales_history" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/sales/sales_history" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/settings/business_timezone</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/business_timezone" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/settings/company_settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/company_settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/company_settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/settings/session_security</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/session_security" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/session_security" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/settings/settings</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/settings" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/settings/settings" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/data_import</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/data_import" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/expiring_products</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/expiring_products" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/expiring_products" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/inventory_adjustment</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_adjustment" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_adjustment" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/inventory_overview</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/inventory_overview" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/inventory_overview" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/product_categories</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/product_categories" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/product_categories" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/products_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/products_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/products_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/stock/stock_movements</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/stock_movements" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/stock/stock_movements" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/transactions/cashier_performance</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/cashier_performance" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/cashier_performance" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/transactions/transactions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/transactions/transactions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/transactions/transactions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/users/employee_onboarding</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/employee_onboarding" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/employee_onboarding" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/users/manage_user_permissions</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/manage_user_permissions" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/manage_user_permissions" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bizcorasystems.com/de/docs/users/users_management</loc>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/users/users_management" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/fr/docs/users/users_management" />
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
 </urlset>
