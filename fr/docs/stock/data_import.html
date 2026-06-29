@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Importer des données : produits, clients et stock (CSV) - Documentation BizCoRa</title>
+  <meta name="description" content="Importer ou mettre à jour votre catalogue produits, votre fichier clients ET votre stock depuis un fichier, sans ressaisie ni doublon." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/data_import" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Importer des données : produits, clients et stock (CSV) - Documentation BizCoRa" />
+  <meta property="og:description" content="Importer ou mettre à jour votre catalogue produits, votre fichier clients ET votre stock depuis un fichier, sans ressaisie ni doublon." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Importer des données : produits, clients et stock (CSV) - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Importer ou mettre à jour votre catalogue produits, votre fichier clients ET votre stock depuis un fichier, sans ressaisie ni doublon." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/fr/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Centre de documentation</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Rechercher dans la documentation..." data-index="/fr/docs/search-index.json" aria-label="Rechercher dans la documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="Aucun résultat"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/fr/">Retour au site</a>
+    <span class="doc-lang"><a href="/fr/docs/stock/data_import" class="is-active" hreflang="fr">FR</a><a href="/en/docs/stock/data_import" class="" hreflang="en">EN</a><a href="/de/docs/stock/data_import" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/fr/docs/">Tout le centre de documentation</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Premiers pas</div>
+<a class="nav-link" href="/fr/docs/getting_started/profile_photo">Ajouter ou changer sa photo de profil</a>
+<a class="nav-link" href="/fr/docs/getting_started/login">Se connecter à l&#x27;application</a>
+<a class="nav-link" href="/fr/docs/getting_started/biometric_login">Connexion biométrique (empreinte / visage)</a>
+<a class="nav-link" href="/fr/docs/getting_started/password_reset">Réinitialiser un mot de passe oublié</a>
+<a class="nav-link" href="/fr/docs/getting_started/home_navigation">Comprendre votre tableau de bord et naviguer</a>
+<a class="nav-link" href="/fr/docs/getting_started/scan_intro">Scanner un code-barres (douchette, caméra ou saisie)</a>
+<a class="nav-link" href="/fr/docs/getting_started/help_center_usage">Utiliser le Centre d&#x27;Aide et la recherche</a>
+<a class="nav-link" href="/fr/docs/getting_started/my_profile">Mon profil et mon mot de passe</a>
+<a class="nav-link" href="/fr/docs/getting_started/signup_company_account">Créer son entreprise et son compte</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Tableau de bord</div>
+<a class="nav-link" href="/fr/docs/dashboard/manager_dashboard">Lire le tableau de bord et les indicateurs du jour</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Ventes / Caisse</div>
+<a class="nav-link" href="/fr/docs/sales/refunds">Suivre les remboursements</a>
+<a class="nav-link" href="/fr/docs/sales/refund_cancel_sale">Rembourser ou annuler une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sale_checkout">Encaisser une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sales_history">Consulter l&#x27;historique des ventes</a>
+<a class="nav-link" href="/fr/docs/sales/quotes">Créer et gérer les devis</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventaire</div>
+<a class="nav-link" href="/fr/docs/stock/inventory_overview">Gérer le stock (vue inventaire)</a>
+<a class="nav-link" href="/fr/docs/stock/product_categories">Gérer les catégories de produits</a>
+<a class="nav-link" href="/fr/docs/stock/expiring_products">Surveiller les produits bientôt périmés</a>
+<a class="nav-link" href="/fr/docs/stock/inventory_adjustment">Ajuster l&#x27;inventaire (corriger le stock)</a>
+<a class="nav-link" href="/fr/docs/stock/products_management">Gérer les produits et leurs codes-barres</a>
+<a class="nav-link" href="/fr/docs/stock/stock_movements">Enregistrer les mouvements de stock</a>
+<a class="nav-link is-active" href="/fr/docs/stock/data_import">Importer des données : produits, clients et stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Clients</div>
+<a class="nav-link" href="/fr/docs/customers/new_customer">Ajouter un client</a>
+<a class="nav-link" href="/fr/docs/customers/customer_loyalty">Consulter la fidélité d&#x27;un client</a>
+<a class="nav-link" href="/fr/docs/customers/customers_loyalty_list">Voir tous les clients fidèles et leurs points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Facturation</div>
+<a class="nav-link" href="/fr/docs/billing/invoices">Consulter les factures</a>
+<a class="nav-link" href="/fr/docs/billing/subscription_payment">Mon abonnement et le paiement</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_manager">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_manager">Consulter les avoirs</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_admin">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_admin">Consulter les avoirs</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Paiements</div>
+<a class="nav-link" href="/fr/docs/transactions/cashier_performance">Analyser la performance des caissiers</a>
+<a class="nav-link" href="/fr/docs/transactions/transactions">Analyser les transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Achats / Fournisseurs</div>
+<a class="nav-link" href="/fr/docs/purchasing/suppliers">Gérer les fournisseurs</a>
+<a class="nav-link" href="/fr/docs/purchasing/purchases">Enregistrer les achats et réceptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Comptabilité</div>
+<a class="nav-link" href="/fr/docs/accounting/accounting">Comptabilité : tableau de bord et rapports</a>
+<a class="nav-link" href="/fr/docs/accounting/understanding_vat">Comprendre la TVA</a>
+<a class="nav-link" href="/fr/docs/accounting/accounting_formulas">Comptabilité : que signifie chaque terme et comment chaque montant est calculé</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Utilisateurs &amp; rôles</div>
+<a class="nav-link" href="/fr/docs/users/users_management">Gérer les utilisateurs et les rôles</a>
+<a class="nav-link" href="/fr/docs/users/manage_user_permissions">Gérer les droits d&#x27;un utilisateur</a>
+<a class="nav-link" href="/fr/docs/users/employee_onboarding">Créer un employé et l&#x27;inviter à rejoindre</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Paramètres</div>
+<a class="nav-link" href="/fr/docs/settings/session_security">Sécurité de session et déconnexion automatique</a>
+<a class="nav-link" href="/fr/docs/settings/business_timezone">Heure et fuseau horaire de l&#x27;entreprise</a>
+<a class="nav-link" href="/fr/docs/settings/settings">Régler les paramètres (langue, thème, notifications)</a>
+<a class="nav-link" href="/fr/docs/settings/company_settings">Configurer les paramètres de l&#x27;entreprise</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Supervision</div>
+<a class="nav-link" href="/fr/docs/administration/audit_logs">Consulter le journal d&#x27;audit</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/fr/docs/notifications/push_notifications">Notifications push (même application fermée)</a>
+<a class="nav-link" href="/fr/docs/notifications/notifications">Notifications et alertes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Assistant IA</div>
+<a class="nav-link" href="/fr/docs/ai/ai_chat">Utiliser l&#x27;Assistant IA</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/fr/docs/">Documentation</a><span class="sep">/</span><a href="/fr/docs/#stock">Stock / Inventaire</a><span class="sep">/</span><span>Importer des données : produits, clients et stock (CSV)</span></nav>
+    <article class="doc-article">
+      <h1>Importer des données : produits, clients et stock (CSV)</h1>
+      <div class="doc-badges"><span class="role-badge admin">Admin</span></div>
+      <p class="doc-lead">Importer ou mettre à jour votre catalogue produits, votre fichier clients ET votre stock depuis un fichier, sans ressaisie ni doublon.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Présentation</h2>
+<p>L&#x27;import permet d&#x27;ajouter ou de mettre à jour beaucoup de données d&#x27;un coup, à partir d&#x27;un fichier CSV (un tableau exportable depuis Excel, Google Sheets ou LibreOffice). L&#x27;écran a trois onglets : Produits, Clients et Stock (ce dernier avec deux sous-onglets : Niveaux d&#x27;inventaire et Mouvements). Idéal pour démarrer (onboarding) ou corriger en masse. Le serveur valide chaque ligne : les bonnes lignes sont importées, les lignes en erreur sont listées avec une explication claire - rien n&#x27;est jamais perdu en silence.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Accès</h2>
+<p>Tableau de bord administrateur, section Stock, carte &quot;Importer des données&quot;, puis choisissez l&#x27;onglet Produits ou Clients. (Réservé aux administrateurs.)</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Description de l&#x27;interface</h2>
+<ul>
+<li>Onglets &quot;Produits&quot;, &quot;Clients&quot; et &quot;Stock&quot; : en haut de l&#x27;écran, trois onglets. Produits importe votre catalogue ; Clients importe votre fichier clients ; Stock met à jour les quantités de produits EXISTANTS, avec deux sous-onglets : &quot;Niveaux d&#x27;inventaire&quot; (vous indiquez le nouveau stock total après un comptage) et &quot;Mouvements&quot; (vous enregistrez des entrées/sorties). Chaque onglet fonctionne pareil (télécharger le modèle, le remplir, l&#x27;importer) et garde son rapport quand vous changez d&#x27;onglet.</li>
+<li>Colonnes stock (onglet Stock) : le produit est identifié par sa &#x27;Référence&#x27; (ou son &#x27;Nom&#x27;) : il doit DÉJÀ exister (le stock ne crée pas de produit ; utilisez l&#x27;onglet Produits pour créer). Sous-onglet Niveaux : &#x27;Quantité&#x27; = le nouveau stock total (un mouvement d&#x27;inventaire tracé est créé pour l&#x27;écart). Sous-onglet Mouvements : &#x27;Type&#x27; = Entrée ou Sortie, &#x27;Quantité&#x27; = la quantité du mouvement ; une Sortie supérieure au stock disponible est refusée (jamais de stock négatif). &#x27;Motif&#x27; est facultatif.</li>
+<li>Colonnes clients (onglet Clients) : dans l&#x27;onglet Clients : &#x27;Prénom&#x27;, &#x27;Nom&#x27; et &#x27;Téléphone&#x27; sont obligatoires (étoile). Le téléphone doit être au format international (ex : +33612345678) ; il sert aussi à reconnaître un client déjà existant pour le mettre à jour (pas de doublon). &#x27;E-mail&#x27; et &#x27;Adresse&#x27; sont facultatifs. Le solde de points de fidélité ne s&#x27;importe jamais (il est géré automatiquement par les ventes).</li>
+<li>Bouton &quot;Télécharger le modèle&quot; : télécharge un fichier CSV déjà prêt, avec les bonnes colonnes (dans votre langue) et deux exemples. C&#x27;est le point de départ conseillé : vous n&#x27;avez plus qu&#x27;à remplacer les exemples par vos produits.</li>
+<li>Colonnes attendues : la liste des colonnes du fichier. Seules &#x27;Nom du produit&#x27; et &#x27;Prix de vente&#x27; sont obligatoires (étoile). &#x27;Référence (SKU)&#x27; sert à reconnaître un produit déjà existant pour le mettre à jour. Les autres colonnes (prix d&#x27;achat, quantité, seuils) sont facultatives.</li>
+<li>Rapport (Créés / Mis à jour / Ignorés) : trois compteurs résument l&#x27;import. En dessous, chaque ligne en erreur est listée avec son numéro et la raison. Corrigez ces lignes et relancez : aucun doublon ne sera créé.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Procédure pas à pas</h2>
+<ol>
+<li>Action : en haut de l&#x27;écran, choisissez l&#x27;onglet selon ce que vous importez : &quot;Produits&quot; pour le catalogue, &quot;Clients&quot; pour le fichier clients. Résultat : l&#x27;onglet choisi affiche ses colonnes attendues et ses boutons.</li>
+<li>Action : touchez &quot;Télécharger le modèle&quot; : un fichier CSV déjà prêt (avec les bonnes colonnes dans votre langue + 2 exemples) est téléchargé sur votre appareil. Résultat : vous obtenez un fichier modèle, déjà au bon format.</li>
+<li>Action : ouvrez le modèle dans Excel (ou Google Sheets), remplacez les 2 lignes d&#x27;exemple par vos produits, puis enregistrez le fichier. Résultat : votre fichier est prêt à être importé. Vérification : gardez la première ligne (les titres de colonnes) intacte ; ne remplissez que Nom et Prix de vente au minimum.</li>
+<li>Action : ouvrez &quot;Importer des produits&quot;, touchez &quot;Choisir un fichier CSV&quot;, puis sélectionnez votre fichier. Résultat : l&#x27;import s&#x27;exécute et le rapport s&#x27;affiche. Vérification : vérifiez les compteurs Créés / Mis à jour / Ignorés.</li>
+<li>Action : s&#x27;il y a des lignes ignorées, corrigez-les dans le fichier (la raison est indiquée), puis relancez l&#x27;import. Résultat : les produits déjà importés sont mis à jour, pas dupliqués ; les lignes corrigées sont ajoutées.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Exemples</h2>
+<p>[Simple] Premier import de catalogue : un fichier de 150 produits (Référence, Nom, Prix de vente, Quantité). Résultat : 150 créés, 0 ignoré. Le stock initial est pris en compte.</p>
+</section>
+<section class="doc-section presentation" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Cas particuliers</h2>
+<p>Réimporter le MÊME fichier ne crée pas de doublon : les produits reconnus (par référence, sinon par nom) sont mis à jour. Vous pouvez corriger et relancer autant de fois que nécessaire.</p>
+<p>La virgule décimale est acceptée (12,50 comme 12.50). Le fichier doit faire au plus 2 Mo et 2000 lignes ; au-delà, scindez-le.</p>
+</section>
+<section class="doc-section errors" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Messages d&#x27;erreur</h2>
+<div class="err"><div class="msg">Le nom du produit est obligatoire.</div><div class="sol">Cause : la colonne Nom est vide sur cette ligne. Solution : renseignez un nom puis relancez.</div></div>
+<div class="err"><div class="msg">Nombre invalide.</div><div class="sol">Cause : le prix ou la quantité contient des caractères non numériques. Solution : mettez un nombre (ex : 12,50) sans symbole de devise.</div></div>
+<div class="err"><div class="msg">Colonnes obligatoires manquantes.</div><div class="sol">Cause : l&#x27;en-tête ne contient pas &#x27;Nom&#x27; et/ou &#x27;Prix de vente&#x27;. Solution : repartez de l&#x27;export de vos produits comme modèle.</div></div>
+</section>
+<section class="doc-section tips" id="sec-7"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Conseils</h2>
+<ul>
+<li>Renseignez la colonne Référence (SKU) : c&#x27;est ce qui permet de retrouver et mettre à jour un produit existant de façon fiable lors d&#x27;un réimport.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/fr/docs/stock/stock_movements"><div class="dir">Précédent</div><div class="ttl">Enregistrer les mouvements de stock</div></a><a class="next" href="/fr/docs/customers/new_customer"><div class="dir">Suivant</div><div class="ttl">Ajouter un client</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">Sur cette page</div><a href="#sec-0">Présentation</a>
+<a href="#sec-1">Accès</a>
+<a href="#sec-2">Description de l&#x27;interface</a>
+<a href="#sec-3">Procédure pas à pas</a>
+<a href="#sec-4">Exemples</a>
+<a href="#sec-5">Cas particuliers</a>
+<a href="#sec-6">Messages d&#x27;erreur</a>
+<a href="#sec-7">Conseils</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Importer des données : produits, clients et stock (CSV)", "description": "Importer ou mettre à jour votre catalogue produits, votre fichier clients ET votre stock depuis un fichier, sans ressaisie ni doublon.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/stock/data_import", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Stock / Inventaire", "item": "https://www.bizcorasystems.com/fr/docs/#stock"}, {"@type": "ListItem", "position": 3, "name": "Importer des données : produits, clients et stock (CSV)", "item": "https://www.bizcorasystems.com/fr/docs/stock/data_import"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Le nom du produit est obligatoire.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : la colonne Nom est vide sur cette ligne. Solution : renseignez un nom puis relancez."}}, {"@type": "Question", "name": "Nombre invalide.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : le prix ou la quantité contient des caractères non numériques. Solution : mettez un nombre (ex : 12,50) sans symbole de devise."}}, {"@type": "Question", "name": "Colonnes obligatoires manquantes.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : l'en-tête ne contient pas 'Nom' et/ou 'Prix de vente'. Solution : repartez de l'export de vos produits comme modèle."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

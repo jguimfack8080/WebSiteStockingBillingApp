@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accounting: what each term means and how each amount is computed - Documentation BizCoRa</title>
+  <meta name="description" content="The meaning of every accounting term AND the exact formula behind each figure. Full transparency." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Accounting: what each term means and how each amount is computed - Documentation BizCoRa" />
+  <meta property="og:description" content="The meaning of every accounting term AND the exact formula behind each figure. Full transparency." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Accounting: what each term means and how each amount is computed - Documentation BizCoRa" />
+  <meta name="twitter:description" content="The meaning of every accounting term AND the exact formula behind each figure. Full transparency." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/en/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Documentation center</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Search the documentation..." data-index="/en/docs/search-index.json" aria-label="Search the documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="No results"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/en/">Back to site</a>
+    <span class="doc-lang"><a href="/fr/docs/accounting/accounting_formulas" class="" hreflang="fr">FR</a><a href="/en/docs/accounting/accounting_formulas" class="is-active" hreflang="en">EN</a><a href="/de/docs/accounting/accounting_formulas" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/en/docs/">Full documentation center</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Getting started</div>
+<a class="nav-link" href="/en/docs/getting_started/profile_photo">Add or change your profile photo</a>
+<a class="nav-link" href="/en/docs/getting_started/login">Sign in to the application</a>
+<a class="nav-link" href="/en/docs/getting_started/biometric_login">Biometric login (fingerprint / face)</a>
+<a class="nav-link" href="/en/docs/getting_started/password_reset">Reset a forgotten password</a>
+<a class="nav-link" href="/en/docs/getting_started/home_navigation">Understand your dashboard and navigate</a>
+<a class="nav-link" href="/en/docs/getting_started/scan_intro">Scan a barcode (scanner gun, camera or manual)</a>
+<a class="nav-link" href="/en/docs/getting_started/help_center_usage">Use the Help Center and search</a>
+<a class="nav-link" href="/en/docs/getting_started/my_profile">My profile and my password</a>
+<a class="nav-link" href="/en/docs/getting_started/signup_company_account">Create your company and account</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Dashboard</div>
+<a class="nav-link" href="/en/docs/dashboard/manager_dashboard">Read the dashboard and daily indicators</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Sales / Checkout</div>
+<a class="nav-link" href="/en/docs/sales/refunds">Track refunds</a>
+<a class="nav-link" href="/en/docs/sales/refund_cancel_sale">Refund or cancel a sale</a>
+<a class="nav-link" href="/en/docs/sales/sale_checkout">Process a sale</a>
+<a class="nav-link" href="/en/docs/sales/sales_history">View the sales history</a>
+<a class="nav-link" href="/en/docs/sales/quotes">Create and manage quotes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventory</div>
+<a class="nav-link" href="/en/docs/stock/inventory_overview">Manage stock (inventory view)</a>
+<a class="nav-link" href="/en/docs/stock/product_categories">Manage product categories</a>
+<a class="nav-link" href="/en/docs/stock/expiring_products">Monitor soon-to-expire products</a>
+<a class="nav-link" href="/en/docs/stock/inventory_adjustment">Adjust inventory (correct stock)</a>
+<a class="nav-link" href="/en/docs/stock/products_management">Manage products and their barcodes</a>
+<a class="nav-link" href="/en/docs/stock/stock_movements">Record stock movements</a>
+<a class="nav-link" href="/en/docs/stock/data_import">Import data: products, customers and stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Customers</div>
+<a class="nav-link" href="/en/docs/customers/new_customer">Add a customer</a>
+<a class="nav-link" href="/en/docs/customers/customer_loyalty">View a customer loyalty</a>
+<a class="nav-link" href="/en/docs/customers/customers_loyalty_list">View all loyal customers and their points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Billing</div>
+<a class="nav-link" href="/en/docs/billing/invoices">View invoices</a>
+<a class="nav-link" href="/en/docs/billing/subscription_payment">My subscription and payment</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_manager">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_manager">View credit notes</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_admin">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_admin">View credit notes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Payments</div>
+<a class="nav-link" href="/en/docs/transactions/cashier_performance">Analyze cashier performance</a>
+<a class="nav-link" href="/en/docs/transactions/transactions">Analyze transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Purchasing / Suppliers</div>
+<a class="nav-link" href="/en/docs/purchasing/suppliers">Manage suppliers</a>
+<a class="nav-link" href="/en/docs/purchasing/purchases">Record purchases and receptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Accounting</div>
+<a class="nav-link" href="/en/docs/accounting/accounting">Accounting: dashboard and reports</a>
+<a class="nav-link" href="/en/docs/accounting/understanding_vat">Understanding VAT</a>
+<a class="nav-link is-active" href="/en/docs/accounting/accounting_formulas">Accounting: what each term means and how each amount is computed</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Users &amp; roles</div>
+<a class="nav-link" href="/en/docs/users/users_management">Manage users and roles</a>
+<a class="nav-link" href="/en/docs/users/manage_user_permissions">Manage a user&#x27;s permissions</a>
+<a class="nav-link" href="/en/docs/users/employee_onboarding">Create an employee and invite them to join</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Settings</div>
+<a class="nav-link" href="/en/docs/settings/session_security">Session security and automatic sign-out</a>
+<a class="nav-link" href="/en/docs/settings/business_timezone">Company time and timezone</a>
+<a class="nav-link" href="/en/docs/settings/settings">Adjust settings (language, theme, notifications)</a>
+<a class="nav-link" href="/en/docs/settings/company_settings">Configure company settings</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Oversight</div>
+<a class="nav-link" href="/en/docs/administration/audit_logs">View the audit log</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/en/docs/notifications/push_notifications">Push notifications (even when the app is closed)</a>
+<a class="nav-link" href="/en/docs/notifications/notifications">Notifications and alerts</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>AI Assistant</div>
+<a class="nav-link" href="/en/docs/ai/ai_chat">Using the AI Assistant</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/en/docs/">Documentation</a><span class="sep">/</span><a href="/en/docs/#accounting">Accounting</a><span class="sep">/</span><span>Accounting: what each term means and how each amount is computed</span></nav>
+    <article class="doc-article">
+      <h1>Accounting: what each term means and how each amount is computed</h1>
+      <div class="doc-badges"><span class="role-badge admin">Admin</span><span class="role-badge ">Manager</span></div>
+      <p class="doc-lead">The meaning of every accounting term AND the exact formula behind each figure. Full transparency.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Presentation</h2>
+<p>This article explains the MEANING of every accounting term and the exact FORMULA of each displayed amount. Goal: you should never wonder where a figure comes from.</p>
+<p>Golden rule: no calculation is done in the app. All amounts are computed by the server (single source of truth) from your real sales, purchases and stock.</p>
+</section>
+<section class="doc-section interface" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface description</h2>
+<ul>
+<li>Gross revenue: Total incl. tax taken on the period sales (before returns). Formula: sum of sale amounts.</li>
+<li>Credit notes (excl. VAT): Total net amount refunded on customer returns of the period. Formula: sum of credit note lines (net amount refunded per item). This is deducted from gross net revenue to get net revenue excl. VAT.</li>
+<li>Net revenue excl. VAT: Real revenue after returns, EXCLUDING VAT. This is the income statement figure (GuV, HGB §275). Formula: net revenue excl. VAT = gross excl. VAT - credit notes excl. VAT. Do not confuse with net revenue incl. VAT (which includes collected VAT - not used in the P&amp;L).</li>
+<li>Excl. tax (net): Sales amount without VAT. Formula: sum of sale net subtotals. It is the margin base.</li>
+<li>Incl. tax (gross): What the customer pays. Formula: incl. tax = excl. tax + VAT.</li>
+<li>COGS (cost of goods sold): Purchase cost of the items actually sold. Formula: sum of the cost (weighted average) of sold items.</li>
+<li>Gross margin: What you earn before expenses. Formula: gross margin = excl.tax - COGS (on the net, NEVER on the gross).</li>
+<li>Margin rate: Formula: margin rate = gross margin / net x 100 (in %).</li>
+<li>Collected VAT: VAT taken on your sales. Formula (per rate): sum (incl.tax - excl.tax) of sold items.</li>
+<li>Deductible VAT: VAT paid on your received purchases (recoverable). Formula (per rate): sum of VAT on received purchases.</li>
+<li>VAT due / payable / credit: VAT due = collected VAT - deductible VAT. If positive -&gt; VAT payable = that amount. If negative -&gt; VAT credit = minus that amount (carried forward).</li>
+<li>Treasury: inflows / outflows / balance: Inflows = sum of received payments by method (cash, card, transfer, Mobile Money). Outflows = sum of actually disbursed refunds (REFUNDED transactions) - strict cash basis. Balance = inflows - outflows. Note: outflows are real cash disbursements, not the TTC amount of accounting credit notes.</li>
+<li>Payment breakdown (cash / card / transfer / Mobile Money): In the treasury report, inflows are broken down by method: cash (CASH), bank card (CARD), bank transfer (TRANSFER) and Mobile Money (MOBILE, e.g. Flutterwave). Each method only appears if used in the period.</li>
+<li>Stock value at cost: What you paid for the stock. Formula: sum (unit cost x quantity), unit cost = weighted average if known, else purchase price.</li>
+<li>Stock value at sale price: What the stock would yield if sold. Formula: sum (sale price x quantity). It is NOT an accounting value.</li>
+<li>Weighted average unit cost: Average purchase cost of a product, recomputed at each costed entry (purchase reception). Basis of COGS and cost value.</li>
+<li>Why cost of goods sold and stock value can be 0: COGS (cost of goods sold) and the accounting &quot;stock value&quot; are computed AT PURCHASE COST (purchase price or weighted average cost). A product WITHOUT a purchase price nor weighted cost is therefore not valued at cost (it counts as 0). Consequence: if your products have no cost recorded (e.g. a catalog imported without purchase prices), the cost of goods sold AND the stock value at cost show 0 - this is NOT an error, it is by design. DO NOT CONFUSE this with the inventory value at SELLING PRICE (Stock management screen), which stays correct. To enable these figures: enter your products&#x27; purchase price (on the product sheet, or via a purchase reception which updates the weighted cost automatically).</li>
+</ul>
+</section>
+<section class="doc-section examples" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Examples</h2>
+<p>[Simple] A single sale: Net 100, VAT 20% -&gt; gross 120. If the cost of sold items is 70: gross margin = 100 - 70 = 30 (rate 30%).</p>
+<p>[Intermediate] Over a month: Net 9,600, credit notes net 400 -&gt; net revenue excl. VAT 9,200 (this is the P&amp;L figure). COGS 7,000 -&gt; gross margin 2,200 (rate 24%). Gross incl. VAT 12,000, credit notes incl. VAT 500 -&gt; net incl. VAT 11,500 (cash figure, not for P&amp;L).</p>
+<p>[Advanced] VAT and treasury: Collected VAT 1,900, deductible 2,100 -&gt; VAT due = -200 -&gt; VAT credit 200 (carried forward). Treasury: inflows 11,800 (of which 800 by Mobile Money), cash refunds 400 -&gt; balance 11,400. Note: the 400 in outflows are the REFUNDED transactions actually disbursed, not the TTC amount of accounting credit notes.</p>
+</section>
+<section class="doc-section tips" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Tips</h2>
+<ul>
+<li>Margin is ALWAYS computed on the net amount, never on the gross (VAT is not revenue). Likewise, the dashboard KPI &quot;Net revenue&quot; shows net revenue excl. VAT: that is the legal P&amp;L basis (HGB §275), not the total cash received incl. VAT.</li>
+<li>A VAT credit (negative VAT due) is normal if you bought a lot; it carries forward to the next period.</li>
+<li>The stock value at cost is complete only if products have a purchase price (otherwise they count 0).</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/en/docs/accounting/understanding_vat"><div class="dir">Previous</div><div class="ttl">Understanding VAT</div></a><a class="next" href="/en/docs/users/users_management"><div class="dir">Next</div><div class="ttl">Manage users and roles</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">On this page</div><a href="#sec-0">Presentation</a>
+<a href="#sec-1">Interface description</a>
+<a href="#sec-2">Examples</a>
+<a href="#sec-3">Tips</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Accounting: what each term means and how each amount is computed", "description": "The meaning of every accounting term AND the exact formula behind each figure. Full transparency.", "inLanguage": "en", "url": "https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/en/docs/"}, {"@type": "ListItem", "position": 2, "name": "Accounting", "item": "https://www.bizcorasystems.com/en/docs/#accounting"}, {"@type": "ListItem", "position": 3, "name": "Accounting: what each term means and how each amount is computed", "item": "https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas"}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

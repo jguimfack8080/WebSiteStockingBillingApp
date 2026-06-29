@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Comptabilité : que signifie chaque terme et comment chaque montant est calculé - Documentation BizCoRa</title>
+  <meta name="description" content="Le sens de tous les termes comptables ET la formule exacte de chaque chiffre. Transparence totale." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/accounting/accounting_formulas" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/accounting/accounting_formulas" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Comptabilité : que signifie chaque terme et comment chaque montant est calculé - Documentation BizCoRa" />
+  <meta property="og:description" content="Le sens de tous les termes comptables ET la formule exacte de chaque chiffre. Transparence totale." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Comptabilité : que signifie chaque terme et comment chaque montant est calculé - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Le sens de tous les termes comptables ET la formule exacte de chaque chiffre. Transparence totale." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/fr/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Centre de documentation</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Rechercher dans la documentation..." data-index="/fr/docs/search-index.json" aria-label="Rechercher dans la documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="Aucun résultat"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/fr/">Retour au site</a>
+    <span class="doc-lang"><a href="/fr/docs/accounting/accounting_formulas" class="is-active" hreflang="fr">FR</a><a href="/en/docs/accounting/accounting_formulas" class="" hreflang="en">EN</a><a href="/de/docs/accounting/accounting_formulas" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/fr/docs/">Tout le centre de documentation</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Premiers pas</div>
+<a class="nav-link" href="/fr/docs/getting_started/profile_photo">Ajouter ou changer sa photo de profil</a>
+<a class="nav-link" href="/fr/docs/getting_started/login">Se connecter à l&#x27;application</a>
+<a class="nav-link" href="/fr/docs/getting_started/biometric_login">Connexion biométrique (empreinte / visage)</a>
+<a class="nav-link" href="/fr/docs/getting_started/password_reset">Réinitialiser un mot de passe oublié</a>
+<a class="nav-link" href="/fr/docs/getting_started/home_navigation">Comprendre votre tableau de bord et naviguer</a>
+<a class="nav-link" href="/fr/docs/getting_started/scan_intro">Scanner un code-barres (douchette, caméra ou saisie)</a>
+<a class="nav-link" href="/fr/docs/getting_started/help_center_usage">Utiliser le Centre d&#x27;Aide et la recherche</a>
+<a class="nav-link" href="/fr/docs/getting_started/my_profile">Mon profil et mon mot de passe</a>
+<a class="nav-link" href="/fr/docs/getting_started/signup_company_account">Créer son entreprise et son compte</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Tableau de bord</div>
+<a class="nav-link" href="/fr/docs/dashboard/manager_dashboard">Lire le tableau de bord et les indicateurs du jour</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Ventes / Caisse</div>
+<a class="nav-link" href="/fr/docs/sales/refunds">Suivre les remboursements</a>
+<a class="nav-link" href="/fr/docs/sales/refund_cancel_sale">Rembourser ou annuler une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sale_checkout">Encaisser une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sales_history">Consulter l&#x27;historique des ventes</a>
+<a class="nav-link" href="/fr/docs/sales/quotes">Créer et gérer les devis</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventaire</div>
+<a class="nav-link" href="/fr/docs/stock/inventory_overview">Gérer le stock (vue inventaire)</a>
+<a class="nav-link" href="/fr/docs/stock/product_categories">Gérer les catégories de produits</a>
+<a class="nav-link" href="/fr/docs/stock/expiring_products">Surveiller les produits bientôt périmés</a>
+<a class="nav-link" href="/fr/docs/stock/inventory_adjustment">Ajuster l&#x27;inventaire (corriger le stock)</a>
+<a class="nav-link" href="/fr/docs/stock/products_management">Gérer les produits et leurs codes-barres</a>
+<a class="nav-link" href="/fr/docs/stock/stock_movements">Enregistrer les mouvements de stock</a>
+<a class="nav-link" href="/fr/docs/stock/data_import">Importer des données : produits, clients et stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Clients</div>
+<a class="nav-link" href="/fr/docs/customers/new_customer">Ajouter un client</a>
+<a class="nav-link" href="/fr/docs/customers/customer_loyalty">Consulter la fidélité d&#x27;un client</a>
+<a class="nav-link" href="/fr/docs/customers/customers_loyalty_list">Voir tous les clients fidèles et leurs points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Facturation</div>
+<a class="nav-link" href="/fr/docs/billing/invoices">Consulter les factures</a>
+<a class="nav-link" href="/fr/docs/billing/subscription_payment">Mon abonnement et le paiement</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_manager">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_manager">Consulter les avoirs</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_admin">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_admin">Consulter les avoirs</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Paiements</div>
+<a class="nav-link" href="/fr/docs/transactions/cashier_performance">Analyser la performance des caissiers</a>
+<a class="nav-link" href="/fr/docs/transactions/transactions">Analyser les transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Achats / Fournisseurs</div>
+<a class="nav-link" href="/fr/docs/purchasing/suppliers">Gérer les fournisseurs</a>
+<a class="nav-link" href="/fr/docs/purchasing/purchases">Enregistrer les achats et réceptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Comptabilité</div>
+<a class="nav-link" href="/fr/docs/accounting/accounting">Comptabilité : tableau de bord et rapports</a>
+<a class="nav-link" href="/fr/docs/accounting/understanding_vat">Comprendre la TVA</a>
+<a class="nav-link is-active" href="/fr/docs/accounting/accounting_formulas">Comptabilité : que signifie chaque terme et comment chaque montant est calculé</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Utilisateurs &amp; rôles</div>
+<a class="nav-link" href="/fr/docs/users/users_management">Gérer les utilisateurs et les rôles</a>
+<a class="nav-link" href="/fr/docs/users/manage_user_permissions">Gérer les droits d&#x27;un utilisateur</a>
+<a class="nav-link" href="/fr/docs/users/employee_onboarding">Créer un employé et l&#x27;inviter à rejoindre</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Paramètres</div>
+<a class="nav-link" href="/fr/docs/settings/session_security">Sécurité de session et déconnexion automatique</a>
+<a class="nav-link" href="/fr/docs/settings/business_timezone">Heure et fuseau horaire de l&#x27;entreprise</a>
+<a class="nav-link" href="/fr/docs/settings/settings">Régler les paramètres (langue, thème, notifications)</a>
+<a class="nav-link" href="/fr/docs/settings/company_settings">Configurer les paramètres de l&#x27;entreprise</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Supervision</div>
+<a class="nav-link" href="/fr/docs/administration/audit_logs">Consulter le journal d&#x27;audit</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/fr/docs/notifications/push_notifications">Notifications push (même application fermée)</a>
+<a class="nav-link" href="/fr/docs/notifications/notifications">Notifications et alertes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Assistant IA</div>
+<a class="nav-link" href="/fr/docs/ai/ai_chat">Utiliser l&#x27;Assistant IA</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/fr/docs/">Documentation</a><span class="sep">/</span><a href="/fr/docs/#accounting">Comptabilité</a><span class="sep">/</span><span>Comptabilité : que signifie chaque terme et comment chaque montant est calculé</span></nav>
+    <article class="doc-article">
+      <h1>Comptabilité : que signifie chaque terme et comment chaque montant est calculé</h1>
+      <div class="doc-badges"><span class="role-badge admin">Admin</span><span class="role-badge ">Manager</span></div>
+      <p class="doc-lead">Le sens de tous les termes comptables ET la formule exacte de chaque chiffre. Transparence totale.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Présentation</h2>
+<p>Cette fiche explique le SENS de chaque terme comptable et la FORMULE exacte de chaque montant affiché. Objectif : vous ne devez jamais vous demander d&#x27;où vient un chiffre.</p>
+<p>Règle d&#x27;or : aucun calcul n&#x27;est fait dans l&#x27;application. Tous les montants sont calculés par le serveur (source de vérité unique) à partir de vos ventes, achats et stock réels.</p>
+</section>
+<section class="doc-section interface" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Description de l&#x27;interface</h2>
+<ul>
+<li>CA brut (chiffre d&#x27;affaires brut) : total TTC encaissé sur les ventes de la période (avant retours). Formule : somme des montants des ventes.</li>
+<li>Avoirs HT : montant HT total remboursé sur des retours clients de la période. Formule : somme des lignes d&#x27;avoir (montant HT remboursé par article). C&#x27;est la déduction à faire sur le CA HT pour obtenir le CA net HT.</li>
+<li>CA net HT (chiffre d&#x27;affaires net hors taxes) : revenu réel après retours, HORS TVA. C&#x27;est le chiffre du compte de résultat (GuV, HGB §275). Formule : CA net HT = CA HT - avoirs HT. À ne pas confondre avec le CA net TTC (qui inclut la TVA encaissée - non utilisée dans le P&amp;L).</li>
+<li>HT (hors taxes) : montant des ventes sans la TVA. Formule : somme des sous-totaux HT des ventes. C&#x27;est la base de la marge.</li>
+<li>TTC (toutes taxes comprises) : ce que paie le client. Formule : TTC = HT + TVA.</li>
+<li>COGS (coût des marchandises vendues) : coût d&#x27;achat des articles effectivement vendus. Formule : somme du coût (CUMP) des articles vendus.</li>
+<li>Marge brute : ce que vous gagnez avant charges. Formule : marge brute = HT - COGS (sur le HT, JAMAIS sur le TTC).</li>
+<li>Taux de marge : formule : taux de marge = marge brute / HT x 100 (en %).</li>
+<li>TVA collectée : TVA encaissée sur vos ventes. Formule (par taux) : somme (TTC - HT) des articles vendus.</li>
+<li>TVA déductible : TVA payée sur vos achats reçus (récupérable). Formule (par taux) : somme de la TVA des achats réceptionnés.</li>
+<li>TVA due / à payer / crédit : TVA due = TVA collectée - TVA déductible. Si positive -&gt; TVA à payer = ce montant. Si négative -&gt; crédit de TVA = -ce montant (reportable).</li>
+<li>Trésorerie : entrées / sorties / solde : entrées = somme des paiements encaissés par méthode (espèces, carte, virement, Mobile Money). Sorties = somme des remboursements réellement décaissés (transactions REFUNDED) - base cash stricte. Solde = entrées - sorties. Attention : les sorties sont les décaissements cash réels, pas le montant TTC des avoirs comptables.</li>
+<li>Répartition des paiements (espèces / carte / virement / Mobile Money) : dans le rapport de trésorerie, les entrées sont ventilées par mode : espèces (CASH), carte bancaire (CARD), virement (TRANSFER) et Mobile Money (MOBILE, ex. Flutterwave). Chaque mode n&#x27;apparaît que s&#x27;il a été utilisé dans la période.</li>
+<li>Valeur stock au coût : ce que vous avez payé pour le stock. Formule : somme (coût unitaire x quantité), coût unitaire = CUMP si connu, sinon prix d&#x27;achat.</li>
+<li>Valeur stock au prix de vente : ce que le stock rapporterait s&#x27;il était vendu. Formule : somme (prix de vente x quantité). Ce n&#x27;est PAS une valeur comptable.</li>
+<li>CUMP (coût unitaire moyen pondéré) : coût d&#x27;achat moyen d&#x27;un produit, recalculé à chaque entrée costée (réception d&#x27;achat). Base du COGS et de la valeur au coût.</li>
+<li>Pourquoi le coût des ventes et la valeur de stock peuvent être à 0 : le COGS (coût des ventes) et la &quot;valeur de stock&quot; en comptabilité sont calculés AU COÛT D&#x27;ACHAT (prix d&#x27;achat ou CUMP). Un produit SANS prix d&#x27;achat ni CUMP n&#x27;est donc pas valorisé au coût (il compte pour 0). Conséquence : si vos produits n&#x27;ont pas de coût renseigné (ex. catalogue importé sans prix d&#x27;achat), le coût des ventes ET la valeur de stock au coût s&#x27;affichent à 0 - ce n&#x27;est PAS une erreur, c&#x27;est logique. À NE PAS CONFONDRE avec la valeur d&#x27;inventaire au PRIX DE VENTE (écran Gestion du stock), qui reste correcte. Pour activer ces chiffres : renseignez le prix d&#x27;achat de vos produits (à la fiche produit, ou via une réception d&#x27;achat qui met à jour le CUMP automatiquement).</li>
+</ul>
+</section>
+<section class="doc-section examples" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Exemples</h2>
+<p>[Simple] Une vente : HT 100, TVA 20 % -&gt; TTC 120. Si le coût des articles vendus est 70 : marge brute = 100 - 70 = 30 (taux 30 %).</p>
+<p>[Intermédiaire] Sur un mois : CA HT 9 600, avoirs HT 400 -&gt; CA net HT 9 200 (c&#x27;est le chiffre du P&amp;L). COGS 7 000 -&gt; marge brute 2 200 (taux 24 %). CA brut TTC 12 000, avoirs TTC 500 -&gt; CA net TTC 11 500 (chiffre de trésorerie, hors P&amp;L).</p>
+<p>[Avancé] TVA et trésorerie : TVA collectée 1 900, déductible 2 100 -&gt; TVA due = -200 -&gt; crédit de TVA 200 (reportable). Trésorerie : encaissements 11 800 (dont 800 en Mobile Money), remboursements cash 400 -&gt; solde 11 400. Attention : les 400 de remboursement sont les transactions REFUNDED réellement décaissées, pas le montant TTC des avoirs comptables.</p>
+</section>
+<section class="doc-section tips" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Conseils</h2>
+<ul>
+<li>La marge se calcule TOUJOURS sur le HT, jamais sur le TTC (la TVA n&#x27;est pas un revenu). De même, le KPI &#x27;CA net&#x27; du tableau de bord affiche le CA net HT : c&#x27;est la base légale du P&amp;L (HGB §275), pas le CA encaissé TTC.</li>
+<li>Un crédit de TVA (TVA due négative) est normal si vous avez beaucoup acheté ; il est reportable sur la période suivante.</li>
+<li>La valeur de stock au coût n&#x27;est complète que si les produits ont un prix d&#x27;achat (sinon ils comptent 0).</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/fr/docs/accounting/understanding_vat"><div class="dir">Précédent</div><div class="ttl">Comprendre la TVA</div></a><a class="next" href="/fr/docs/users/users_management"><div class="dir">Suivant</div><div class="ttl">Gérer les utilisateurs et les rôles</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">Sur cette page</div><a href="#sec-0">Présentation</a>
+<a href="#sec-1">Description de l&#x27;interface</a>
+<a href="#sec-2">Exemples</a>
+<a href="#sec-3">Conseils</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Comptabilité : que signifie chaque terme et comment chaque montant est calculé", "description": "Le sens de tous les termes comptables ET la formule exacte de chaque chiffre. Transparence totale.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Comptabilité", "item": "https://www.bizcorasystems.com/fr/docs/#accounting"}, {"@type": "ListItem", "position": 3, "name": "Comptabilité : que signifie chaque terme et comment chaque montant est calculé", "item": "https://www.bizcorasystems.com/fr/docs/accounting/accounting_formulas"}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

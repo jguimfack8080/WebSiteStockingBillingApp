@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Biometric login (fingerprint / face) - Documentation BizCoRa</title>
+  <meta name="description" content="Sign in without retyping your password, using fingerprint, face or Windows Hello." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/getting_started/biometric_login" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/getting_started/biometric_login" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Biometric login (fingerprint / face) - Documentation BizCoRa" />
+  <meta property="og:description" content="Sign in without retyping your password, using fingerprint, face or Windows Hello." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/en/docs/getting_started/biometric_login" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Biometric login (fingerprint / face) - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Sign in without retyping your password, using fingerprint, face or Windows Hello." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/en/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Documentation center</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Search the documentation..." data-index="/en/docs/search-index.json" aria-label="Search the documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="No results"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/en/">Back to site</a>
+    <span class="doc-lang"><a href="/fr/docs/getting_started/biometric_login" class="" hreflang="fr">FR</a><a href="/en/docs/getting_started/biometric_login" class="is-active" hreflang="en">EN</a><a href="/de/docs/getting_started/biometric_login" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/en/docs/">Full documentation center</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Getting started</div>
+<a class="nav-link" href="/en/docs/getting_started/profile_photo">Add or change your profile photo</a>
+<a class="nav-link" href="/en/docs/getting_started/login">Sign in to the application</a>
+<a class="nav-link is-active" href="/en/docs/getting_started/biometric_login">Biometric login (fingerprint / face)</a>
+<a class="nav-link" href="/en/docs/getting_started/password_reset">Reset a forgotten password</a>
+<a class="nav-link" href="/en/docs/getting_started/home_navigation">Understand your dashboard and navigate</a>
+<a class="nav-link" href="/en/docs/getting_started/scan_intro">Scan a barcode (scanner gun, camera or manual)</a>
+<a class="nav-link" href="/en/docs/getting_started/help_center_usage">Use the Help Center and search</a>
+<a class="nav-link" href="/en/docs/getting_started/my_profile">My profile and my password</a>
+<a class="nav-link" href="/en/docs/getting_started/signup_company_account">Create your company and account</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Dashboard</div>
+<a class="nav-link" href="/en/docs/dashboard/manager_dashboard">Read the dashboard and daily indicators</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Sales / Checkout</div>
+<a class="nav-link" href="/en/docs/sales/refunds">Track refunds</a>
+<a class="nav-link" href="/en/docs/sales/refund_cancel_sale">Refund or cancel a sale</a>
+<a class="nav-link" href="/en/docs/sales/sale_checkout">Process a sale</a>
+<a class="nav-link" href="/en/docs/sales/sales_history">View the sales history</a>
+<a class="nav-link" href="/en/docs/sales/quotes">Create and manage quotes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventory</div>
+<a class="nav-link" href="/en/docs/stock/inventory_overview">Manage stock (inventory view)</a>
+<a class="nav-link" href="/en/docs/stock/product_categories">Manage product categories</a>
+<a class="nav-link" href="/en/docs/stock/expiring_products">Monitor soon-to-expire products</a>
+<a class="nav-link" href="/en/docs/stock/inventory_adjustment">Adjust inventory (correct stock)</a>
+<a class="nav-link" href="/en/docs/stock/products_management">Manage products and their barcodes</a>
+<a class="nav-link" href="/en/docs/stock/stock_movements">Record stock movements</a>
+<a class="nav-link" href="/en/docs/stock/data_import">Import data: products, customers and stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Customers</div>
+<a class="nav-link" href="/en/docs/customers/new_customer">Add a customer</a>
+<a class="nav-link" href="/en/docs/customers/customer_loyalty">View a customer loyalty</a>
+<a class="nav-link" href="/en/docs/customers/customers_loyalty_list">View all loyal customers and their points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Billing</div>
+<a class="nav-link" href="/en/docs/billing/invoices">View invoices</a>
+<a class="nav-link" href="/en/docs/billing/subscription_payment">My subscription and payment</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_manager">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_manager">View credit notes</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_admin">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_admin">View credit notes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Payments</div>
+<a class="nav-link" href="/en/docs/transactions/cashier_performance">Analyze cashier performance</a>
+<a class="nav-link" href="/en/docs/transactions/transactions">Analyze transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Purchasing / Suppliers</div>
+<a class="nav-link" href="/en/docs/purchasing/suppliers">Manage suppliers</a>
+<a class="nav-link" href="/en/docs/purchasing/purchases">Record purchases and receptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Accounting</div>
+<a class="nav-link" href="/en/docs/accounting/accounting">Accounting: dashboard and reports</a>
+<a class="nav-link" href="/en/docs/accounting/understanding_vat">Understanding VAT</a>
+<a class="nav-link" href="/en/docs/accounting/accounting_formulas">Accounting: what each term means and how each amount is computed</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Users &amp; roles</div>
+<a class="nav-link" href="/en/docs/users/users_management">Manage users and roles</a>
+<a class="nav-link" href="/en/docs/users/manage_user_permissions">Manage a user&#x27;s permissions</a>
+<a class="nav-link" href="/en/docs/users/employee_onboarding">Create an employee and invite them to join</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Settings</div>
+<a class="nav-link" href="/en/docs/settings/session_security">Session security and automatic sign-out</a>
+<a class="nav-link" href="/en/docs/settings/business_timezone">Company time and timezone</a>
+<a class="nav-link" href="/en/docs/settings/settings">Adjust settings (language, theme, notifications)</a>
+<a class="nav-link" href="/en/docs/settings/company_settings">Configure company settings</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Oversight</div>
+<a class="nav-link" href="/en/docs/administration/audit_logs">View the audit log</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/en/docs/notifications/push_notifications">Push notifications (even when the app is closed)</a>
+<a class="nav-link" href="/en/docs/notifications/notifications">Notifications and alerts</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>AI Assistant</div>
+<a class="nav-link" href="/en/docs/ai/ai_chat">Using the AI Assistant</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/en/docs/">Documentation</a><span class="sep">/</span><a href="/en/docs/#getting_started">Getting started</a><span class="sep">/</span><span>Biometric login (fingerprint / face)</span></nav>
+    <article class="doc-article">
+      <h1>Biometric login (fingerprint / face)</h1>
+      <div class="doc-badges"><span class="role-badge all">All roles</span></div>
+      <p class="doc-lead">Sign in without retyping your password, using fingerprint, face or Windows Hello.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Presentation</h2>
+<p>Biometric login saves you from typing your password every time: the device checks your fingerprint or face, then opens your session.</p>
+<p>Your credentials are stored only on THIS device, in its secure vault, and are used only after a successful biometric check. They are never sent anywhere else.</p>
+<p>This option only appears if your device has biometrics (fingerprint, face recognition or Windows Hello). On the web it is not available: use the password.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Access</h2>
+<p>On the sign-in screen: the &quot;Enable biometric login&quot; checkbox (below the password) and, once enabled, the &quot;Sign in with biometrics&quot; button.</p>
+<p>In Settings &gt; Security &gt; &quot;Biometric login&quot;: to enable it (with password confirmation) or disable it.</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
+<ul>
+<li>&quot;Enable biometric login&quot; checkbox (sign-in): Tick it before signing in to remember your credentials on this device.</li>
+<li>&quot;Sign in with biometrics&quot; button: Starts the check (fingerprint/face) then opens your session without a password.</li>
+<li>&quot;Biometric login&quot; switch (Settings &gt; Security): Enables (after password confirmation) or disables biometrics. Disabling erases the stored credentials.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Step-by-step procedure</h2>
+<ol>
+<li>At sign-in, enter e-mail and password, tick &quot;Enable biometric login&quot;, then submit. -&gt; Your session opens and your credentials are securely stored on the device.</li>
+<li>Next time, just open the app: the biometric prompt appears automatically (a &quot;Sign in with biometrics&quot; button remains available if you dismissed the prompt). -&gt; As soon as your face or fingerprint is recognized, you go straight in, without tapping or confirming anything. (Check: You land on your dashboard without typing a password.)</li>
+<li>You can also enable it later via Settings &gt; Security &gt; &quot;Biometric login&quot; (password requested to confirm). -&gt; Once confirmed, the biometric button will appear at the next sign-in.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Examples</h2>
+<p>Enable at first sign-in: The cashier signs in, ticks the biometric checkbox, submits. The next day they tap the button, place a finger: the till opens in a second.</p>
+<p>Enable from Settings: Already signed in, the manager goes to Settings &gt; Security, enables &quot;Biometric login&quot;, retypes the password to confirm: ready for next time.</p>
+<p>On the web (browser), biometric login is not available: use your password.</p>
+<p>If your password is changed, biometric login disables automatically: sign in again with the new password, then re-enable it.</p>
+</section>
+<section class="doc-section errors" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Error messages</h2>
+<div class="err"><div class="msg">Incorrect password (enabling)</div><div class="sol">Cause: The password entered to confirm enabling does not match your account. - Solution: Re-enter your current password; if unsure, use &quot;Forgot password&quot;.</div></div>
+<div class="err"><div class="msg">Biometric authentication failed</div><div class="sol">Cause: Biometrics failed or the stored credentials are no longer valid. - Solution: Sign in with your password, then re-enable biometric login.</div></div>
+</section>
+<section class="doc-section tips" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Tips</h2>
+<ul>
+<li>Only enable biometrics on YOUR personal device. On a shared device, keep it disabled.</li>
+<li>To remove access on a device, disable &quot;Biometric login&quot; in Settings &gt; Security: the stored credentials are erased.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/en/docs/getting_started/login"><div class="dir">Previous</div><div class="ttl">Sign in to the application</div></a><a class="next" href="/en/docs/getting_started/password_reset"><div class="dir">Next</div><div class="ttl">Reset a forgotten password</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">On this page</div><a href="#sec-0">Presentation</a>
+<a href="#sec-1">Access</a>
+<a href="#sec-2">Interface</a>
+<a href="#sec-3">Step-by-step procedure</a>
+<a href="#sec-4">Examples</a>
+<a href="#sec-5">Error messages</a>
+<a href="#sec-6">Tips</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Biometric login (fingerprint / face)", "description": "Sign in without retyping your password, using fingerprint, face or Windows Hello.", "inLanguage": "en", "url": "https://www.bizcorasystems.com/en/docs/getting_started/biometric_login", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/en/docs/"}, {"@type": "ListItem", "position": 2, "name": "Getting started", "item": "https://www.bizcorasystems.com/en/docs/#getting_started"}, {"@type": "ListItem", "position": 3, "name": "Biometric login (fingerprint / face)", "item": "https://www.bizcorasystems.com/en/docs/getting_started/biometric_login"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Incorrect password (enabling)", "acceptedAnswer": {"@type": "Answer", "text": "Cause: The password entered to confirm enabling does not match your account. - Solution: Re-enter your current password; if unsure, use \"Forgot password\"."}}, {"@type": "Question", "name": "Biometric authentication failed", "acceptedAnswer": {"@type": "Answer", "text": "Cause: Biometrics failed or the stored credentials are no longer valid. - Solution: Sign in with your password, then re-enable biometric login."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

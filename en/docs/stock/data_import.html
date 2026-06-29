@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Import data: products, customers and stock (CSV) - Documentation BizCoRa</title>
+  <meta name="description" content="Import or update your product catalog, your customer file AND your stock from a file, without re-keying or duplicates." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/stock/data_import" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/stock/data_import" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Import data: products, customers and stock (CSV) - Documentation BizCoRa" />
+  <meta property="og:description" content="Import or update your product catalog, your customer file AND your stock from a file, without re-keying or duplicates." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/en/docs/stock/data_import" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Import data: products, customers and stock (CSV) - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Import or update your product catalog, your customer file AND your stock from a file, without re-keying or duplicates." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/en/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Documentation center</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Search the documentation..." data-index="/en/docs/search-index.json" aria-label="Search the documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="No results"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/en/">Back to site</a>
+    <span class="doc-lang"><a href="/fr/docs/stock/data_import" class="" hreflang="fr">FR</a><a href="/en/docs/stock/data_import" class="is-active" hreflang="en">EN</a><a href="/de/docs/stock/data_import" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/en/docs/">Full documentation center</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Getting started</div>
+<a class="nav-link" href="/en/docs/getting_started/profile_photo">Add or change your profile photo</a>
+<a class="nav-link" href="/en/docs/getting_started/login">Sign in to the application</a>
+<a class="nav-link" href="/en/docs/getting_started/biometric_login">Biometric login (fingerprint / face)</a>
+<a class="nav-link" href="/en/docs/getting_started/password_reset">Reset a forgotten password</a>
+<a class="nav-link" href="/en/docs/getting_started/home_navigation">Understand your dashboard and navigate</a>
+<a class="nav-link" href="/en/docs/getting_started/scan_intro">Scan a barcode (scanner gun, camera or manual)</a>
+<a class="nav-link" href="/en/docs/getting_started/help_center_usage">Use the Help Center and search</a>
+<a class="nav-link" href="/en/docs/getting_started/my_profile">My profile and my password</a>
+<a class="nav-link" href="/en/docs/getting_started/signup_company_account">Create your company and account</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Dashboard</div>
+<a class="nav-link" href="/en/docs/dashboard/manager_dashboard">Read the dashboard and daily indicators</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Sales / Checkout</div>
+<a class="nav-link" href="/en/docs/sales/refunds">Track refunds</a>
+<a class="nav-link" href="/en/docs/sales/refund_cancel_sale">Refund or cancel a sale</a>
+<a class="nav-link" href="/en/docs/sales/sale_checkout">Process a sale</a>
+<a class="nav-link" href="/en/docs/sales/sales_history">View the sales history</a>
+<a class="nav-link" href="/en/docs/sales/quotes">Create and manage quotes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventory</div>
+<a class="nav-link" href="/en/docs/stock/inventory_overview">Manage stock (inventory view)</a>
+<a class="nav-link" href="/en/docs/stock/product_categories">Manage product categories</a>
+<a class="nav-link" href="/en/docs/stock/expiring_products">Monitor soon-to-expire products</a>
+<a class="nav-link" href="/en/docs/stock/inventory_adjustment">Adjust inventory (correct stock)</a>
+<a class="nav-link" href="/en/docs/stock/products_management">Manage products and their barcodes</a>
+<a class="nav-link" href="/en/docs/stock/stock_movements">Record stock movements</a>
+<a class="nav-link is-active" href="/en/docs/stock/data_import">Import data: products, customers and stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Customers</div>
+<a class="nav-link" href="/en/docs/customers/new_customer">Add a customer</a>
+<a class="nav-link" href="/en/docs/customers/customer_loyalty">View a customer loyalty</a>
+<a class="nav-link" href="/en/docs/customers/customers_loyalty_list">View all loyal customers and their points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Billing</div>
+<a class="nav-link" href="/en/docs/billing/invoices">View invoices</a>
+<a class="nav-link" href="/en/docs/billing/subscription_payment">My subscription and payment</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_manager">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_manager">View credit notes</a>
+<a class="nav-link" href="/en/docs/billing/invoice_manual_create_admin">Create a manual invoice</a>
+<a class="nav-link" href="/en/docs/billing/credit_notes_admin">View credit notes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Payments</div>
+<a class="nav-link" href="/en/docs/transactions/cashier_performance">Analyze cashier performance</a>
+<a class="nav-link" href="/en/docs/transactions/transactions">Analyze transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Purchasing / Suppliers</div>
+<a class="nav-link" href="/en/docs/purchasing/suppliers">Manage suppliers</a>
+<a class="nav-link" href="/en/docs/purchasing/purchases">Record purchases and receptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Accounting</div>
+<a class="nav-link" href="/en/docs/accounting/accounting">Accounting: dashboard and reports</a>
+<a class="nav-link" href="/en/docs/accounting/understanding_vat">Understanding VAT</a>
+<a class="nav-link" href="/en/docs/accounting/accounting_formulas">Accounting: what each term means and how each amount is computed</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Users &amp; roles</div>
+<a class="nav-link" href="/en/docs/users/users_management">Manage users and roles</a>
+<a class="nav-link" href="/en/docs/users/manage_user_permissions">Manage a user&#x27;s permissions</a>
+<a class="nav-link" href="/en/docs/users/employee_onboarding">Create an employee and invite them to join</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Settings</div>
+<a class="nav-link" href="/en/docs/settings/session_security">Session security and automatic sign-out</a>
+<a class="nav-link" href="/en/docs/settings/business_timezone">Company time and timezone</a>
+<a class="nav-link" href="/en/docs/settings/settings">Adjust settings (language, theme, notifications)</a>
+<a class="nav-link" href="/en/docs/settings/company_settings">Configure company settings</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Oversight</div>
+<a class="nav-link" href="/en/docs/administration/audit_logs">View the audit log</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/en/docs/notifications/push_notifications">Push notifications (even when the app is closed)</a>
+<a class="nav-link" href="/en/docs/notifications/notifications">Notifications and alerts</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>AI Assistant</div>
+<a class="nav-link" href="/en/docs/ai/ai_chat">Using the AI Assistant</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/en/docs/">Documentation</a><span class="sep">/</span><a href="/en/docs/#stock">Stock / Inventory</a><span class="sep">/</span><span>Import data: products, customers and stock (CSV)</span></nav>
+    <article class="doc-article">
+      <h1>Import data: products, customers and stock (CSV)</h1>
+      <div class="doc-badges"><span class="role-badge admin">Admin</span></div>
+      <p class="doc-lead">Import or update your product catalog, your customer file AND your stock from a file, without re-keying or duplicates.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Presentation</h2>
+<p>Import lets you add or update lots of data at once from a CSV file (a spreadsheet you can export from Excel, Google Sheets or LibreOffice). The screen has three tabs: Products, Customers and Stock (the latter with two sub-tabs: Inventory levels and Movements). Ideal for onboarding or bulk fixing. The server validates each row: valid rows are imported, rows in error are listed with a clear explanation - nothing is ever silently lost.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Access</h2>
+<p>Administrator dashboard, Stock section, &quot;Import data&quot; card, then choose the Products or Customers tab. (Administrators only.)</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface description</h2>
+<ul>
+<li>&quot;Products&quot;, &quot;Customers&quot; and &quot;Stock&quot; tabs: At the top, three tabs. Products imports your catalog; Customers imports your customer file; Stock updates the quantities of EXISTING products, with two sub-tabs: &quot;Inventory levels&quot; (you give the new total stock after a count) and &quot;Movements&quot; (you record entries/exits). Each tab works the same way (download the template, fill it, import it) and keeps its report when you switch tabs.</li>
+<li>Stock columns (Stock tab): The product is identified by its &#x27;Reference&#x27; (or &#x27;Name&#x27;): it must ALREADY exist (stock import never creates a product; use the Products tab to create). Levels sub-tab: &#x27;Quantity&#x27; = the new total stock (a traced inventory movement is created for the difference). Movements sub-tab: &#x27;Type&#x27; = In or Out, &#x27;Quantity&#x27; = the movement quantity; an Out larger than available stock is refused (never negative stock). &#x27;Reason&#x27; is optional.</li>
+<li>Customer columns (Customers tab): On the Customers tab: &#x27;First name&#x27;, &#x27;Last name&#x27; and &#x27;Phone&#x27; are required (star). Phone must be in international format (e.g. +33612345678); it is also used to recognize an existing customer and update it (no duplicate). &#x27;Email&#x27; and &#x27;Address&#x27; are optional. The loyalty points balance is never imported (it is managed automatically by sales).</li>
+<li>&quot;Download the template&quot; button: Downloads a ready-made CSV file, with the right columns (in your language) and two examples. This is the recommended starting point: just replace the examples with your products.</li>
+<li>Expected columns: The list of file columns. Only &#x27;Product name&#x27; and &#x27;Selling price&#x27; are required (star). &#x27;Reference (SKU)&#x27; is used to recognize an existing product and update it. Other columns (purchase price, quantity, thresholds) are optional.</li>
+<li>Report (Created / Updated / Skipped): Three counters summarize the import. Below, each row in error is listed with its number and reason. Fix those rows and re-run: no duplicate is created.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Step-by-step procedure</h2>
+<ol>
+<li>Action: At the top, pick the tab for what you import: &quot;Products&quot; for the catalog, &quot;Customers&quot; for the customer file. Result: The chosen tab shows its expected columns and buttons.</li>
+<li>Action: Tap &quot;Download the template&quot;: a ready-made CSV file (with the right columns in your language + 2 examples) is downloaded to your device. Result: You get a template file, already in the right format.</li>
+<li>Action: Open the template in Excel (or Google Sheets), replace the 2 example rows with your products, then save the file. Result: Your file is ready to import. Check: Keep the first row (the column titles) intact; fill in at least Name and Selling price.</li>
+<li>Action: Open &quot;Import products&quot;, tap &quot;Choose a CSV file&quot;, then select your file. Result: The import runs and the report appears. Check: Check the Created / Updated / Skipped counters.</li>
+<li>Action: If some rows were skipped, fix them in the file (the reason is shown), then re-run the import. Result: Already-imported products are updated, not duplicated; the fixed rows are added.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Examples</h2>
+<p>[Simple] First catalog import: A file of 150 products (Reference, Name, Selling price, Quantity). Result: 150 created, 0 skipped. Initial stock is taken into account.</p>
+</section>
+<section class="doc-section presentation" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Edge cases</h2>
+<p>Re-importing the SAME file creates no duplicate: recognized products (by reference, otherwise by name) are updated. You can fix and re-run as many times as needed.</p>
+<p>A decimal comma is accepted (12,50 as well as 12.50). The file must be at most 2 MB and 2000 rows; beyond that, split it.</p>
+</section>
+<section class="doc-section errors" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Error messages</h2>
+<div class="err"><div class="msg">Product name is required.</div><div class="sol">Cause: The Name column is empty on this row. Solution: Fill in a name then re-run.</div></div>
+<div class="err"><div class="msg">Invalid number.</div><div class="sol">Cause: The price or quantity contains non-numeric characters. Solution: Use a number (e.g. 12.50) without a currency symbol.</div></div>
+<div class="err"><div class="msg">Required columns missing.</div><div class="sol">Cause: The header does not contain &#x27;Name&#x27; and/or &#x27;Selling price&#x27;. Solution: Start again from the export of your products as a template.</div></div>
+</section>
+<section class="doc-section tips" id="sec-7"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Tips</h2>
+<ul>
+<li>Fill in the Reference (SKU) column: it reliably finds and updates an existing product on re-import.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/en/docs/stock/stock_movements"><div class="dir">Previous</div><div class="ttl">Record stock movements</div></a><a class="next" href="/en/docs/customers/new_customer"><div class="dir">Next</div><div class="ttl">Add a customer</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">On this page</div><a href="#sec-0">Presentation</a>
+<a href="#sec-1">Access</a>
+<a href="#sec-2">Interface description</a>
+<a href="#sec-3">Step-by-step procedure</a>
+<a href="#sec-4">Examples</a>
+<a href="#sec-5">Edge cases</a>
+<a href="#sec-6">Error messages</a>
+<a href="#sec-7">Tips</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Import data: products, customers and stock (CSV)", "description": "Import or update your product catalog, your customer file AND your stock from a file, without re-keying or duplicates.", "inLanguage": "en", "url": "https://www.bizcorasystems.com/en/docs/stock/data_import", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/en/docs/"}, {"@type": "ListItem", "position": 2, "name": "Stock / Inventory", "item": "https://www.bizcorasystems.com/en/docs/#stock"}, {"@type": "ListItem", "position": 3, "name": "Import data: products, customers and stock (CSV)", "item": "https://www.bizcorasystems.com/en/docs/stock/data_import"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Product name is required.", "acceptedAnswer": {"@type": "Answer", "text": "Cause: The Name column is empty on this row. Solution: Fill in a name then re-run."}}, {"@type": "Question", "name": "Invalid number.", "acceptedAnswer": {"@type": "Answer", "text": "Cause: The price or quantity contains non-numeric characters. Solution: Use a number (e.g. 12.50) without a currency symbol."}}, {"@type": "Question", "name": "Required columns missing.", "acceptedAnswer": {"@type": "Answer", "text": "Cause: The header does not contain 'Name' and/or 'Selling price'. Solution: Start again from the export of your products as a template."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

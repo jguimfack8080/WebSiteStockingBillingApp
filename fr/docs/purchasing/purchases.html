@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Enregistrer les achats et réceptions - Documentation BizCoRa</title>
+  <meta name="description" content="Saisir un achat fournisseur ; la réception met à jour le stock, le coût (moyen pondéré) et la TVA déductible." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/purchasing/purchases" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/purchasing/purchases" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/purchasing/purchases" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Enregistrer les achats et réceptions - Documentation BizCoRa" />
+  <meta property="og:description" content="Saisir un achat fournisseur ; la réception met à jour le stock, le coût (moyen pondéré) et la TVA déductible." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/purchasing/purchases" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Enregistrer les achats et réceptions - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Saisir un achat fournisseur ; la réception met à jour le stock, le coût (moyen pondéré) et la TVA déductible." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/fr/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Centre de documentation</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Rechercher dans la documentation..." data-index="/fr/docs/search-index.json" aria-label="Rechercher dans la documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="Aucun résultat"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/fr/">Retour au site</a>
+    <span class="doc-lang"><a href="/fr/docs/purchasing/purchases" class="is-active" hreflang="fr">FR</a><a href="/en/docs/purchasing/purchases" class="" hreflang="en">EN</a><a href="/de/docs/purchasing/purchases" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/fr/docs/">Tout le centre de documentation</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Premiers pas</div>
+<a class="nav-link" href="/fr/docs/getting_started/profile_photo">Ajouter ou changer sa photo de profil</a>
+<a class="nav-link" href="/fr/docs/getting_started/login">Se connecter à l&#x27;application</a>
+<a class="nav-link" href="/fr/docs/getting_started/biometric_login">Connexion biométrique (empreinte / visage)</a>
+<a class="nav-link" href="/fr/docs/getting_started/password_reset">Réinitialiser un mot de passe oublié</a>
+<a class="nav-link" href="/fr/docs/getting_started/home_navigation">Comprendre votre tableau de bord et naviguer</a>
+<a class="nav-link" href="/fr/docs/getting_started/scan_intro">Scanner un code-barres (douchette, caméra ou saisie)</a>
+<a class="nav-link" href="/fr/docs/getting_started/help_center_usage">Utiliser le Centre d&#x27;Aide et la recherche</a>
+<a class="nav-link" href="/fr/docs/getting_started/my_profile">Mon profil et mon mot de passe</a>
+<a class="nav-link" href="/fr/docs/getting_started/signup_company_account">Créer son entreprise et son compte</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Tableau de bord</div>
+<a class="nav-link" href="/fr/docs/dashboard/manager_dashboard">Lire le tableau de bord et les indicateurs du jour</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Ventes / Caisse</div>
+<a class="nav-link" href="/fr/docs/sales/refunds">Suivre les remboursements</a>
+<a class="nav-link" href="/fr/docs/sales/refund_cancel_sale">Rembourser ou annuler une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sale_checkout">Encaisser une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sales_history">Consulter l&#x27;historique des ventes</a>
+<a class="nav-link" href="/fr/docs/sales/quotes">Créer et gérer les devis</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventaire</div>
+<a class="nav-link" href="/fr/docs/stock/inventory_overview">Gérer le stock (vue inventaire)</a>
+<a class="nav-link" href="/fr/docs/stock/product_categories">Gérer les catégories de produits</a>
+<a class="nav-link" href="/fr/docs/stock/expiring_products">Surveiller les produits bientôt périmés</a>
+<a class="nav-link" href="/fr/docs/stock/inventory_adjustment">Ajuster l&#x27;inventaire (corriger le stock)</a>
+<a class="nav-link" href="/fr/docs/stock/products_management">Gérer les produits et leurs codes-barres</a>
+<a class="nav-link" href="/fr/docs/stock/stock_movements">Enregistrer les mouvements de stock</a>
+<a class="nav-link" href="/fr/docs/stock/data_import">Importer des données : produits, clients et stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Clients</div>
+<a class="nav-link" href="/fr/docs/customers/new_customer">Ajouter un client</a>
+<a class="nav-link" href="/fr/docs/customers/customer_loyalty">Consulter la fidélité d&#x27;un client</a>
+<a class="nav-link" href="/fr/docs/customers/customers_loyalty_list">Voir tous les clients fidèles et leurs points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Facturation</div>
+<a class="nav-link" href="/fr/docs/billing/invoices">Consulter les factures</a>
+<a class="nav-link" href="/fr/docs/billing/subscription_payment">Mon abonnement et le paiement</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_manager">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_manager">Consulter les avoirs</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_admin">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_admin">Consulter les avoirs</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Paiements</div>
+<a class="nav-link" href="/fr/docs/transactions/cashier_performance">Analyser la performance des caissiers</a>
+<a class="nav-link" href="/fr/docs/transactions/transactions">Analyser les transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Achats / Fournisseurs</div>
+<a class="nav-link" href="/fr/docs/purchasing/suppliers">Gérer les fournisseurs</a>
+<a class="nav-link is-active" href="/fr/docs/purchasing/purchases">Enregistrer les achats et réceptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Comptabilité</div>
+<a class="nav-link" href="/fr/docs/accounting/accounting">Comptabilité : tableau de bord et rapports</a>
+<a class="nav-link" href="/fr/docs/accounting/understanding_vat">Comprendre la TVA</a>
+<a class="nav-link" href="/fr/docs/accounting/accounting_formulas">Comptabilité : que signifie chaque terme et comment chaque montant est calculé</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Utilisateurs &amp; rôles</div>
+<a class="nav-link" href="/fr/docs/users/users_management">Gérer les utilisateurs et les rôles</a>
+<a class="nav-link" href="/fr/docs/users/manage_user_permissions">Gérer les droits d&#x27;un utilisateur</a>
+<a class="nav-link" href="/fr/docs/users/employee_onboarding">Créer un employé et l&#x27;inviter à rejoindre</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Paramètres</div>
+<a class="nav-link" href="/fr/docs/settings/session_security">Sécurité de session et déconnexion automatique</a>
+<a class="nav-link" href="/fr/docs/settings/business_timezone">Heure et fuseau horaire de l&#x27;entreprise</a>
+<a class="nav-link" href="/fr/docs/settings/settings">Régler les paramètres (langue, thème, notifications)</a>
+<a class="nav-link" href="/fr/docs/settings/company_settings">Configurer les paramètres de l&#x27;entreprise</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Supervision</div>
+<a class="nav-link" href="/fr/docs/administration/audit_logs">Consulter le journal d&#x27;audit</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/fr/docs/notifications/push_notifications">Notifications push (même application fermée)</a>
+<a class="nav-link" href="/fr/docs/notifications/notifications">Notifications et alertes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Assistant IA</div>
+<a class="nav-link" href="/fr/docs/ai/ai_chat">Utiliser l&#x27;Assistant IA</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/fr/docs/">Documentation</a><span class="sep">/</span><a href="/fr/docs/#purchasing">Achats / Fournisseurs</a><span class="sep">/</span><span>Enregistrer les achats et réceptions</span></nav>
+    <article class="doc-article">
+      <h1>Enregistrer les achats et réceptions</h1>
+      <div class="doc-badges"><span class="role-badge admin">Admin</span></div>
+      <p class="doc-lead">Saisir un achat fournisseur ; la réception met à jour le stock, le coût (moyen pondéré) et la TVA déductible.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Présentation</h2>
+<p>Un achat enregistre ce que vous commandez et recevez d&#x27;un fournisseur. C&#x27;est le point d&#x27;entrée de votre marchandise dans l&#x27;application.</p>
+<p>Point clé à bien comprendre : un achat n&#x27;ajoute PAS un nouveau produit, il ajoute du STOCK à un produit qui existe déjà dans &quot;Produits&quot;. Vous créez donc le produit une seule fois, puis vous l&#x27;achetez autant de fois que nécessaire, chez n&#x27;importe quel fournisseur.</p>
+<p>À la réception de l&#x27;achat, trois choses se font automatiquement : (1) le stock des produits augmente ; (2) le coût réellement payé alimente le coût moyen pondéré, qui sert ensuite au calcul de votre marge ; (3) la TVA payée au fournisseur est enregistrée comme TVA déductible (elle vient en déduction de la TVA que vous collectez sur vos ventes).</p>
+<p>Cycle de vie d&#x27;un achat : il est d&#x27;abord créé en &quot;Brouillon&quot; (vous pouvez encore le modifier), puis passe en &quot;Reçu&quot; lorsque la marchandise arrive. C&#x27;est ce passage en &quot;Reçu&quot; qui déclenche l&#x27;entrée en stock et les calculs ci-dessus.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Accès</h2>
+<p>Tableau de bord administrateur, section Achats, carte &quot;Achats&quot;.</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
+<ul>
+<li>Liste des achats avec statut : filtres par fournisseur, période et statut (ex : brouillon).</li>
+<li>Nouvel achat : saisir un achat (fournisseur, produits, quantités, prix).</li>
+<li>Champ produit (recherche par nom) : sur chaque ligne, touchez le champ produit : une fenêtre de recherche s&#x27;ouvre. Tapez le nom du produit et choisissez-le dans la liste (avec image, prix et stock). Vous n&#x27;avez aucun numéro à connaître.</li>
+<li>Scan code-barres (douchette ou appareil photo) : scannez le code-barres d&#x27;un produit : il s&#x27;ajoute automatiquement aux lignes. Re-scanner le même produit augmente sa quantité. Le bouton appareil photo en haut à droite sert aux appareils sans douchette. Le coût d&#x27;achat reste à saisir à la main (le scan ne le connaît pas).</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Procédure pas à pas</h2>
+<ol>
+<li>Action : assurez-vous d&#x27;abord que le produit existe dans &quot;Produits&quot;. Si ce n&#x27;est pas le cas, créez-le avant (un achat n&#x27;ajoute pas un produit, il ajoute du stock à un produit existant). Résultat : le produit sera trouvable dans la recherche du formulaire d&#x27;achat.</li>
+<li>Action : ouvrez &quot;Achats&quot; puis touchez &quot;Nouvel achat&quot;. Résultat : le formulaire d&#x27;achat s&#x27;ouvre, avec une première ligne vide.</li>
+<li>Action : choisissez le fournisseur dans la liste déroulante (seuls les fournisseurs actifs apparaissent). Résultat : le fournisseur est rattaché à l&#x27;achat.</li>
+<li>Action : ajoutez les produits, soit en touchant le champ produit puis en cherchant par nom, soit en scannant directement le code-barres (le produit s&#x27;ajoute tout seul). Résultat : chaque produit apparaît sur une ligne.</li>
+<li>Action : pour chaque ligne, saisissez la quantité reçue et le coût unitaire réel (hors taxe) payé au fournisseur. Le taux de TVA est déjà pré-rempli avec la TVA par défaut de votre entreprise : modifiez-le uniquement si cet article a un taux différent. Résultat : les totaux (HT, TVA, TTC) sont calculés par le serveur, vous n&#x27;avez rien à calculer.</li>
+<li>Action : enregistrez le brouillon, puis passez l&#x27;achat en &quot;Reçu&quot; quand la marchandise arrive. Résultat : à la réception, le stock augmente automatiquement, le coût moyen est mis à jour et la TVA déductible est enregistrée. Vérification : vérifiez les quantités reçues par rapport au bon de livraison, et le nouveau stock dans &quot;Produits&quot;.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Exemples</h2>
+<p>[simple] Réapprovisionnement : un produit est en rupture : vous créez un achat auprès du fournisseur, et à la réception le stock repasse au-dessus du seuil.</p>
+<p>[intermédiaire] Réception au scan : la livraison arrive : vous ouvrez &quot;Nouvel achat&quot;, choisissez le fournisseur, puis scannez chaque article au fur et à mesure. Chaque scan ajoute le produit ; si vous scannez deux fois le même, sa quantité passe à 2. Vous saisissez ensuite les coûts, puis vous réceptionnez.</p>
+</section>
+<section class="doc-section presentation" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Cas particuliers</h2>
+<p>Le produit doit exister AVANT l&#x27;achat. Si vous ne le trouvez pas dans la recherche, c&#x27;est qu&#x27;il n&#x27;est pas encore créé : créez-le d&#x27;abord dans &quot;Produits&quot;.</p>
+<p>Scanner deux fois le même produit n&#x27;ajoute pas deux lignes : la quantité de la ligne existante est simplement augmentée.</p>
+<p>Le scan ne pré-remplit pas le coût d&#x27;achat (le serveur ne renvoie pas le coût sur le chemin du scan, pour des raisons de confidentialité de la marge). Vous saisissez le coût réel à la main.</p>
+<p>Tant que l&#x27;achat est en &quot;Brouillon&quot;, il n&#x27;a aucun effet sur le stock. L&#x27;effet ne se produit qu&#x27;au passage en &quot;Reçu&quot;.</p>
+<p>La TVA de chaque ligne est pré-remplie avec la TVA par défaut de l&#x27;entreprise (réglée dans Réglages &gt; Entreprise). Vous pouvez la changer ligne par ligne si un article relève d&#x27;un taux différent. Pour tout comprendre, voyez la fiche &quot;Comprendre la TVA&quot;.</p>
+</section>
+<section class="doc-section errors" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Messages d&#x27;erreur</h2>
+<div class="err"><div class="msg">Sélectionnez un produit.</div><div class="sol">Cause : une ligne d&#x27;achat n&#x27;a pas de produit choisi. Solution : touchez le champ produit de la ligne et choisissez un produit (par nom ou par scan), ou supprimez la ligne vide.</div></div>
+<div class="err"><div class="msg">Sélectionnez un fournisseur.</div><div class="sol">Cause : aucun fournisseur n&#x27;a été choisi pour l&#x27;achat. Solution : choisissez un fournisseur dans la liste déroulante. S&#x27;il n&#x27;apparaît pas, vérifiez qu&#x27;il est actif dans &quot;Fournisseurs&quot;.</div></div>
+<div class="err"><div class="msg">Produit(s) introuvable(s).</div><div class="sol">Cause : un produit de l&#x27;achat a été supprimé entre-temps, ou n&#x27;appartient pas à votre entreprise. Solution : retirez la ligne concernée et choisissez un produit existant, ou recréez le produit dans &quot;Produits&quot;.</div></div>
+<div class="err"><div class="msg">Code inconnu (au scan).</div><div class="sol">Cause : le code-barres scanné ne correspond à aucun produit de votre entreprise. Solution : vérifiez que le produit existe et que son code-barres est bien enregistré dans sa fiche &quot;Produits&quot;.</div></div>
+</section>
+<section class="doc-section tips" id="sec-7"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Conseils</h2>
+<ul>
+<li>Saisissez le prix d&#x27;achat réel : il sert au calcul du coût des marchandises vendues et de la marge en comptabilité.</li>
+<li>Pour une réception rapide, scannez les articles un par un : c&#x27;est le moyen le plus sûr de ne rien oublier et d&#x27;éviter les erreurs de saisie.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/fr/docs/purchasing/suppliers"><div class="dir">Précédent</div><div class="ttl">Gérer les fournisseurs</div></a><a class="next" href="/fr/docs/accounting/accounting"><div class="dir">Suivant</div><div class="ttl">Comptabilité : tableau de bord et rapports</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">Sur cette page</div><a href="#sec-0">Présentation</a>
+<a href="#sec-1">Accès</a>
+<a href="#sec-2">Interface</a>
+<a href="#sec-3">Procédure pas à pas</a>
+<a href="#sec-4">Exemples</a>
+<a href="#sec-5">Cas particuliers</a>
+<a href="#sec-6">Messages d&#x27;erreur</a>
+<a href="#sec-7">Conseils</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Enregistrer les achats et réceptions", "description": "Saisir un achat fournisseur ; la réception met à jour le stock, le coût (moyen pondéré) et la TVA déductible.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/purchasing/purchases", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Achats / Fournisseurs", "item": "https://www.bizcorasystems.com/fr/docs/#purchasing"}, {"@type": "ListItem", "position": 3, "name": "Enregistrer les achats et réceptions", "item": "https://www.bizcorasystems.com/fr/docs/purchasing/purchases"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Sélectionnez un produit.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : une ligne d'achat n'a pas de produit choisi. Solution : touchez le champ produit de la ligne et choisissez un produit (par nom ou par scan), ou supprimez la ligne vide."}}, {"@type": "Question", "name": "Sélectionnez un fournisseur.", "acceptedAnswer": {"@type": "Answer", "text": "Cause : aucun fournisseur n'a été choisi pour l'achat. Solution : choisissez un fournisseur dans la liste déroulante. S'il n'apparaît pas, vérifiez qu'il est actif dans \"Fournisseurs\"."}}, {"@type": "Question", "name": "Produit(s) introuvable(s).", "acceptedAnswer": {"@type": "Answer", "text": "Cause : un produit de l'achat a été supprimé entre-temps, ou n'appartient pas à votre entreprise. Solution : retirez la ligne concernée et choisissez un produit existant, ou recréez le produit dans \"Produits\"."}}, {"@type": "Question", "name": "Code inconnu (au scan).", "acceptedAnswer": {"@type": "Answer", "text": "Cause : le code-barres scanné ne correspond à aucun produit de votre entreprise. Solution : vérifiez que le produit existe et que son code-barres est bien enregistré dans sa fiche \"Produits\"."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>

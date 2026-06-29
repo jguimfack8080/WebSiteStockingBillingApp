@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr" class="docs">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Heure et fuseau horaire de l&#x27;entreprise - Documentation BizCoRa</title>
+  <meta name="description" content="Comprendre pourquoi les rapports &quot;du jour&quot; suivent le fuseau de l&#x27;entreprise (pas votre appareil), et comment le régler correctement." />
+  <link rel="canonical" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+  <link rel="alternate" hreflang="fr" href="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+  <link rel="alternate" hreflang="en" href="https://www.bizcorasystems.com/en/docs/settings/business_timezone" />
+  <link rel="alternate" hreflang="de" href="https://www.bizcorasystems.com/de/docs/settings/business_timezone" />
+  <link rel="alternate" hreflang="x-default" href="https://www.bizcorasystems.com/en/docs/settings/business_timezone" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Heure et fuseau horaire de l&#x27;entreprise - Documentation BizCoRa" />
+  <meta property="og:description" content="Comprendre pourquoi les rapports &quot;du jour&quot; suivent le fuseau de l&#x27;entreprise (pas votre appareil), et comment le régler correctement." />
+  <meta property="og:url" content="https://www.bizcorasystems.com/fr/docs/settings/business_timezone" />
+  <meta property="og:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <meta property="og:site_name" content="BizCoRa" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Heure et fuseau horaire de l&#x27;entreprise - Documentation BizCoRa" />
+  <meta name="twitter:description" content="Comprendre pourquoi les rapports &quot;du jour&quot; suivent le fuseau de l&#x27;entreprise (pas votre appareil), et comment le régler correctement." />
+  <meta name="twitter:image" content="https://www.bizcorasystems.com/assets/images/og-cover-1200x630.png" />
+  <link rel="icon" href="/assets/images/favicon.ico" />
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/docs.css" />
+</head>
+<body class="docs">
+<header class="doc-topbar">
+  <button class="doc-burger" id="doc-burger" aria-label="Menu"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+  <a class="doc-brand" href="/fr/docs/"><img src="/assets/images/logo-96.png" alt="BizCoRa" /><span>Biz<span class="ra">CoRa</span></span><span class="tag">Centre de documentation</span></a>
+  <div class="doc-search">
+    <input id="doc-search-input" type="search" autocomplete="off" placeholder="Rechercher dans la documentation..." data-index="/fr/docs/search-index.json" aria-label="Rechercher dans la documentation..." />
+    <kbd>/</kbd>
+    <div class="doc-results" id="doc-search-results" data-empty="Aucun résultat"></div>
+  </div>
+  <div class="spacer"></div>
+  <div class="top-links">
+    <a href="/fr/">Retour au site</a>
+    <span class="doc-lang"><a href="/fr/docs/settings/business_timezone" class="is-active" hreflang="fr">FR</a><a href="/en/docs/settings/business_timezone" class="" hreflang="en">EN</a><a href="/de/docs/settings/business_timezone" class="" hreflang="de">DE</a></span>
+  </div>
+</header>
+<div class="doc-sidebar-backdrop" id="doc-sidebar-backdrop"></div>
+<div class="doc-shell">
+  <aside class="doc-sidebar" id="doc-sidebar"><a class="nav-home" href="/fr/docs/">Tout le centre de documentation</a>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Premiers pas</div>
+<a class="nav-link" href="/fr/docs/getting_started/profile_photo">Ajouter ou changer sa photo de profil</a>
+<a class="nav-link" href="/fr/docs/getting_started/login">Se connecter à l&#x27;application</a>
+<a class="nav-link" href="/fr/docs/getting_started/biometric_login">Connexion biométrique (empreinte / visage)</a>
+<a class="nav-link" href="/fr/docs/getting_started/password_reset">Réinitialiser un mot de passe oublié</a>
+<a class="nav-link" href="/fr/docs/getting_started/home_navigation">Comprendre votre tableau de bord et naviguer</a>
+<a class="nav-link" href="/fr/docs/getting_started/scan_intro">Scanner un code-barres (douchette, caméra ou saisie)</a>
+<a class="nav-link" href="/fr/docs/getting_started/help_center_usage">Utiliser le Centre d&#x27;Aide et la recherche</a>
+<a class="nav-link" href="/fr/docs/getting_started/my_profile">Mon profil et mon mot de passe</a>
+<a class="nav-link" href="/fr/docs/getting_started/signup_company_account">Créer son entreprise et son compte</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Tableau de bord</div>
+<a class="nav-link" href="/fr/docs/dashboard/manager_dashboard">Lire le tableau de bord et les indicateurs du jour</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Ventes / Caisse</div>
+<a class="nav-link" href="/fr/docs/sales/refunds">Suivre les remboursements</a>
+<a class="nav-link" href="/fr/docs/sales/refund_cancel_sale">Rembourser ou annuler une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sale_checkout">Encaisser une vente</a>
+<a class="nav-link" href="/fr/docs/sales/sales_history">Consulter l&#x27;historique des ventes</a>
+<a class="nav-link" href="/fr/docs/sales/quotes">Créer et gérer les devis</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Stock / Inventaire</div>
+<a class="nav-link" href="/fr/docs/stock/inventory_overview">Gérer le stock (vue inventaire)</a>
+<a class="nav-link" href="/fr/docs/stock/product_categories">Gérer les catégories de produits</a>
+<a class="nav-link" href="/fr/docs/stock/expiring_products">Surveiller les produits bientôt périmés</a>
+<a class="nav-link" href="/fr/docs/stock/inventory_adjustment">Ajuster l&#x27;inventaire (corriger le stock)</a>
+<a class="nav-link" href="/fr/docs/stock/products_management">Gérer les produits et leurs codes-barres</a>
+<a class="nav-link" href="/fr/docs/stock/stock_movements">Enregistrer les mouvements de stock</a>
+<a class="nav-link" href="/fr/docs/stock/data_import">Importer des données : produits, clients et stock (CSV)</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Clients</div>
+<a class="nav-link" href="/fr/docs/customers/new_customer">Ajouter un client</a>
+<a class="nav-link" href="/fr/docs/customers/customer_loyalty">Consulter la fidélité d&#x27;un client</a>
+<a class="nav-link" href="/fr/docs/customers/customers_loyalty_list">Voir tous les clients fidèles et leurs points</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Facturation</div>
+<a class="nav-link" href="/fr/docs/billing/invoices">Consulter les factures</a>
+<a class="nav-link" href="/fr/docs/billing/subscription_payment">Mon abonnement et le paiement</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_manager">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_manager">Consulter les avoirs</a>
+<a class="nav-link" href="/fr/docs/billing/invoice_manual_create_admin">Créer une facture manuelle</a>
+<a class="nav-link" href="/fr/docs/billing/credit_notes_admin">Consulter les avoirs</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Transactions / Paiements</div>
+<a class="nav-link" href="/fr/docs/transactions/cashier_performance">Analyser la performance des caissiers</a>
+<a class="nav-link" href="/fr/docs/transactions/transactions">Analyser les transactions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Achats / Fournisseurs</div>
+<a class="nav-link" href="/fr/docs/purchasing/suppliers">Gérer les fournisseurs</a>
+<a class="nav-link" href="/fr/docs/purchasing/purchases">Enregistrer les achats et réceptions</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Comptabilité</div>
+<a class="nav-link" href="/fr/docs/accounting/accounting">Comptabilité : tableau de bord et rapports</a>
+<a class="nav-link" href="/fr/docs/accounting/understanding_vat">Comprendre la TVA</a>
+<a class="nav-link" href="/fr/docs/accounting/accounting_formulas">Comptabilité : que signifie chaque terme et comment chaque montant est calculé</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Utilisateurs &amp; rôles</div>
+<a class="nav-link" href="/fr/docs/users/users_management">Gérer les utilisateurs et les rôles</a>
+<a class="nav-link" href="/fr/docs/users/manage_user_permissions">Gérer les droits d&#x27;un utilisateur</a>
+<a class="nav-link" href="/fr/docs/users/employee_onboarding">Créer un employé et l&#x27;inviter à rejoindre</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Paramètres</div>
+<a class="nav-link" href="/fr/docs/settings/session_security">Sécurité de session et déconnexion automatique</a>
+<a class="nav-link is-active" href="/fr/docs/settings/business_timezone">Heure et fuseau horaire de l&#x27;entreprise</a>
+<a class="nav-link" href="/fr/docs/settings/settings">Régler les paramètres (langue, thème, notifications)</a>
+<a class="nav-link" href="/fr/docs/settings/company_settings">Configurer les paramètres de l&#x27;entreprise</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Administration / Supervision</div>
+<a class="nav-link" href="/fr/docs/administration/audit_logs">Consulter le journal d&#x27;audit</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Notifications</div>
+<a class="nav-link" href="/fr/docs/notifications/push_notifications">Notifications push (même application fermée)</a>
+<a class="nav-link" href="/fr/docs/notifications/notifications">Notifications et alertes</a>
+</div>
+<div class="doc-cat"><div class="cat-title"><span class="dot"></span>Assistant IA</div>
+<a class="nav-link" href="/fr/docs/ai/ai_chat">Utiliser l&#x27;Assistant IA</a>
+</div></aside>
+  <main class="doc-main">
+    <nav class="doc-breadcrumb"><a href="/fr/docs/">Documentation</a><span class="sep">/</span><a href="/fr/docs/#settings">Paramètres</a><span class="sep">/</span><span>Heure et fuseau horaire de l&#x27;entreprise</span></nav>
+    <article class="doc-article">
+      <h1>Heure et fuseau horaire de l&#x27;entreprise</h1>
+      <div class="doc-badges"><span class="role-badge all">Tous les rôles</span></div>
+      <p class="doc-lead">Comprendre pourquoi les rapports &quot;du jour&quot; suivent le fuseau de l&#x27;entreprise (pas votre appareil), et comment le régler correctement.</p>
+      <section class="doc-section presentation" id="sec-0"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Présentation</h2>
+<p>POINT IMPORTANT. Chaque vente est enregistrée avec une heure universelle (UTC), une référence unique valable partout dans le monde. Mais pour dire &quot;les ventes d&#x27;AUJOURD&#x27;HUI&quot;, il faut savoir quand la journée commence et se termine - ce qui dépend d&#x27;un fuseau horaire.</p>
+<p>La référence utilisée est le FUSEAU DE VOTRE ENTREPRISE (le lieu où vous exploitez), PAS celui de votre téléphone. C&#x27;est volontaire : ainsi, où que vous soyez (en déplacement, à l&#x27;étranger), &quot;aujourd&#x27;hui&quot; reste la journée de votre entreprise. Les chiffres ne changent donc jamais selon l&#x27;endroit d&#x27;où vous consultez l&#x27;application.</p>
+</section>
+<section class="doc-section presentation" id="sec-1"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg></span>Accès</h2>
+<p>L&#x27;heure de l&#x27;entreprise s&#x27;affiche en haut du tableau de bord (bannière &quot;Heure de l&#x27;entreprise&quot; avec la date, l&#x27;heure et le fuseau). Le réglage du fuseau se fait dans Réglages &gt; Entreprise (administrateur).</p>
+</section>
+<section class="doc-section interface" id="sec-2"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/></svg></span>Interface</h2>
+<ul>
+<li>Bannière &quot;Heure de l&#x27;entreprise&quot; : horloge vivante affichant la date et l&#x27;heure dans le fuseau de l&#x27;entreprise, ainsi que le nom du fuseau (ex : Africa/Douala) et le décalage (ex : UTC+01:00).</li>
+<li>Réglage du fuseau (admin) : dans Réglages &gt; Entreprise : un menu déroulant liste les fuseaux (ex : Douala UTC+1, Paris UTC+1/+2...). À régler sur le pays où l&#x27;entreprise opère.</li>
+</ul>
+</section>
+<section class="doc-section steps" id="sec-3"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></span>Procédure pas à pas</h2>
+<ol>
+<li>Administrateur : ouvrez Réglages &gt; Entreprise, trouvez &quot;Fuseau horaire&quot; et sélectionnez votre pays (ex : Douala (UTC+1) pour le Cameroun), puis enregistrez. -&gt; Tous les rapports &quot;du jour&quot; et l&#x27;horloge affichée suivent désormais ce fuseau. (Vérif : vérifiez que la bannière en haut du tableau de bord affiche bien l&#x27;heure de votre pays.)</li>
+<li>Au quotidien : fiez-vous à la bannière &quot;Heure de l&#x27;entreprise&quot; pour savoir quel jour est en cours. -&gt; Le &quot;résumé du jour&quot; correspond exactement à la journée affichée dans la bannière.</li>
+</ol>
+</section>
+<section class="doc-section examples" id="sec-4"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span>Exemples</h2>
+<p>Lire l&#x27;heure de l&#x27;entreprise : la bannière indique &quot;06/06/2026 00:42 - Africa/Douala (UTC+01:00)&quot;. Le jour en cours pour l&#x27;entreprise est donc le 06/06.</p>
+<p>Mon téléphone affiche une autre heure : si votre téléphone est réglé sur un autre fuseau que votre entreprise, son heure peut différer de la bannière. C&#x27;est NORMAL : seuls la bannière et les rapports (= fuseau entreprise) font foi.</p>
+<p>Dirigeant en voyage à l&#x27;étranger : votre entreprise est au Cameroun et vous contrôlez l&#x27;app depuis la Chine. Les chiffres restent ceux de la journée camerounaise : aucune statistique faussée, car le fuseau de l&#x27;entreprise (et non celui de la Chine) sert de référence.</p>
+<p>Autour de minuit (heure entreprise), la journée bascule : le résumé du jour repart à zéro. C&#x27;est l&#x27;heure de l&#x27;entreprise qui déclenche ce changement, pas celle de votre appareil.</p>
+<p>Dans les pays à heure d&#x27;été (ex : Europe), le décalage change deux fois par an. L&#x27;app le gère automatiquement (base de fuseaux IANA) ; le décalage affiché (UTC+xx) se met à jour tout seul.</p>
+</section>
+<section class="doc-section errors" id="sec-5"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>Messages d&#x27;erreur</h2>
+<div class="err"><div class="msg">Le résumé du jour semble afficher la mauvaise journée</div><div class="sol">Cause : le fuseau de l&#x27;entreprise n&#x27;est pas réglé sur votre pays (valeur par défaut, ou pays différent). - Solution : administrateur : Réglages &gt; Entreprise &gt; Fuseau horaire, choisissez votre pays et enregistrez. La bannière et les rapports s&#x27;aligneront immédiatement.</div></div>
+</section>
+<section class="doc-section tips" id="sec-6"><h2><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6"/><path d="M10 22h4"/><path d="M15.09 14c.18-.98.65-1.74 1.41-2.5A4.65 4.65 0 0 0 18 8 6 6 0 0 0 6 8c0 1 .23 2.23 1.5 3.5A4.61 4.61 0 0 1 8.91 14"/></svg></span>Conseils</h2>
+<ul>
+<li>Réglez le fuseau de l&#x27;entreprise UNE FOIS, dès le départ, sur votre pays réel d&#x27;exploitation. C&#x27;est le réglage le plus important pour des chiffres justes. En cas de doute, fiez-vous toujours à la bannière &quot;Heure de l&#x27;entreprise&quot;, jamais à l&#x27;horloge de votre téléphone.</li>
+</ul>
+</section>
+      <nav class="doc-pager"><a class="prev" href="/fr/docs/settings/session_security"><div class="dir">Précédent</div><div class="ttl">Sécurité de session et déconnexion automatique</div></a><a class="next" href="/fr/docs/settings/settings"><div class="dir">Suivant</div><div class="ttl">Régler les paramètres (langue, thème, notifications)</div></a></nav>
+    </article>
+  </main>
+  <aside class="doc-toc"><div class="toc-title">Sur cette page</div><a href="#sec-0">Présentation</a>
+<a href="#sec-1">Accès</a>
+<a href="#sec-2">Interface</a>
+<a href="#sec-3">Procédure pas à pas</a>
+<a href="#sec-4">Exemples</a>
+<a href="#sec-5">Messages d&#x27;erreur</a>
+<a href="#sec-6">Conseils</a></aside>
+</div>
+<script type="application/ld+json">[{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Heure et fuseau horaire de l'entreprise", "description": "Comprendre pourquoi les rapports \"du jour\" suivent le fuseau de l'entreprise (pas votre appareil), et comment le régler correctement.", "inLanguage": "fr", "url": "https://www.bizcorasystems.com/fr/docs/settings/business_timezone", "isPartOf": {"@type": "WebSite", "name": "BizCoRa", "url": "https://www.bizcorasystems.com"}, "publisher": {"@type": "Organization", "name": "BizCoRa", "logo": {"@type": "ImageObject", "url": "https://www.bizcorasystems.com/assets/images/logo-512.png"}}}, {"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Documentation", "item": "https://www.bizcorasystems.com/fr/docs/"}, {"@type": "ListItem", "position": 2, "name": "Paramètres", "item": "https://www.bizcorasystems.com/fr/docs/#settings"}, {"@type": "ListItem", "position": 3, "name": "Heure et fuseau horaire de l'entreprise", "item": "https://www.bizcorasystems.com/fr/docs/settings/business_timezone"}]}, {"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Le résumé du jour semble afficher la mauvaise journée", "acceptedAnswer": {"@type": "Answer", "text": "Cause : le fuseau de l'entreprise n'est pas réglé sur votre pays (valeur par défaut, ou pays différent). - Solution : administrateur : Réglages > Entreprise > Fuseau horaire, choisissez votre pays et enregistrez. La bannière et les rapports s'aligneront immédiatement."}}]}]</script>
+<script src="/assets/js/docs.js"></script>
+</body>
+</html>
