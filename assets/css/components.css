@@ -572,3 +572,21 @@ body.lb-open { overflow: hidden; }
   .lightbox__close { top: -10px; right: -10px; width: 40px; height: 40px; }
   .lightbox__caption { bottom: -32px; font-size: 0.82rem; }
 }
+
+/* --- Menu deroulant "Ressources" (details natif, accessible) ------------- */
+.nav-dd { position: relative; }
+.nav-dd > summary { list-style: none; cursor: pointer; color: var(--ink-700); font-weight: 500; padding: 10px 14px; border-radius: var(--radius-sm); font-size: 0.96rem; display: inline-flex; align-items: center; gap: 6px; user-select: none; }
+.nav-dd > summary::-webkit-details-marker { display: none; }
+.nav-dd > summary::marker { content: ""; }
+.nav-dd > summary:hover { color: var(--brand-700); background: var(--brand-50); }
+.nav-dd[open] > summary, .nav-dd > summary.is-active { color: var(--brand-700); }
+.nav-dd .cx { font-size: .6rem; opacity: .7; transition: transform .2s ease; }
+.nav-dd[open] .cx { transform: rotate(180deg); }
+.nav-dd-menu { position: absolute; top: calc(100% + 8px); left: 0; min-width: 212px; background: #fff; border: 1px solid var(--border-strong); border-radius: 14px; box-shadow: 0 18px 44px rgba(15,23,42,.14), 0 4px 12px rgba(15,23,42,.06); padding: 8px; display: flex; flex-direction: column; gap: 2px; z-index: 80; }
+.nav-dd-menu a { padding: 10px 12px; border-radius: 10px; font-size: .94rem; color: var(--ink-700); font-weight: 500; white-space: nowrap; }
+.nav-dd-menu a:hover { background: var(--brand-50); color: var(--brand-700); }
+@media (max-width: 920px) {
+  .nav-dd { width: 100%; }
+  .nav-dd > summary { padding: 14px; font-size: 1rem; }
+  .nav-dd-menu { position: static; box-shadow: none; border: none; border-left: 2px solid var(--brand-100, #e0e7ff); border-radius: 0; margin: 2px 0 6px 10px; padding: 0; min-width: 0; }
+}
